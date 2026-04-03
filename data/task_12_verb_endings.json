@@ -1,0 +1,699 @@
+{
+  "task_number": 12,
+  "task_name": "Правописание глагольных форм",
+  "subcategories": [
+    {
+      "code": "verb_ending",
+      "name": "Окончания глаголов",
+      "rule": "",
+      "questions": [
+        {
+          "word_display": "стро_шь",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "строить → II спр. → стрОишь."
+        },
+        {
+          "word_display": "люб_шь",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "любить → II спр. → лЮбишь."
+        },
+        {
+          "word_display": "прос_шь",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "просить → II спр. → прОсишь."
+        },
+        {
+          "word_display": "смотр_шь",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "смотреть (искл. II) → смОтришь."
+        },
+        {
+          "word_display": "вид_шь",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "видеть (искл. II) → вИдишь."
+        },
+        {
+          "word_display": "слыш_шь",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "слышать (искл. II) → слЫшишь."
+        },
+        {
+          "word_display": "дыш_шь",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "дышать (искл. II) → дЫшишь."
+        },
+        {
+          "word_display": "держ_шь",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "держать (искл. II) → дЕржишь."
+        },
+        {
+          "word_display": "гон_шь",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "гнать (искл. II) → гОнишь."
+        },
+        {
+          "word_display": "верт_шь",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "вертеть (искл. II) → вЕртишь."
+        },
+        {
+          "word_display": "терп_шь",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "терпеть (искл. II) → тЕрпишь."
+        },
+        {
+          "word_display": "завис_шь",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "зависеть (искл. II) → завИсишь."
+        },
+        {
+          "word_display": "ненавид_шь",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "ненавидеть (искл. II) → ненАвидишь."
+        },
+        {
+          "word_display": "обид_шь",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "обидеть (искл. II) → обИдишь."
+        },
+        {
+          "word_display": "пиш_шь",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и"
+          ],
+          "explanation": "писать → I спр. → пИшешь."
+        },
+        {
+          "word_display": "та_шь",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и"
+          ],
+          "explanation": "таять → I спр. → тАешь."
+        },
+        {
+          "word_display": "кол_шь",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и"
+          ],
+          "explanation": "колоть → I спр. → кОлешь."
+        },
+        {
+          "word_display": "мел_шь",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и"
+          ],
+          "explanation": "молоть → I спр. → мЕлешь."
+        },
+        {
+          "word_display": "ла_шь",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и"
+          ],
+          "explanation": "лаять → I спр. → лАешь."
+        },
+        {
+          "word_display": "се_шь",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и"
+          ],
+          "explanation": "сеять → I спр. → сЕешь."
+        },
+        {
+          "word_display": "ве_шь",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и"
+          ],
+          "explanation": "веять → I спр. → вЕешь."
+        },
+        {
+          "word_display": "стел_шь",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и"
+          ],
+          "explanation": "стелить (искл. I) → стЕлешь."
+        },
+        {
+          "word_display": "бре_тся",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и"
+          ],
+          "explanation": "брить (искл. I) → брЕется."
+        },
+        {
+          "word_display": "дремл_шь",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и"
+          ],
+          "explanation": "дремать → I спр. → дрЕмлешь."
+        },
+        {
+          "word_display": "пол_шь",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и"
+          ],
+          "explanation": "полоть → I спр. → пОлешь."
+        },
+        {
+          "word_display": "реж_шь",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и"
+          ],
+          "explanation": "резать → I спр. → рЕжешь."
+        },
+        {
+          "word_display": "пляш_шь",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и"
+          ],
+          "explanation": "плясать → I спр. → плЯшешь."
+        },
+        {
+          "word_display": "рису_шь",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и"
+          ],
+          "explanation": "рисовать → I спр. → рисуЕшь."
+        },
+        {
+          "word_display": "вяж_шь",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и"
+          ],
+          "explanation": "вязать → I спр. → вЯжешь."
+        },
+        {
+          "word_display": "скач_шь",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и"
+          ],
+          "explanation": "скакать → I спр. → скАчешь."
+        },
+        {
+          "word_display": "хоч_шь",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и"
+          ],
+          "explanation": "хотеть (разноспрягаемый) → хОчешь."
+        },
+        {
+          "word_display": "гоня_тся",
+          "correct_answer": "ю",
+          "wrong_options": [
+            "я"
+          ],
+          "explanation": "гнать → II спр. → гоняЮтся (3 л. мн.)."
+        },
+        {
+          "word_display": "стро_тся",
+          "correct_answer": "я",
+          "wrong_options": [
+            "ю"
+          ],
+          "explanation": "строить → II спр. → стрОятся (3 л. мн.)."
+        },
+        {
+          "word_display": "дремл_т",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и"
+          ],
+          "explanation": "дремать → I спр. → дрЕмлет (3 л. ед.)."
+        },
+        {
+          "word_display": "ненавид_т",
+          "correct_answer": "я",
+          "wrong_options": [
+            "ю"
+          ],
+          "explanation": "ненавидеть → II спр. → ненАвидят (3 л. мн.)."
+        },
+        {
+          "word_display": "та_т",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и"
+          ],
+          "explanation": "таять → I спр. → тАет (3 л. ед.)."
+        },
+        {
+          "word_display": "кле_т",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "клеить → II спр. → клЕит (3 л. ед.)."
+        }
+      ]
+    },
+    {
+      "code": "part_present",
+      "name": "Суффиксы причастий настоящего вр.",
+      "rule": "",
+      "questions": [
+        {
+          "word_display": "стро_щийся",
+          "correct_answer": "я",
+          "wrong_options": [
+            "ю"
+          ],
+          "explanation": "строить (II) → строЯщийся."
+        },
+        {
+          "word_display": "завис_щий",
+          "correct_answer": "я",
+          "wrong_options": [
+            "ю"
+          ],
+          "explanation": "зависеть (II, искл.) → завИсящий."
+        },
+        {
+          "word_display": "кле_щий",
+          "correct_answer": "я",
+          "wrong_options": [
+            "ю"
+          ],
+          "explanation": "клеить (II) → клЕящий."
+        },
+        {
+          "word_display": "вид_щий",
+          "correct_answer": "я",
+          "wrong_options": [
+            "ю"
+          ],
+          "explanation": "видеть (II, искл.) → вИдящий."
+        },
+        {
+          "word_display": "слыш_щий",
+          "correct_answer": "а",
+          "wrong_options": [
+            "у"
+          ],
+          "explanation": "слышать (II, искл.) → слЫшащий."
+        },
+        {
+          "word_display": "дыш_щий",
+          "correct_answer": "а",
+          "wrong_options": [
+            "у"
+          ],
+          "explanation": "дышать (II, искл.) → дЫшащий."
+        },
+        {
+          "word_display": "держ_щий",
+          "correct_answer": "а",
+          "wrong_options": [
+            "у"
+          ],
+          "explanation": "держать (II, искл.) → дЕржащий."
+        },
+        {
+          "word_display": "бор_щийся",
+          "correct_answer": "ю",
+          "wrong_options": [
+            "я"
+          ],
+          "explanation": "бороться (I) → борЮщийся."
+        },
+        {
+          "word_display": "та_щий",
+          "correct_answer": "ю",
+          "wrong_options": [
+            "я"
+          ],
+          "explanation": "таять (I) → тАющий."
+        },
+        {
+          "word_display": "кол_щий",
+          "correct_answer": "ю",
+          "wrong_options": [
+            "я"
+          ],
+          "explanation": "колоть (I) → кОлющий."
+        },
+        {
+          "word_display": "ла_щий",
+          "correct_answer": "ю",
+          "wrong_options": [
+            "я"
+          ],
+          "explanation": "лаять (I) → лАющий."
+        },
+        {
+          "word_display": "мел_щий",
+          "correct_answer": "ю",
+          "wrong_options": [
+            "я"
+          ],
+          "explanation": "молоть (I) → мЕлющий."
+        },
+        {
+          "word_display": "пол_щий",
+          "correct_answer": "ю",
+          "wrong_options": [
+            "я"
+          ],
+          "explanation": "полоть (I) → пОлющий."
+        },
+        {
+          "word_display": "реж_щий",
+          "correct_answer": "у",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "резать (I) → рЕжущий."
+        },
+        {
+          "word_display": "рису_щий",
+          "correct_answer": "ю",
+          "wrong_options": [
+            "я"
+          ],
+          "explanation": "рисовать (I) → рисуЮщий."
+        },
+        {
+          "word_display": "вез_щий",
+          "correct_answer": "у",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "везти (I) → везУщий."
+        },
+        {
+          "word_display": "расходу_мый",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и"
+          ],
+          "explanation": "расходовать (I) → расходуЕмый."
+        },
+        {
+          "word_display": "движ_мый",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "двигать в знач. управлять (II) → движИмый (искл.)."
+        },
+        {
+          "word_display": "слыш_мый",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "слышать (II, искл.) → слЫшимый."
+        },
+        {
+          "word_display": "вид_мый",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "видеть (II, искл.) → вИдимый."
+        },
+        {
+          "word_display": "реша_мый",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и"
+          ],
+          "explanation": "решать (I) → решАемый."
+        },
+        {
+          "word_display": "чита_мый",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и"
+          ],
+          "explanation": "читать (I) → читАемый."
+        },
+        {
+          "word_display": "терп_мый",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "терпеть (II, искл.) → терпИмый."
+        }
+      ]
+    },
+    {
+      "code": "part_past",
+      "name": "Суффиксы причастий прошедшего вр.",
+      "rule": "",
+      "questions": [
+        {
+          "word_display": "услыш_нный",
+          "correct_answer": "а",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "услышать (-ать) → услышАнный."
+        },
+        {
+          "word_display": "посе_нный",
+          "correct_answer": "я",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "посеять (-ять) → посеЯнный."
+        },
+        {
+          "word_display": "закле_нный",
+          "correct_answer": "е",
+          "wrong_options": [
+            "я"
+          ],
+          "explanation": "заклеить (-ить) → заклеЕнный."
+        },
+        {
+          "word_display": "постро_нный",
+          "correct_answer": "е",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "построить (-ить) → построЕнный."
+        },
+        {
+          "word_display": "увид_нный",
+          "correct_answer": "е",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "увидеть (-еть) → увидЕнный."
+        },
+        {
+          "word_display": "выкро_нный",
+          "correct_answer": "е",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "выкроить (-ить) → выкроЕнный."
+        },
+        {
+          "word_display": "расстрел_нный",
+          "correct_answer": "я",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "расстрелять (-ять) → расстрелЯнный."
+        },
+        {
+          "word_display": "потер_нный",
+          "correct_answer": "я",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "потерять (-ять) → потерЯнный."
+        },
+        {
+          "word_display": "замеш_нный",
+          "correct_answer": "а",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "замешать (-ать) тесто → замешАнный. Замесить тесто → замешЕнный."
+        },
+        {
+          "word_display": "скле_нный",
+          "correct_answer": "е",
+          "wrong_options": [
+            "я"
+          ],
+          "explanation": "склеить (-ить) → склеЕнный."
+        },
+        {
+          "word_display": "простр_ленный",
+          "correct_answer": "е",
+          "wrong_options": [
+            "я"
+          ],
+          "explanation": "прострелить (-ить) → прострЕленный."
+        },
+        {
+          "word_display": "выпол_ненный",
+          "correct_answer": "о",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "выполнить (-ить) → выпОлненный."
+        },
+        {
+          "word_display": "просмотр_нный",
+          "correct_answer": "е",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "просмотреть (-еть) → просмотрЕнный."
+        },
+        {
+          "word_display": "разбуж_нный",
+          "correct_answer": "е",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "разбудить (-ить) → разбужЕнный."
+        },
+        {
+          "word_display": "встреч_нный",
+          "correct_answer": "е",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "встретить (-ить) → встрЕченный."
+        },
+        {
+          "word_display": "выслуш_нный",
+          "correct_answer": "а",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "выслушать (-ать) → выслушАнный."
+        },
+        {
+          "word_display": "засе_нный",
+          "correct_answer": "я",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "засеять (-ять) → засеЯнный."
+        },
+        {
+          "word_display": "взвеш_нный",
+          "correct_answer": "е",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "взвесить (-ить) → взвЕшенный."
+        },
+        {
+          "word_display": "окле_нный",
+          "correct_answer": "е",
+          "wrong_options": [
+            "я"
+          ],
+          "explanation": "оклеить (-ить) → оклеЕнный."
+        },
+        {
+          "word_display": "намеч_нный",
+          "correct_answer": "е",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "наметить (-ить) → намЕченный."
+        },
+        {
+          "word_display": "наслыш_н",
+          "correct_answer": "а",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "наслышаться (-аться) → наслЫшан (кратк.)."
+        },
+        {
+          "word_display": "разве_нный",
+          "correct_answer": "я",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "развеять (-ять) → развЕянный."
+        },
+        {
+          "word_display": "засуш_нный",
+          "correct_answer": "е",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "засушить (-ить) → засушЕнный."
+        },
+        {
+          "word_display": "выуч_нный",
+          "correct_answer": "е",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "выучить (-ить) → вЫученный."
+        }
+      ]
+    }
+  ]
+}

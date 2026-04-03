@@ -1,0 +1,1806 @@
+{
+  "task_number": 4,
+  "task_name": "Орфоэпия (ударения)",
+  "subcategories": [
+    {
+      "code": "main",
+      "name": null,
+      "rule": "",
+      "questions": [
+        {
+          "word_display": "аэропорты",
+          "correct_answer": "аэропОрты",
+          "wrong_options": [
+            "Аэропорты",
+            "аЭропорты"
+          ],
+          "explanation": "Правильное ударение: аэропОрты."
+        },
+        {
+          "word_display": "банты",
+          "correct_answer": "бАнты",
+          "wrong_options": [
+            "бантЫ"
+          ],
+          "explanation": "Правильное ударение: бАнты."
+        },
+        {
+          "word_display": "бороду",
+          "correct_answer": "бОроду",
+          "wrong_options": [
+            "борОду",
+            "бородУ"
+          ],
+          "explanation": "Правильное ударение: бОроду."
+        },
+        {
+          "word_display": "бухгалтеров",
+          "correct_answer": "бухгАлтеров",
+          "wrong_options": [
+            "бУхгалтеров",
+            "бухгалтЕров"
+          ],
+          "explanation": "Правильное ударение: бухгАлтеров."
+        },
+        {
+          "word_display": "вероисповедание",
+          "correct_answer": "вероисповЕдание",
+          "wrong_options": [
+            "вЕроисповедание",
+            "верОисповедание"
+          ],
+          "explanation": "Правильное ударение: вероисповЕдание."
+        },
+        {
+          "word_display": "водопровод",
+          "correct_answer": "водопровОд",
+          "wrong_options": [
+            "вОдопровод",
+            "водОпровод"
+          ],
+          "explanation": "Правильное ударение: водопровОд."
+        },
+        {
+          "word_display": "газопровод",
+          "correct_answer": "газопровОд",
+          "wrong_options": [
+            "гАзопровод",
+            "газОпровод"
+          ],
+          "explanation": "Правильное ударение: газопровОд."
+        },
+        {
+          "word_display": "нефтепровод",
+          "correct_answer": "нефтепровОд",
+          "wrong_options": [
+            "нЕфтепровод",
+            "нефтЕпровод"
+          ],
+          "explanation": "Правильное ударение: нефтепровОд."
+        },
+        {
+          "word_display": "гражданство",
+          "correct_answer": "граждАнство",
+          "wrong_options": [
+            "грАжданство",
+            "гражданствО"
+          ],
+          "explanation": "Правильное ударение: граждАнство."
+        },
+        {
+          "word_display": "дефис",
+          "correct_answer": "дефИс",
+          "wrong_options": [
+            "дЕфис"
+          ],
+          "explanation": "Правильное ударение: дефИс."
+        },
+        {
+          "word_display": "дешевизна",
+          "correct_answer": "дешевИзна",
+          "wrong_options": [
+            "дЕшевизна",
+            "дешЕвизна"
+          ],
+          "explanation": "Правильное ударение: дешевИзна."
+        },
+        {
+          "word_display": "диспансер",
+          "correct_answer": "диспансЕр",
+          "wrong_options": [
+            "дИспансер",
+            "диспАнсер"
+          ],
+          "explanation": "Правильное ударение: диспансЕр."
+        },
+        {
+          "word_display": "договоренность",
+          "correct_answer": "договорЁнность",
+          "wrong_options": [
+            "дОговорённость",
+            "догОворённость"
+          ],
+          "explanation": "Правильное ударение: договорЁнность."
+        },
+        {
+          "word_display": "документ",
+          "correct_answer": "докумЕнт",
+          "wrong_options": [
+            "дОкумент",
+            "докУмент"
+          ],
+          "explanation": "Правильное ударение: докумЕнт."
+        },
+        {
+          "word_display": "досуг",
+          "correct_answer": "досУг",
+          "wrong_options": [
+            "дОсуг"
+          ],
+          "explanation": "Правильное ударение: досУг."
+        },
+        {
+          "word_display": "еретик",
+          "correct_answer": "еретИк",
+          "wrong_options": [
+            "Еретик",
+            "ерЕтик"
+          ],
+          "explanation": "Правильное ударение: еретИк."
+        },
+        {
+          "word_display": "жалюзи",
+          "correct_answer": "жалюзИ",
+          "wrong_options": [
+            "жАлюзи",
+            "жалЮзи"
+          ],
+          "explanation": "Правильное ударение: жалюзИ."
+        },
+        {
+          "word_display": "значимость",
+          "correct_answer": "знАчимость",
+          "wrong_options": [
+            "значИмость",
+            "значимОсть"
+          ],
+          "explanation": "Правильное ударение: знАчимость."
+        },
+        {
+          "word_display": "иксы",
+          "correct_answer": "Иксы",
+          "wrong_options": [
+            "иксЫ"
+          ],
+          "explanation": "Правильное ударение: Иксы."
+        },
+        {
+          "word_display": "каталог",
+          "correct_answer": "каталОг",
+          "wrong_options": [
+            "кАталог",
+            "катАлог"
+          ],
+          "explanation": "Правильное ударение: каталОг."
+        },
+        {
+          "word_display": "квартал",
+          "correct_answer": "квартАл",
+          "wrong_options": [
+            "квАртал"
+          ],
+          "explanation": "Правильное ударение: квартАл."
+        },
+        {
+          "word_display": "километр",
+          "correct_answer": "киломЕтр",
+          "wrong_options": [
+            "кИлометр",
+            "килОметр"
+          ],
+          "explanation": "Правильное ударение: киломЕтр."
+        },
+        {
+          "word_display": "конусов",
+          "correct_answer": "кОнусов",
+          "wrong_options": [
+            "конУсов",
+            "конусОв"
+          ],
+          "explanation": "Правильное ударение: кОнусов."
+        },
+        {
+          "word_display": "корысть",
+          "correct_answer": "корЫсть",
+          "wrong_options": [
+            "кОрысть"
+          ],
+          "explanation": "Правильное ударение: корЫсть."
+        },
+        {
+          "word_display": "краны",
+          "correct_answer": "крАны",
+          "wrong_options": [
+            "кранЫ"
+          ],
+          "explanation": "Правильное ударение: крАны."
+        },
+        {
+          "word_display": "кремень",
+          "correct_answer": "кремЕнь",
+          "wrong_options": [
+            "крЕмень"
+          ],
+          "explanation": "Правильное ударение: кремЕнь."
+        },
+        {
+          "word_display": "кремня",
+          "correct_answer": "кремнЯ",
+          "wrong_options": [
+            "крЕмня"
+          ],
+          "explanation": "Правильное ударение: кремнЯ."
+        },
+        {
+          "word_display": "лекторов",
+          "correct_answer": "лЕкторов",
+          "wrong_options": [
+            "лектОров",
+            "лекторОв"
+          ],
+          "explanation": "Правильное ударение: лЕкторов."
+        },
+        {
+          "word_display": "локтя",
+          "correct_answer": "лОктя",
+          "wrong_options": [
+            "локтЯ"
+          ],
+          "explanation": "Правильное ударение: лОктя."
+        },
+        {
+          "word_display": "локтей",
+          "correct_answer": "локтЕй",
+          "wrong_options": [
+            "лОктей"
+          ],
+          "explanation": "Правильное ударение: локтЕй."
+        },
+        {
+          "word_display": "лыжня",
+          "correct_answer": "лыжнЯ",
+          "wrong_options": [
+            "лЫжня"
+          ],
+          "explanation": "Правильное ударение: лыжнЯ."
+        },
+        {
+          "word_display": "местностей",
+          "correct_answer": "мЕстностей",
+          "wrong_options": [
+            "местнОстей",
+            "местностЕй"
+          ],
+          "explanation": "Правильное ударение: мЕстностей."
+        },
+        {
+          "word_display": "намерение",
+          "correct_answer": "намЕрение",
+          "wrong_options": [
+            "нАмерение",
+            "намерЕние"
+          ],
+          "explanation": "Правильное ударение: намЕрение."
+        },
+        {
+          "word_display": "недруг",
+          "correct_answer": "нЕдруг",
+          "wrong_options": [
+            "недрУг"
+          ],
+          "explanation": "Правильное ударение: нЕдруг."
+        },
+        {
+          "word_display": "недуг",
+          "correct_answer": "недУг",
+          "wrong_options": [
+            "нЕдуг"
+          ],
+          "explanation": "Правильное ударение: недУг."
+        },
+        {
+          "word_display": "некролог",
+          "correct_answer": "некролОг",
+          "wrong_options": [
+            "нЕкролог",
+            "некрОлог"
+          ],
+          "explanation": "Правильное ударение: некролОг."
+        },
+        {
+          "word_display": "ненависть",
+          "correct_answer": "нЕнависть",
+          "wrong_options": [
+            "ненАвисть",
+            "ненавИсть"
+          ],
+          "explanation": "Правильное ударение: нЕнависть."
+        },
+        {
+          "word_display": "новостей",
+          "correct_answer": "новостЕй",
+          "wrong_options": [
+            "нОвостей",
+            "новОстей"
+          ],
+          "explanation": "Правильное ударение: новостЕй."
+        },
+        {
+          "word_display": "ногтя",
+          "correct_answer": "нОгтя",
+          "wrong_options": [
+            "ногтЯ"
+          ],
+          "explanation": "Правильное ударение: нОгтя."
+        },
+        {
+          "word_display": "ногтей",
+          "correct_answer": "ногтЕй",
+          "wrong_options": [
+            "нОгтей"
+          ],
+          "explanation": "Правильное ударение: ногтЕй."
+        },
+        {
+          "word_display": "отзыв",
+          "correct_answer": "Отзыв",
+          "wrong_options": [
+            "отзЫв"
+          ],
+          "explanation": "Правильное ударение: Отзыв."
+        },
+        {
+          "word_display": "отрочество",
+          "correct_answer": "Отрочество",
+          "wrong_options": [
+            "отрОчество",
+            "отрочЕство"
+          ],
+          "explanation": "Правильное ударение: Отрочество."
+        },
+        {
+          "word_display": "партер",
+          "correct_answer": "партЕр",
+          "wrong_options": [
+            "пАртер"
+          ],
+          "explanation": "Правильное ударение: партЕр."
+        },
+        {
+          "word_display": "портфель",
+          "correct_answer": "портфЕль",
+          "wrong_options": [
+            "пОртфель"
+          ],
+          "explanation": "Правильное ударение: портфЕль."
+        },
+        {
+          "word_display": "приданое",
+          "correct_answer": "придАное",
+          "wrong_options": [
+            "прИданое",
+            "приданОе"
+          ],
+          "explanation": "Правильное ударение: придАное."
+        },
+        {
+          "word_display": "свекла",
+          "correct_answer": "свЁкла",
+          "wrong_options": [
+            "свёклА"
+          ],
+          "explanation": "Правильное ударение: свЁкла."
+        },
+        {
+          "word_display": "сироты",
+          "correct_answer": "сирОты",
+          "wrong_options": [
+            "сИроты",
+            "сиротЫ"
+          ],
+          "explanation": "Правильное ударение: сирОты."
+        },
+        {
+          "word_display": "сосредоточение",
+          "correct_answer": "сосредотОчение",
+          "wrong_options": [
+            "сОсредоточение",
+            "сосрЕдоточение"
+          ],
+          "explanation": "Правильное ударение: сосредотОчение."
+        },
+        {
+          "word_display": "средства",
+          "correct_answer": "срЕдства",
+          "wrong_options": [
+            "средствА"
+          ],
+          "explanation": "Правильное ударение: срЕдства."
+        },
+        {
+          "word_display": "статуя",
+          "correct_answer": "стАтуя",
+          "wrong_options": [
+            "статУя",
+            "статуЯ"
+          ],
+          "explanation": "Правильное ударение: стАтуя."
+        },
+        {
+          "word_display": "столяр",
+          "correct_answer": "столЯр",
+          "wrong_options": [
+            "стОляр"
+          ],
+          "explanation": "Правильное ударение: столЯр."
+        },
+        {
+          "word_display": "таможня",
+          "correct_answer": "тамОжня",
+          "wrong_options": [
+            "тАможня",
+            "таможнЯ"
+          ],
+          "explanation": "Правильное ударение: тамОжня."
+        },
+        {
+          "word_display": "торты",
+          "correct_answer": "тОрты",
+          "wrong_options": [
+            "тортЫ"
+          ],
+          "explanation": "Правильное ударение: тОрты."
+        },
+        {
+          "word_display": "туфля",
+          "correct_answer": "тУфля",
+          "wrong_options": [
+            "туфлЯ"
+          ],
+          "explanation": "Правильное ударение: тУфля."
+        },
+        {
+          "word_display": "цемент",
+          "correct_answer": "цемЕнт",
+          "wrong_options": [
+            "цЕмент"
+          ],
+          "explanation": "Правильное ударение: цемЕнт."
+        },
+        {
+          "word_display": "центнер",
+          "correct_answer": "цЕнтнер",
+          "wrong_options": [
+            "центнЕр"
+          ],
+          "explanation": "Правильное ударение: цЕнтнер."
+        },
+        {
+          "word_display": "цепочка",
+          "correct_answer": "цепОчка",
+          "wrong_options": [
+            "цЕпочка",
+            "цепочкА"
+          ],
+          "explanation": "Правильное ударение: цепОчка."
+        },
+        {
+          "word_display": "шарфы",
+          "correct_answer": "шАрфы",
+          "wrong_options": [
+            "шарфЫ"
+          ],
+          "explanation": "Правильное ударение: шАрфы."
+        },
+        {
+          "word_display": "шофер",
+          "correct_answer": "шофЁр",
+          "wrong_options": [
+            "шОфёр"
+          ],
+          "explanation": "Правильное ударение: шофЁр."
+        },
+        {
+          "word_display": "эксперт",
+          "correct_answer": "экспЕрт",
+          "wrong_options": [
+            "Эксперт"
+          ],
+          "explanation": "Правильное ударение: экспЕрт."
+        },
+        {
+          "word_display": "верна",
+          "correct_answer": "вернА",
+          "wrong_options": [
+            "вЕрна"
+          ],
+          "explanation": "Правильное ударение: вернА."
+        },
+        {
+          "word_display": "значимый",
+          "correct_answer": "знАчимый",
+          "wrong_options": [
+            "значИмый",
+            "значимЫй"
+          ],
+          "explanation": "Правильное ударение: знАчимый."
+        },
+        {
+          "word_display": "красивее",
+          "correct_answer": "красИвее",
+          "wrong_options": [
+            "крАсивее",
+            "красивЕе"
+          ],
+          "explanation": "Правильное ударение: красИвее."
+        },
+        {
+          "word_display": "красивейший",
+          "correct_answer": "красИвейший",
+          "wrong_options": [
+            "крАсивейший",
+            "красивЕйший"
+          ],
+          "explanation": "Правильное ударение: красИвейший."
+        },
+        {
+          "word_display": "кухонный",
+          "correct_answer": "кУхонный",
+          "wrong_options": [
+            "кухОнный",
+            "кухоннЫй"
+          ],
+          "explanation": "Правильное ударение: кУхонный."
+        },
+        {
+          "word_display": "ловка",
+          "correct_answer": "ловкА",
+          "wrong_options": [
+            "лОвка"
+          ],
+          "explanation": "Правильное ударение: ловкА."
+        },
+        {
+          "word_display": "мозаичный",
+          "correct_answer": "мозаИчный",
+          "wrong_options": [
+            "мОзаичный",
+            "мозАичный"
+          ],
+          "explanation": "Правильное ударение: мозаИчный."
+        },
+        {
+          "word_display": "оптовый",
+          "correct_answer": "оптОвый",
+          "wrong_options": [
+            "Оптовый",
+            "оптовЫй"
+          ],
+          "explanation": "Правильное ударение: оптОвый."
+        },
+        {
+          "word_display": "прозорливый",
+          "correct_answer": "прозорлИвый",
+          "wrong_options": [
+            "прОзорливый",
+            "прозОрливый"
+          ],
+          "explanation": "Правильное ударение: прозорлИвый."
+        },
+        {
+          "word_display": "прозорлива",
+          "correct_answer": "прозорлИва",
+          "wrong_options": [
+            "прОзорлива",
+            "прозОрлива"
+          ],
+          "explanation": "Правильное ударение: прозорлИва."
+        },
+        {
+          "word_display": "сливовый",
+          "correct_answer": "слИвовый",
+          "wrong_options": [
+            "сливОвый",
+            "сливовЫй"
+          ],
+          "explanation": "Правильное ударение: слИвовый."
+        },
+        {
+          "word_display": "брала",
+          "correct_answer": "бралА",
+          "wrong_options": [
+            "брАла"
+          ],
+          "explanation": "Правильное ударение: бралА."
+        },
+        {
+          "word_display": "бралась",
+          "correct_answer": "бралАсь",
+          "wrong_options": [
+            "брАлась"
+          ],
+          "explanation": "Правильное ударение: бралАсь."
+        },
+        {
+          "word_display": "добрала",
+          "correct_answer": "добралА",
+          "wrong_options": [
+            "дОбрала",
+            "добрАла"
+          ],
+          "explanation": "Правильное ударение: добралА."
+        },
+        {
+          "word_display": "добралась",
+          "correct_answer": "добралАсь",
+          "wrong_options": [
+            "дОбралась",
+            "добрАлась"
+          ],
+          "explanation": "Правильное ударение: добралАсь."
+        },
+        {
+          "word_display": "взяла",
+          "correct_answer": "взялА",
+          "wrong_options": [
+            "взЯла"
+          ],
+          "explanation": "Правильное ударение: взялА."
+        },
+        {
+          "word_display": "взялась",
+          "correct_answer": "взялАсь",
+          "wrong_options": [
+            "взЯлась"
+          ],
+          "explanation": "Правильное ударение: взялАсь."
+        },
+        {
+          "word_display": "ворвалась",
+          "correct_answer": "ворвалАсь",
+          "wrong_options": [
+            "вОрвалась",
+            "ворвАлась"
+          ],
+          "explanation": "Правильное ударение: ворвалАсь."
+        },
+        {
+          "word_display": "надорвалась",
+          "correct_answer": "надорвалАсь",
+          "wrong_options": [
+            "нАдорвалась",
+            "надОрвалась"
+          ],
+          "explanation": "Правильное ударение: надорвалАсь."
+        },
+        {
+          "word_display": "нарвала",
+          "correct_answer": "нарвалА",
+          "wrong_options": [
+            "нАрвала",
+            "нарвАла"
+          ],
+          "explanation": "Правильное ударение: нарвалА."
+        },
+        {
+          "word_display": "рвала",
+          "correct_answer": "рвалА",
+          "wrong_options": [
+            "рвАла"
+          ],
+          "explanation": "Правильное ударение: рвалА."
+        },
+        {
+          "word_display": "сорвала",
+          "correct_answer": "сорвалА",
+          "wrong_options": [
+            "сОрвала",
+            "сорвАла"
+          ],
+          "explanation": "Правильное ударение: сорвалА."
+        },
+        {
+          "word_display": "воспринять",
+          "correct_answer": "воспринЯть",
+          "wrong_options": [
+            "вОспринять",
+            "воспрИнять"
+          ],
+          "explanation": "Правильное ударение: воспринЯть."
+        },
+        {
+          "word_display": "восприняла",
+          "correct_answer": "воспринялА",
+          "wrong_options": [
+            "вОсприняла",
+            "воспрИняла"
+          ],
+          "explanation": "Правильное ударение: воспринялА."
+        },
+        {
+          "word_display": "вручит",
+          "correct_answer": "вручИт",
+          "wrong_options": [
+            "врУчит"
+          ],
+          "explanation": "Правильное ударение: вручИт."
+        },
+        {
+          "word_display": "гнала",
+          "correct_answer": "гналА",
+          "wrong_options": [
+            "гнАла"
+          ],
+          "explanation": "Правильное ударение: гналА."
+        },
+        {
+          "word_display": "гналась",
+          "correct_answer": "гналАсь",
+          "wrong_options": [
+            "гнАлась"
+          ],
+          "explanation": "Правильное ударение: гналАсь."
+        },
+        {
+          "word_display": "обогнала",
+          "correct_answer": "обогналА",
+          "wrong_options": [
+            "Обогнала",
+            "обОгнала"
+          ],
+          "explanation": "Правильное ударение: обогналА."
+        },
+        {
+          "word_display": "дождалась",
+          "correct_answer": "дождалАсь",
+          "wrong_options": [
+            "дОждалась",
+            "дождАлась"
+          ],
+          "explanation": "Правильное ударение: дождалАсь."
+        },
+        {
+          "word_display": "ждала",
+          "correct_answer": "ждалА",
+          "wrong_options": [
+            "ждАла"
+          ],
+          "explanation": "Правильное ударение: ждалА."
+        },
+        {
+          "word_display": "звонит",
+          "correct_answer": "звонИт",
+          "wrong_options": [
+            "звОнит"
+          ],
+          "explanation": "Правильное ударение: звонИт."
+        },
+        {
+          "word_display": "дозвонится",
+          "correct_answer": "дозвонИтся",
+          "wrong_options": [
+            "дОзвонится",
+            "дозвОнится"
+          ],
+          "explanation": "Правильное ударение: дозвонИтся."
+        },
+        {
+          "word_display": "обзвонит",
+          "correct_answer": "обзвонИт",
+          "wrong_options": [
+            "Обзвонит",
+            "обзвОнит"
+          ],
+          "explanation": "Правильное ударение: обзвонИт."
+        },
+        {
+          "word_display": "перезвонит",
+          "correct_answer": "перезвонИт",
+          "wrong_options": [
+            "пЕрезвонит",
+            "перЕзвонит"
+          ],
+          "explanation": "Правильное ударение: перезвонИт."
+        },
+        {
+          "word_display": "позвонит",
+          "correct_answer": "позвонИт",
+          "wrong_options": [
+            "пОзвонит",
+            "позвОнит"
+          ],
+          "explanation": "Правильное ударение: позвонИт."
+        },
+        {
+          "word_display": "дозировать",
+          "correct_answer": "дозИровать",
+          "wrong_options": [
+            "дОзировать",
+            "дозирОвать"
+          ],
+          "explanation": "Правильное ударение: дозИровать."
+        },
+        {
+          "word_display": "закупорить",
+          "correct_answer": "закУпорить",
+          "wrong_options": [
+            "зАкупорить",
+            "закупОрить"
+          ],
+          "explanation": "Правильное ударение: закУпорить."
+        },
+        {
+          "word_display": "откупорить",
+          "correct_answer": "откУпорить",
+          "wrong_options": [
+            "Откупорить",
+            "откупОрить"
+          ],
+          "explanation": "Правильное ударение: откУпорить."
+        },
+        {
+          "word_display": "занять",
+          "correct_answer": "занЯть",
+          "wrong_options": [
+            "зАнять"
+          ],
+          "explanation": "Правильное ударение: занЯть."
+        },
+        {
+          "word_display": "занял",
+          "correct_answer": "зАнял",
+          "wrong_options": [
+            "занЯл"
+          ],
+          "explanation": "Правильное ударение: зАнял."
+        },
+        {
+          "word_display": "заняла",
+          "correct_answer": "занялА",
+          "wrong_options": [
+            "зАняла",
+            "занЯла"
+          ],
+          "explanation": "Правильное ударение: занялА."
+        },
+        {
+          "word_display": "заняли",
+          "correct_answer": "зАняли",
+          "wrong_options": [
+            "занЯли",
+            "занялИ"
+          ],
+          "explanation": "Правильное ударение: зАняли."
+        },
+        {
+          "word_display": "заперла",
+          "correct_answer": "заперлА",
+          "wrong_options": [
+            "зАперла",
+            "запЕрла"
+          ],
+          "explanation": "Правильное ударение: заперлА."
+        },
+        {
+          "word_display": "запломбировать",
+          "correct_answer": "запломбировАть",
+          "wrong_options": [
+            "зАпломбировать",
+            "заплОмбировать"
+          ],
+          "explanation": "Правильное ударение: запломбировАть."
+        },
+        {
+          "word_display": "защемит",
+          "correct_answer": "защемИт",
+          "wrong_options": [
+            "зАщемит",
+            "защЕмит"
+          ],
+          "explanation": "Правильное ударение: защемИт."
+        },
+        {
+          "word_display": "щемит",
+          "correct_answer": "щемИт",
+          "wrong_options": [
+            "щЕмит"
+          ],
+          "explanation": "Правильное ударение: щемИт."
+        },
+        {
+          "word_display": "кашлянуть",
+          "correct_answer": "кАшлянуть",
+          "wrong_options": [
+            "кашлЯнуть",
+            "кашлянУть"
+          ],
+          "explanation": "Правильное ударение: кАшлянуть."
+        },
+        {
+          "word_display": "клала",
+          "correct_answer": "клАла",
+          "wrong_options": [
+            "клалА"
+          ],
+          "explanation": "Правильное ударение: клАла."
+        },
+        {
+          "word_display": "клеить",
+          "correct_answer": "клЕить",
+          "wrong_options": [
+            "клеИть"
+          ],
+          "explanation": "Правильное ударение: клЕить."
+        },
+        {
+          "word_display": "кралась",
+          "correct_answer": "крАлась",
+          "wrong_options": [
+            "кралАсь"
+          ],
+          "explanation": "Правильное ударение: крАлась."
+        },
+        {
+          "word_display": "лгала",
+          "correct_answer": "лгалА",
+          "wrong_options": [
+            "лгАла"
+          ],
+          "explanation": "Правильное ударение: лгалА."
+        },
+        {
+          "word_display": "кровоточить",
+          "correct_answer": "кровоточИть",
+          "wrong_options": [
+            "крОвоточить",
+            "кровОточить"
+          ],
+          "explanation": "Правильное ударение: кровоточИть."
+        },
+        {
+          "word_display": "кровоточащий",
+          "correct_answer": "кровоточАщий",
+          "wrong_options": [
+            "крОвоточащий",
+            "кровОточащий"
+          ],
+          "explanation": "Правильное ударение: кровоточАщий."
+        },
+        {
+          "word_display": "лила",
+          "correct_answer": "лилА",
+          "wrong_options": [
+            "лИла"
+          ],
+          "explanation": "Правильное ударение: лилА."
+        },
+        {
+          "word_display": "лилась",
+          "correct_answer": "лилАсь",
+          "wrong_options": [
+            "лИлась"
+          ],
+          "explanation": "Правильное ударение: лилАсь."
+        },
+        {
+          "word_display": "налила",
+          "correct_answer": "налилА",
+          "wrong_options": [
+            "нАлила",
+            "налИла"
+          ],
+          "explanation": "Правильное ударение: налилА."
+        },
+        {
+          "word_display": "облилась",
+          "correct_answer": "облилАсь",
+          "wrong_options": [
+            "Облилась",
+            "облИлась"
+          ],
+          "explanation": "Правильное ударение: облилАсь."
+        },
+        {
+          "word_display": "полила",
+          "correct_answer": "полилА",
+          "wrong_options": [
+            "пОлила",
+            "полИла"
+          ],
+          "explanation": "Правильное ударение: полилА."
+        },
+        {
+          "word_display": "влилась",
+          "correct_answer": "влилАсь",
+          "wrong_options": [
+            "влИлась"
+          ],
+          "explanation": "Правильное ударение: влилАсь."
+        },
+        {
+          "word_display": "перелила",
+          "correct_answer": "перелилА",
+          "wrong_options": [
+            "пЕрелила",
+            "перЕлила"
+          ],
+          "explanation": "Правильное ударение: перелилА."
+        },
+        {
+          "word_display": "наделит",
+          "correct_answer": "наделИт",
+          "wrong_options": [
+            "нАделит",
+            "надЕлит"
+          ],
+          "explanation": "Правильное ударение: наделИт."
+        },
+        {
+          "word_display": "накренится",
+          "correct_answer": "накренИтся",
+          "wrong_options": [
+            "нАкренится",
+            "накрЕнится"
+          ],
+          "explanation": "Правильное ударение: накренИтся."
+        },
+        {
+          "word_display": "начать",
+          "correct_answer": "начАть",
+          "wrong_options": [
+            "нАчать"
+          ],
+          "explanation": "Правильное ударение: начАть."
+        },
+        {
+          "word_display": "начал",
+          "correct_answer": "нАчал",
+          "wrong_options": [
+            "начАл"
+          ],
+          "explanation": "Правильное ударение: нАчал."
+        },
+        {
+          "word_display": "начала",
+          "correct_answer": "началА",
+          "wrong_options": [
+            "нАчала",
+            "начАла"
+          ],
+          "explanation": "Правильное ударение: началА."
+        },
+        {
+          "word_display": "начали",
+          "correct_answer": "нАчали",
+          "wrong_options": [
+            "начАли",
+            "началИ"
+          ],
+          "explanation": "Правильное ударение: нАчали."
+        },
+        {
+          "word_display": "облегчить",
+          "correct_answer": "облегчИть",
+          "wrong_options": [
+            "Облегчить",
+            "облЕгчить"
+          ],
+          "explanation": "Правильное ударение: облегчИть."
+        },
+        {
+          "word_display": "облегчит",
+          "correct_answer": "облегчИт",
+          "wrong_options": [
+            "Облегчит",
+            "облЕгчит"
+          ],
+          "explanation": "Правильное ударение: облегчИт."
+        },
+        {
+          "word_display": "обнялась",
+          "correct_answer": "обнялАсь",
+          "wrong_options": [
+            "Обнялась",
+            "обнЯлась"
+          ],
+          "explanation": "Правильное ударение: обнялАсь."
+        },
+        {
+          "word_display": "ободрала",
+          "correct_answer": "ободралА",
+          "wrong_options": [
+            "Ободрала",
+            "обОдрала"
+          ],
+          "explanation": "Правильное ударение: ободралА."
+        },
+        {
+          "word_display": "ободрить",
+          "correct_answer": "ободрИть",
+          "wrong_options": [
+            "Ободрить",
+            "обОдрить"
+          ],
+          "explanation": "Правильное ударение: ободрИть."
+        },
+        {
+          "word_display": "ободрит",
+          "correct_answer": "ободрИться",
+          "wrong_options": [
+            "Ободриться",
+            "обОдриться"
+          ],
+          "explanation": "Правильное ударение: ободрИться."
+        },
+        {
+          "word_display": "ободриться",
+          "correct_answer": "ободрИтся",
+          "wrong_options": [
+            "Ободрится",
+            "обОдрится"
+          ],
+          "explanation": "Правильное ударение: ободрИтся."
+        },
+        {
+          "word_display": "обострить",
+          "correct_answer": "обострИть",
+          "wrong_options": [
+            "Обострить",
+            "обОстрить"
+          ],
+          "explanation": "Правильное ударение: обострИть."
+        },
+        {
+          "word_display": "одолжить",
+          "correct_answer": "одолжИть",
+          "wrong_options": [
+            "Одолжить",
+            "одОлжить"
+          ],
+          "explanation": "Правильное ударение: одолжИть."
+        },
+        {
+          "word_display": "одолжит",
+          "correct_answer": "одолжИт",
+          "wrong_options": [
+            "Одолжит",
+            "одОлжит"
+          ],
+          "explanation": "Правильное ударение: одолжИт."
+        },
+        {
+          "word_display": "озлобить",
+          "correct_answer": "озлОбить",
+          "wrong_options": [
+            "Озлобить",
+            "озлобИть"
+          ],
+          "explanation": "Правильное ударение: озлОбить."
+        },
+        {
+          "word_display": "оклеить",
+          "correct_answer": "оклЕить",
+          "wrong_options": [
+            "Оклеить",
+            "оклеИть"
+          ],
+          "explanation": "Правильное ударение: оклЕить."
+        },
+        {
+          "word_display": "окружит",
+          "correct_answer": "окружИт",
+          "wrong_options": [
+            "Окружит",
+            "окрУжит"
+          ],
+          "explanation": "Правильное ударение: окружИт."
+        },
+        {
+          "word_display": "опошлить",
+          "correct_answer": "опОшлить",
+          "wrong_options": [
+            "Опошлить",
+            "опошлИть"
+          ],
+          "explanation": "Правильное ударение: опОшлить."
+        },
+        {
+          "word_display": "осведомиться",
+          "correct_answer": "освЕдомиться",
+          "wrong_options": [
+            "Осведомиться",
+            "осведОмиться"
+          ],
+          "explanation": "Правильное ударение: освЕдомиться."
+        },
+        {
+          "word_display": "осведомится",
+          "correct_answer": "освЕдомится",
+          "wrong_options": [
+            "Осведомится",
+            "осведОмится"
+          ],
+          "explanation": "Правильное ударение: освЕдомится."
+        },
+        {
+          "word_display": "отбыла",
+          "correct_answer": "отбылА",
+          "wrong_options": [
+            "Отбыла",
+            "отбЫла"
+          ],
+          "explanation": "Правильное ударение: отбылА."
+        },
+        {
+          "word_display": "отдала",
+          "correct_answer": "отдалА",
+          "wrong_options": [
+            "Отдала",
+            "отдАла"
+          ],
+          "explanation": "Правильное ударение: отдалА."
+        },
+        {
+          "word_display": "звала",
+          "correct_answer": "звалА",
+          "wrong_options": [
+            "звАла"
+          ],
+          "explanation": "Правильное ударение: звалА."
+        },
+        {
+          "word_display": "назвалась",
+          "correct_answer": "назвалАсь",
+          "wrong_options": [
+            "нАзвалась",
+            "назвАлась"
+          ],
+          "explanation": "Правильное ударение: назвалАсь."
+        },
+        {
+          "word_display": "отозвала",
+          "correct_answer": "отозвалА",
+          "wrong_options": [
+            "Отозвала",
+            "отОзвала"
+          ],
+          "explanation": "Правильное ударение: отозвалА."
+        },
+        {
+          "word_display": "отозвалась",
+          "correct_answer": "отозвалАсь",
+          "wrong_options": [
+            "Отозвалась",
+            "отОзвалась"
+          ],
+          "explanation": "Правильное ударение: отозвалАсь."
+        },
+        {
+          "word_display": "позвала",
+          "correct_answer": "позвалА",
+          "wrong_options": [
+            "пОзвала",
+            "позвАла"
+          ],
+          "explanation": "Правильное ударение: позвалА."
+        },
+        {
+          "word_display": "плодоносить",
+          "correct_answer": "плодоносИть",
+          "wrong_options": [
+            "плОдоносить",
+            "плодОносить"
+          ],
+          "explanation": "Правильное ударение: плодоносИть."
+        },
+        {
+          "word_display": "пломбировать",
+          "correct_answer": "пломбировАть",
+          "wrong_options": [
+            "плОмбировать",
+            "пломбИровать"
+          ],
+          "explanation": "Правильное ударение: пломбировАть."
+        },
+        {
+          "word_display": "повторит",
+          "correct_answer": "повторИт",
+          "wrong_options": [
+            "пОвторит",
+            "повтОрит"
+          ],
+          "explanation": "Правильное ударение: повторИт."
+        },
+        {
+          "word_display": "положить",
+          "correct_answer": "положИть",
+          "wrong_options": [
+            "пОложить",
+            "полОжить"
+          ],
+          "explanation": "Правильное ударение: положИть."
+        },
+        {
+          "word_display": "положил",
+          "correct_answer": "положИл",
+          "wrong_options": [
+            "пОложил",
+            "полОжил"
+          ],
+          "explanation": "Правильное ударение: положИл."
+        },
+        {
+          "word_display": "понять",
+          "correct_answer": "понЯть",
+          "wrong_options": [
+            "пОнять"
+          ],
+          "explanation": "Правильное ударение: понЯть."
+        },
+        {
+          "word_display": "поняла",
+          "correct_answer": "понялА",
+          "wrong_options": [
+            "пОняла",
+            "понЯла"
+          ],
+          "explanation": "Правильное ударение: понялА."
+        },
+        {
+          "word_display": "послала",
+          "correct_answer": "послАла",
+          "wrong_options": [
+            "пОслала",
+            "послалА"
+          ],
+          "explanation": "Правильное ударение: послАла."
+        },
+        {
+          "word_display": "прибыть",
+          "correct_answer": "прибЫть",
+          "wrong_options": [
+            "прИбыть"
+          ],
+          "explanation": "Правильное ударение: прибЫть."
+        },
+        {
+          "word_display": "прибыл",
+          "correct_answer": "прИбыл",
+          "wrong_options": [
+            "прибЫл"
+          ],
+          "explanation": "Правильное ударение: прИбыл."
+        },
+        {
+          "word_display": "прибыла",
+          "correct_answer": "прибылА",
+          "wrong_options": [
+            "прИбыла",
+            "прибЫла"
+          ],
+          "explanation": "Правильное ударение: прибылА."
+        },
+        {
+          "word_display": "прибыли",
+          "correct_answer": "прИбыли",
+          "wrong_options": [
+            "прибЫли",
+            "прибылИ"
+          ],
+          "explanation": "Правильное ударение: прИбыли."
+        },
+        {
+          "word_display": "принять",
+          "correct_answer": "принЯть",
+          "wrong_options": [
+            "прИнять"
+          ],
+          "explanation": "Правильное ударение: принЯть."
+        },
+        {
+          "word_display": "принял",
+          "correct_answer": "прИнял",
+          "wrong_options": [
+            "принЯл"
+          ],
+          "explanation": "Правильное ударение: прИнял."
+        },
+        {
+          "word_display": "приняла",
+          "correct_answer": "принялА",
+          "wrong_options": [
+            "прИняла",
+            "принЯла"
+          ],
+          "explanation": "Правильное ударение: принялА."
+        },
+        {
+          "word_display": "приняли",
+          "correct_answer": "прИняли",
+          "wrong_options": [
+            "принЯли",
+            "принялИ"
+          ],
+          "explanation": "Правильное ударение: прИняли."
+        },
+        {
+          "word_display": "воссоздала",
+          "correct_answer": "воссоздалА",
+          "wrong_options": [
+            "вОссоздала",
+            "воссОздала"
+          ],
+          "explanation": "Правильное ударение: воссоздалА."
+        },
+        {
+          "word_display": "создала",
+          "correct_answer": "создалА",
+          "wrong_options": [
+            "сОздала",
+            "создАла"
+          ],
+          "explanation": "Правильное ударение: создалА."
+        },
+        {
+          "word_display": "сверлит",
+          "correct_answer": "сверлИт",
+          "wrong_options": [
+            "свЕрлит"
+          ],
+          "explanation": "Правильное ударение: сверлИт."
+        },
+        {
+          "word_display": "сняла",
+          "correct_answer": "снялА",
+          "wrong_options": [
+            "снЯла"
+          ],
+          "explanation": "Правильное ударение: снялА."
+        },
+        {
+          "word_display": "убрала",
+          "correct_answer": "убралА",
+          "wrong_options": [
+            "Убрала",
+            "убрАла"
+          ],
+          "explanation": "Правильное ударение: убралА."
+        },
+        {
+          "word_display": "сорит",
+          "correct_answer": "сорИт",
+          "wrong_options": [
+            "сОрит"
+          ],
+          "explanation": "Правильное ударение: сорИт."
+        },
+        {
+          "word_display": "углубить",
+          "correct_answer": "углубИть",
+          "wrong_options": [
+            "Углубить",
+            "углУбить"
+          ],
+          "explanation": "Правильное ударение: углубИть."
+        },
+        {
+          "word_display": "укрепит",
+          "correct_answer": "укрепИт",
+          "wrong_options": [
+            "Укрепит",
+            "укрЕпит"
+          ],
+          "explanation": "Правильное ударение: укрепИт."
+        },
+        {
+          "word_display": "черпать",
+          "correct_answer": "чЕрпать",
+          "wrong_options": [
+            "черпАть"
+          ],
+          "explanation": "Правильное ударение: чЕрпать."
+        },
+        {
+          "word_display": "щелкать",
+          "correct_answer": "щЁлкать",
+          "wrong_options": [
+            "щёлкАть"
+          ],
+          "explanation": "Правильное ударение: щЁлкать."
+        },
+        {
+          "word_display": "довезенный",
+          "correct_answer": "довезЁнный",
+          "wrong_options": [
+            "дОвезённый",
+            "довЕзённый"
+          ],
+          "explanation": "Правильное ударение: довезЁнный."
+        },
+        {
+          "word_display": "загнутый",
+          "correct_answer": "зАгнутый",
+          "wrong_options": [
+            "загнУтый",
+            "загнутЫй"
+          ],
+          "explanation": "Правильное ударение: зАгнутый."
+        },
+        {
+          "word_display": "согнутый",
+          "correct_answer": "сОгнутый",
+          "wrong_options": [
+            "согнУтый",
+            "согнутЫй"
+          ],
+          "explanation": "Правильное ударение: сОгнутый."
+        },
+        {
+          "word_display": "занятый",
+          "correct_answer": "зАнятый",
+          "wrong_options": [
+            "занЯтый",
+            "занятЫй"
+          ],
+          "explanation": "Правильное ударение: зАнятый."
+        },
+        {
+          "word_display": "занята",
+          "correct_answer": "занятА",
+          "wrong_options": [
+            "зАнята",
+            "занЯта"
+          ],
+          "explanation": "Правильное ударение: занятА."
+        },
+        {
+          "word_display": "запертый",
+          "correct_answer": "зАпертый",
+          "wrong_options": [
+            "запЕртый",
+            "запертЫй"
+          ],
+          "explanation": "Правильное ударение: зАпертый."
+        },
+        {
+          "word_display": "заселенный",
+          "correct_answer": "заселЁнный",
+          "wrong_options": [
+            "зАселённый",
+            "засЕлённый"
+          ],
+          "explanation": "Правильное ударение: заселЁнный."
+        },
+        {
+          "word_display": "заселена",
+          "correct_answer": "заселенА",
+          "wrong_options": [
+            "зАселена",
+            "засЕлена"
+          ],
+          "explanation": "Правильное ударение: заселенА."
+        },
+        {
+          "word_display": "наживший",
+          "correct_answer": "нажИвший",
+          "wrong_options": [
+            "нАживший",
+            "нажившИй"
+          ],
+          "explanation": "Правильное ударение: нажИвший."
+        },
+        {
+          "word_display": "проживший",
+          "correct_answer": "прожИвший",
+          "wrong_options": [
+            "прОживший",
+            "прожившИй"
+          ],
+          "explanation": "Правильное ударение: прожИвший."
+        },
+        {
+          "word_display": "наливший",
+          "correct_answer": "налИвший",
+          "wrong_options": [
+            "нАливший",
+            "налившИй"
+          ],
+          "explanation": "Правильное ударение: налИвший."
+        },
+        {
+          "word_display": "нанявшийся",
+          "correct_answer": "нанЯвшийся",
+          "wrong_options": [
+            "нАнявшийся",
+            "нанявшИйся"
+          ],
+          "explanation": "Правильное ударение: нанЯвшийся."
+        },
+        {
+          "word_display": "начавший",
+          "correct_answer": "начАвший",
+          "wrong_options": [
+            "нАчавший",
+            "начавшИй"
+          ],
+          "explanation": "Правильное ударение: начАвший."
+        },
+        {
+          "word_display": "начатый",
+          "correct_answer": "нАчатый",
+          "wrong_options": [
+            "начАтый",
+            "начатЫй"
+          ],
+          "explanation": "Правильное ударение: нАчатый."
+        },
+        {
+          "word_display": "понявший",
+          "correct_answer": "понЯвший",
+          "wrong_options": [
+            "пОнявший",
+            "понявшИй"
+          ],
+          "explanation": "Правильное ударение: понЯвший."
+        },
+        {
+          "word_display": "принятый",
+          "correct_answer": "прИнятый",
+          "wrong_options": [
+            "принЯтый",
+            "принятЫй"
+          ],
+          "explanation": "Правильное ударение: прИнятый."
+        },
+        {
+          "word_display": "принята",
+          "correct_answer": "принятА",
+          "wrong_options": [
+            "прИнята",
+            "принЯта"
+          ],
+          "explanation": "Правильное ударение: принятА."
+        },
+        {
+          "word_display": "снята",
+          "correct_answer": "снятА",
+          "wrong_options": [
+            "снЯта"
+          ],
+          "explanation": "Правильное ударение: снятА."
+        },
+        {
+          "word_display": "закупорив",
+          "correct_answer": "закУпорив",
+          "wrong_options": [
+            "зАкупорив",
+            "закупОрив"
+          ],
+          "explanation": "Правильное ударение: закУпорив."
+        },
+        {
+          "word_display": "начав",
+          "correct_answer": "начАв",
+          "wrong_options": [
+            "нАчав"
+          ],
+          "explanation": "Правильное ударение: начАв."
+        },
+        {
+          "word_display": "начавшись",
+          "correct_answer": "начАвшись",
+          "wrong_options": [
+            "нАчавшись",
+            "начавшИсь"
+          ],
+          "explanation": "Правильное ударение: начАвшись."
+        },
+        {
+          "word_display": "отдав",
+          "correct_answer": "отдАв",
+          "wrong_options": [
+            "Отдав"
+          ],
+          "explanation": "Правильное ударение: отдАв."
+        },
+        {
+          "word_display": "поняв",
+          "correct_answer": "понЯв",
+          "wrong_options": [
+            "пОняв"
+          ],
+          "explanation": "Правильное ударение: понЯв."
+        },
+        {
+          "word_display": "прибыв",
+          "correct_answer": "прибЫв",
+          "wrong_options": [
+            "прИбыв"
+          ],
+          "explanation": "Правильное ударение: прибЫв."
+        },
+        {
+          "word_display": "создав",
+          "correct_answer": "создАв",
+          "wrong_options": [
+            "сОздав"
+          ],
+          "explanation": "Правильное ударение: создАв."
+        },
+        {
+          "word_display": "вовремя",
+          "correct_answer": "вОвремя",
+          "wrong_options": [
+            "воврЕмя",
+            "вовремЯ"
+          ],
+          "explanation": "Правильное ударение: вОвремя."
+        },
+        {
+          "word_display": "доверху",
+          "correct_answer": "дОверху",
+          "wrong_options": [
+            "довЕрху",
+            "доверхУ"
+          ],
+          "explanation": "Правильное ударение: дОверху."
+        },
+        {
+          "word_display": "донизу",
+          "correct_answer": "дОнизу",
+          "wrong_options": [
+            "донИзу",
+            "донизУ"
+          ],
+          "explanation": "Правильное ударение: дОнизу."
+        },
+        {
+          "word_display": "досуха",
+          "correct_answer": "дОсуха",
+          "wrong_options": [
+            "досУха",
+            "досухА"
+          ],
+          "explanation": "Правильное ударение: дОсуха."
+        },
+        {
+          "word_display": "засветло",
+          "correct_answer": "зАсветло",
+          "wrong_options": [
+            "засвЕтло",
+            "засветлО"
+          ],
+          "explanation": "Правильное ударение: зАсветло."
+        },
+        {
+          "word_display": "надолго",
+          "correct_answer": "надОлго",
+          "wrong_options": [
+            "нАдолго",
+            "надолгО"
+          ],
+          "explanation": "Правильное ударение: надОлго."
+        },
+        {
+          "word_display": "ненадолго",
+          "correct_answer": "ненадОлго",
+          "wrong_options": [
+            "нЕнадолго",
+            "ненАдолго"
+          ],
+          "explanation": "Правильное ударение: ненадОлго."
+        }
+      ]
+    }
+  ]
+}

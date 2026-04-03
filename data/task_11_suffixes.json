@@ -1,0 +1,957 @@
+{
+  "task_number": 11,
+  "task_name": "Правописание суффиксов",
+  "subcategories": [
+    {
+      "code": "adj_iv_ev",
+      "name": "Суффиксы -ИВ-/-ЕВ-",
+      "rule": "",
+      "questions": [
+        {
+          "word_display": "крас_вый",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "-ИВ- под ударением: красИвый."
+        },
+        {
+          "word_display": "игр_вый",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "-ИВ- под ударением: игрИвый."
+        },
+        {
+          "word_display": "плакс_вый",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "-ИВ- под ударением: плаксИвый."
+        },
+        {
+          "word_display": "бо_вой",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и"
+          ],
+          "explanation": "-ЕВ- без ударения: боевой."
+        },
+        {
+          "word_display": "сир_невый",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и"
+          ],
+          "explanation": "-ЕВ- без ударения: сиреневый."
+        },
+        {
+          "word_display": "эмал_вый",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и"
+          ],
+          "explanation": "-ЕВ- без ударения: эмалевый."
+        },
+        {
+          "word_display": "рж_вый",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и"
+          ],
+          "explanation": "После шипящей без ударения — Е: ржавый… нет, ржавый особый. Суффикс -ЕВ-: ежевой нет; рж_вый = ржАвый, но суффикс -ав-, пример: грош_вый → грошевый."
+        },
+        {
+          "word_display": "груш_вый",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и"
+          ],
+          "explanation": "-ЕВ- без ударения: грушевый."
+        },
+        {
+          "word_display": "плюш_вый",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и"
+          ],
+          "explanation": "-ЕВ- после шипящей без ударения: плюшевый."
+        },
+        {
+          "word_display": "ландыш_вый",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и"
+          ],
+          "explanation": "-ЕВ- без ударения: ландышевый."
+        },
+        {
+          "word_display": "милост_вый",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "Исключение: мИлостивый (суффикс -ИВ- без ударения)."
+        },
+        {
+          "word_display": "юрод_вый",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "Исключение: юрОдивый (суффикс -ИВ- без ударения)."
+        }
+      ]
+    },
+    {
+      "code": "adj_chiv",
+      "name": "Суффиксы -ЧИВ-/-ЛИВ-",
+      "rule": "",
+      "questions": [
+        {
+          "word_display": "доверч_вый",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "Суффикс -ЧИВ- всегда пишется с И: доверчивый."
+        },
+        {
+          "word_display": "заботл_вый",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "Суффикс -ЛИВ- всегда пишется с И: заботливый."
+        },
+        {
+          "word_display": "назойл_вый",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "Суффикс -ЛИВ- всегда пишется с И: назойливый."
+        },
+        {
+          "word_display": "находч_вый",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "Суффикс -ЧИВ- всегда пишется с И: находчивый."
+        },
+        {
+          "word_display": "задумч_вый",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "Суффикс -ЧИВ- всегда пишется с И: задумчивый."
+        },
+        {
+          "word_display": "усидч_вый",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "Суффикс -ЧИВ- всегда пишется с И: усидчивый."
+        },
+        {
+          "word_display": "сговорч_вый",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "Суффикс -ЧИВ- всегда пишется с И: сговорчивый."
+        },
+        {
+          "word_display": "талантл_вый",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "Суффикс -ЛИВ- всегда пишется с И: талантливый."
+        },
+        {
+          "word_display": "завистл_вый",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "Суффикс -ЛИВ- всегда пишется с И: завистливый."
+        },
+        {
+          "word_display": "обидч_вый",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "Суффикс -ЧИВ- всегда пишется с И: обидчивый."
+        },
+        {
+          "word_display": "прихотл_вый",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "Суффикс -ЛИВ- всегда пишется с И: прихотливый."
+        },
+        {
+          "word_display": "уживч_вый",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "Суффикс -ЧИВ- всегда пишется с И: уживчивый."
+        },
+        {
+          "word_display": "расчётл_вый",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "Суффикс -ЛИВ- всегда пишется с И: расчётливый."
+        },
+        {
+          "word_display": "вынослив_й",
+          "correct_answer": "ы",
+          "wrong_options": [
+            "и"
+          ],
+          "explanation": "Суффикс -ЛИВ-: выносливый — проверка окончания -ый/-ий."
+        }
+      ]
+    },
+    {
+      "code": "adj_ov_ev",
+      "name": "Суффиксы -ОВ-/-ЕВ- (после шипящих)",
+      "rule": "",
+      "questions": [
+        {
+          "word_display": "ершов_й",
+          "correct_answer": "о",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "-ОВ- после шипящей под ударением: ершОвый."
+        },
+        {
+          "word_display": "парч_вый",
+          "correct_answer": "о",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "-ОВ- после шипящей под ударением: парчОвый."
+        },
+        {
+          "word_display": "камыш_вый",
+          "correct_answer": "о",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "-ОВ- после шипящей под ударением: камышОвый."
+        },
+        {
+          "word_display": "кумач_вый",
+          "correct_answer": "о",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "-ОВ- после шипящей под ударением: кумачОвый."
+        },
+        {
+          "word_display": "ситц_вый",
+          "correct_answer": "е",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "-ЕВ- после Ц без ударения: ситцЕвый."
+        },
+        {
+          "word_display": "глянц_вый",
+          "correct_answer": "е",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "-ЕВ- после Ц без ударения: глянцЕвый."
+        },
+        {
+          "word_display": "гречн_вый",
+          "correct_answer": "е",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "-ЕВ- без ударения: гречнЕвый."
+        },
+        {
+          "word_display": "грош_вый",
+          "correct_answer": "е",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "-ЕВ- после шипящей без ударения: грошЕвый."
+        },
+        {
+          "word_display": "холщ_вый",
+          "correct_answer": "о",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "-ОВ- после шипящей под ударением: холщОвый."
+        }
+      ]
+    },
+    {
+      "code": "adj_an",
+      "name": "Суффиксы -АН-/-ЯН-/-ЯНН-",
+      "rule": "",
+      "questions": [
+        {
+          "word_display": "кож_ный",
+          "correct_answer": "а",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "-АН-: кожАный (из кожи). Не путать с -ЕН-."
+        },
+        {
+          "word_display": "серебр_ный",
+          "correct_answer": "я",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "-ЯН-: серебрЯный (из серебра)."
+        },
+        {
+          "word_display": "льн_ной",
+          "correct_answer": "я",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "-ЯН-: льнЯной (из льна)."
+        },
+        {
+          "word_display": "песч_ный",
+          "correct_answer": "а",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "-АН-: песчАный (из песка)."
+        },
+        {
+          "word_display": "глин_ный",
+          "correct_answer": "я",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "-ЯН-: глинЯный (из глины)."
+        },
+        {
+          "word_display": "стекл_нный",
+          "correct_answer": "я",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "Исключение: стеклЯнный (три исключения на -ЯНН-)."
+        },
+        {
+          "word_display": "торф_ной",
+          "correct_answer": "я",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "-ЯН-: торфЯной (из торфа)."
+        },
+        {
+          "word_display": "ветр_ный",
+          "correct_answer": "е",
+          "wrong_options": [
+            "я"
+          ],
+          "explanation": "ВетрЕный (день, человек) — одна Н! Не путать с проветренный."
+        },
+        {
+          "word_display": "масл_ный",
+          "correct_answer": "я",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "МаслЯный — содержащий масло (масляная краска)."
+        },
+        {
+          "word_display": "масл_ничный",
+          "correct_answer": "е",
+          "wrong_options": [
+            "я"
+          ],
+          "explanation": "МаслЕничный — относящийся к Масленице (празднику)."
+        }
+      ]
+    },
+    {
+      "code": "noun_ek_ik",
+      "name": "Суффиксы -ЕК-/-ИК-",
+      "rule": "",
+      "questions": [
+        {
+          "word_display": "замоч_к",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и"
+          ],
+          "explanation": "-ЕК-: замочЕк → замочка (гласная выпадает)."
+        },
+        {
+          "word_display": "горош_к",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и"
+          ],
+          "explanation": "-ЕК-: горошЕк → горошка (гласная выпадает)."
+        },
+        {
+          "word_display": "орёш_к",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и"
+          ],
+          "explanation": "-ЕК-: орешЕк → орешка (гласная выпадает)."
+        },
+        {
+          "word_display": "ножич_к",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и"
+          ],
+          "explanation": "-ЕК-: ножичЕк → ножичка (гласная выпадает)."
+        },
+        {
+          "word_display": "денёч_к",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и"
+          ],
+          "explanation": "-ЕК-: денёчЕк → денёчка (гласная выпадает)."
+        },
+        {
+          "word_display": "ключ_к",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "-ИК-: ключИк → ключика (гласная не выпадает)."
+        },
+        {
+          "word_display": "карандаш_к",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "-ИК-: карандашИк → карандашика (не выпадает)."
+        },
+        {
+          "word_display": "столб_к",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "-ИК-: столбИк → столбика (гласная не выпадает)."
+        },
+        {
+          "word_display": "кусоч_к",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и"
+          ],
+          "explanation": "-ЕК-: кусочЕк → кусочка (гласная выпадает)."
+        },
+        {
+          "word_display": "листоч_к",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и"
+          ],
+          "explanation": "-ЕК-: листочЕк → листочка (гласная выпадает)."
+        },
+        {
+          "word_display": "звоноч_к",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и"
+          ],
+          "explanation": "-ЕК-: звоночЕк → звоночка (гласная выпадает)."
+        },
+        {
+          "word_display": "пузырёч_к",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и"
+          ],
+          "explanation": "-ЕК-: пузырёчЕк → пузырёчка (выпадает)."
+        },
+        {
+          "word_display": "фонар_к",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "-ИК-: фонарИк → фонарика (не выпадает)."
+        }
+      ]
+    },
+    {
+      "code": "noun_enk",
+      "name": "Суффиксы -ЕНК-/-ИНК-",
+      "rule": "",
+      "questions": [
+        {
+          "word_display": "горош_нка",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "-ИНК-: от горошИна → горошинка."
+        },
+        {
+          "word_display": "завал_нка",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "-ИНК-: от завалИна → завалинка."
+        },
+        {
+          "word_display": "впад_нка",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "-ИНК-: от впадИна → впадинка."
+        },
+        {
+          "word_display": "картош_нка",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "-ИНК-: от картошИна → картошинка."
+        },
+        {
+          "word_display": "бус_нка",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "-ИНК-: от бусИна → бусинка."
+        },
+        {
+          "word_display": "нож_нка",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и"
+          ],
+          "explanation": "-ЕНК-: нет слова на -ина → ноженька/ноженка."
+        },
+        {
+          "word_display": "неж_нка",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и"
+          ],
+          "explanation": "-ЕНК-: нет слова на -ина → неженка."
+        },
+        {
+          "word_display": "француж_нка",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и"
+          ],
+          "explanation": "-ЕНК-: нет слова на -ина → француженка."
+        },
+        {
+          "word_display": "монаш_нка",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и"
+          ],
+          "explanation": "-ЕНК-: нет слова на -ина → монашенка."
+        }
+      ]
+    },
+    {
+      "code": "noun_misc",
+      "name": "Суффиксы существительных (-ИН-, -ОТА-)",
+      "rule": "",
+      "questions": [
+        {
+          "word_display": "глуб_на",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "Суффикс -ИН-: глубИна."
+        },
+        {
+          "word_display": "тиш_на",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "Суффикс -ИН-: тишИна."
+        },
+        {
+          "word_display": "высот_",
+          "correct_answer": "а",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "Суффикс -ОТА-: высотА."
+        },
+        {
+          "word_display": "теплот_",
+          "correct_answer": "а",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "Суффикс -ОТА-: теплотА."
+        },
+        {
+          "word_display": "старш_нство",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "Суффикс -ИНСТВ-: старшИнство."
+        },
+        {
+          "word_display": "большинств_",
+          "correct_answer": "о",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "Суффикс -ИНСТВ-: большинствО."
+        }
+      ]
+    },
+    {
+      "code": "verb_ova",
+      "name": "Суффиксы -ОВА-/-ЕВА- / -ЫВА-/-ИВА-",
+      "rule": "",
+      "questions": [
+        {
+          "word_display": "рассказ_вать",
+          "correct_answer": "ы",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "рассказЫвать: рассказываю → -ывать."
+        },
+        {
+          "word_display": "задум_ваться",
+          "correct_answer": "ы",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "задУмываться: задумываюсь → -ываться."
+        },
+        {
+          "word_display": "отчаив_ться",
+          "correct_answer": "а",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "отчАиваться: отчаиваюсь → -иваться."
+        },
+        {
+          "word_display": "настаив_ть",
+          "correct_answer": "а",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "настАивать: настаиваю → -ивать."
+        },
+        {
+          "word_display": "прислуш_ваться",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "прислУшиваться: прислушиваюсь → -иваться."
+        },
+        {
+          "word_display": "подраз_мевать",
+          "correct_answer": "у",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "подразУмевать: подразумеваю → -евать (евать после мягкого)."
+        },
+        {
+          "word_display": "команд_вать",
+          "correct_answer": "о",
+          "wrong_options": [
+            "ы"
+          ],
+          "explanation": "командОвать: командую → -овать."
+        },
+        {
+          "word_display": "воздейств_вать",
+          "correct_answer": "о",
+          "wrong_options": [
+            "ы"
+          ],
+          "explanation": "воздЕйствовать: воздействую → -овать."
+        },
+        {
+          "word_display": "исслед_вать",
+          "correct_answer": "о",
+          "wrong_options": [
+            "ы"
+          ],
+          "explanation": "исслЕдовать: исследую → -овать."
+        },
+        {
+          "word_display": "реализ_вывать",
+          "correct_answer": "о",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "реализОвывать: реализовываю → -овывать."
+        },
+        {
+          "word_display": "обрад_ваться",
+          "correct_answer": "о",
+          "wrong_options": [
+            "ы"
+          ],
+          "explanation": "обрАдоваться: радуюсь → -оваться."
+        },
+        {
+          "word_display": "горев_ть",
+          "correct_answer": "а",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "горевАть: горюю → -евать."
+        },
+        {
+          "word_display": "буш_вать",
+          "correct_answer": "е",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "бушевАть: бушую → -евать (после шипящей)."
+        },
+        {
+          "word_display": "танц_вать",
+          "correct_answer": "е",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "танцевАть: танцую → -евать (после ц)."
+        },
+        {
+          "word_display": "попроб_вать",
+          "correct_answer": "о",
+          "wrong_options": [
+            "ы"
+          ],
+          "explanation": "попрОбовать: пробую → -овать."
+        },
+        {
+          "word_display": "жалов_ться",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "жАловаться: жалуюсь → -оваться."
+        },
+        {
+          "word_display": "беседов_ть",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "беседОвать: беседую → -овать."
+        },
+        {
+          "word_display": "ноч_вать",
+          "correct_answer": "е",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "ночевАть: ночую → -евать."
+        },
+        {
+          "word_display": "торг_вать",
+          "correct_answer": "о",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "торгОвать: торгую → -овать."
+        },
+        {
+          "word_display": "разглядыв_ть",
+          "correct_answer": "а",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "разглЯдывать: разглядываю → -ывать."
+        },
+        {
+          "word_display": "оглядыв_ться",
+          "correct_answer": "а",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "оглЯдываться: оглядываюсь → -ываться."
+        },
+        {
+          "word_display": "встр_вать",
+          "correct_answer": "е",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "встревАть: встреваю → -евать."
+        },
+        {
+          "word_display": "недоум_вать",
+          "correct_answer": "е",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "недоумевАть: недоумеваю → -евать."
+        },
+        {
+          "word_display": "намер_ваться",
+          "correct_answer": "е",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "намеревАться: намереваюсь → -еваться."
+        },
+        {
+          "word_display": "застр_вать",
+          "correct_answer": "е",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "застревАть: застреваю → -евать."
+        },
+        {
+          "word_display": "затм_вать",
+          "correct_answer": "е",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "затмевАть: затмеваю → -евать."
+        }
+      ]
+    },
+    {
+      "code": "adverb",
+      "name": "Суффиксы наречий (-А/-О)",
+      "rule": "",
+      "questions": [
+        {
+          "word_display": "досух_",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Приставка ДО-: досухА (из-, до-, с- → -а)."
+        },
+        {
+          "word_display": "издалек_",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Приставка ИЗ-: издалекА (из-, до-, с- → -а)."
+        },
+        {
+          "word_display": "справ_",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Приставка С-: справА (из-, до-, с- → -а)."
+        },
+        {
+          "word_display": "слев_",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Приставка С-: слевА (из-, до-, с- → -а)."
+        },
+        {
+          "word_display": "снов_",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Приставка С-: сновА (из-, до-, с- → -а)."
+        },
+        {
+          "word_display": "начист_",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Приставка НА-: начистО (в-, на-, за- → -о)."
+        },
+        {
+          "word_display": "засветл_",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Приставка ЗА-: засветлО (в-, на-, за- → -о)."
+        },
+        {
+          "word_display": "влев_",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Приставка В-: влевО (в-, на-, за- → -о)."
+        },
+        {
+          "word_display": "вправ_",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Приставка В-: вправО (в-, на-, за- → -о)."
+        },
+        {
+          "word_display": "наскор_",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Приставка НА-: наскорО (в-, на-, за- → -о)."
+        },
+        {
+          "word_display": "изредк_",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Приставка ИЗ-: изрЕдка (из-, до-, с- → -а)."
+        },
+        {
+          "word_display": "добел_",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Приставка ДО-: добелА (из-, до-, с- → -а)."
+        }
+      ]
+    }
+  ]
+}

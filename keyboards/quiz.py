@@ -1,0 +1,41 @@
+from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+
+from keyboards.callbacks import QuizAnswer, QuizControl
+
+
+def answer_keyboard(question_id: int, options: list[str]) -> InlineKeyboardMarkup:
+    buttons = []
+    for idx, option in enumerate(options):
+        buttons.append([
+            InlineKeyboardButton(
+                text=option,
+                callback_data=QuizAnswer(qid=question_id, idx=idx).pack(),
+            )
+        ])
+    return InlineKeyboardMarkup(inline_keyboard=buttons)
+
+
+def stop_keyboard() -> InlineKeyboardMarkup:
+    """Shown briefly during correct-answer feedback (auto-advances after delay)."""
+    return InlineKeyboardMarkup(inline_keyboard=[
+        [
+            InlineKeyboardButton(text="⏸ Пауза", callback_data=QuizControl(action="pause").pack()),
+            InlineKeyboardButton(text="⏹ Стоп",  callback_data=QuizControl(action="stop").pack()),
+        ],
+    ])
+
+
+def paused_keyboard() -> InlineKeyboardMarkup:
+    """Shown when user paused to read the explanation."""
+    return InlineKeyboardMarkup(inline_keyboard=[
+        [InlineKeyboardButton(text="▶ Продолжить", callback_data=QuizControl(action="continue").pack())],
+        [InlineKeyboardButton(text="⏹ Стоп",       callback_data=QuizControl(action="stop").pack())],
+    ])
+
+
+def wrong_answer_keyboard() -> InlineKeyboardMarkup:
+    """Shown after a wrong answer — session stops here."""
+    return InlineKeyboardMarkup(inline_keyboard=[
+        [InlineKeyboardButton(text="🔄 Начать заново", callback_data=QuizControl(action="restart").pack())],
+        [InlineKeyboardButton(text="🏠 В меню", callback_data=QuizControl(action="menu").pack())],
+    ])

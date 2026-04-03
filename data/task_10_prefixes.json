@@ -1,0 +1,533 @@
+{
+  "task_number": 10,
+  "task_name": "Правописание приставок (пре/при)",
+  "subcategories": [
+    {
+      "code": "main",
+      "name": "пре/при",
+      "rule": "",
+      "questions": [
+        {
+          "word_display": "пр_следовать",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и"
+          ],
+          "explanation": "прЕследовать."
+        },
+        {
+          "word_display": "пр_нудить",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "прИнудить."
+        },
+        {
+          "word_display": "пр_возносить",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и"
+          ],
+          "explanation": "прЕвозносить."
+        },
+        {
+          "word_display": "пр_мерять",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "прИмерять."
+        },
+        {
+          "word_display": "пр_зирать",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и"
+          ],
+          "explanation": "прЕзирать."
+        },
+        {
+          "word_display": "пр_хоть",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "прИхоть."
+        },
+        {
+          "word_display": "пр_вилегия",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "прИвилегия."
+        },
+        {
+          "word_display": "пр_исполненный",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и"
+          ],
+          "explanation": "прЕисполненный."
+        },
+        {
+          "word_display": "пр_небрегать",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и"
+          ],
+          "explanation": "прЕнебрегать."
+        },
+        {
+          "word_display": "пр_обладать",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и"
+          ],
+          "explanation": "прЕобладать."
+        },
+        {
+          "word_display": "пр_цениться",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "прИцениться."
+        },
+        {
+          "word_display": "пр_страстие",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "прИстрастие."
+        },
+        {
+          "word_display": "пр_видение",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "прИвидение."
+        },
+        {
+          "word_display": "пр_чуда",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "прИчуда."
+        },
+        {
+          "word_display": "пр_сяга",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "прИсяга."
+        },
+        {
+          "word_display": "пр_пятствие",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и"
+          ],
+          "explanation": "прЕпятствие."
+        },
+        {
+          "word_display": "пр_словутый",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и"
+          ],
+          "explanation": "прЕсловутый."
+        },
+        {
+          "word_display": "пр_способиться",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "прИспособиться."
+        },
+        {
+          "word_display": "пр_тензия",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и"
+          ],
+          "explanation": "прЕтензия."
+        },
+        {
+          "word_display": "пр_говор",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "прИговор."
+        },
+        {
+          "word_display": "пр_баутка",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "прИбаутка."
+        },
+        {
+          "word_display": "пр_вередливый",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "прИвередливый."
+        },
+        {
+          "word_display": "пр_внести",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "прИвнести."
+        },
+        {
+          "word_display": "пр_волье",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "прИволье."
+        },
+        {
+          "word_display": "пр_увеличить",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и"
+          ],
+          "explanation": "прЕувеличить."
+        },
+        {
+          "word_display": "беспр_кословно",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и"
+          ],
+          "explanation": "беспрЕкословно."
+        },
+        {
+          "word_display": "пр_годиться",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "прИгодиться."
+        },
+        {
+          "word_display": "пр_льстить(ся)",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и"
+          ],
+          "explanation": "прЕльстить(ся)."
+        },
+        {
+          "word_display": "пр_гожий",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "прИгожий."
+        },
+        {
+          "word_display": "пр_зидент",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и"
+          ],
+          "explanation": "прЕзидент."
+        },
+        {
+          "word_display": "пр_дираться",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "прИдираться."
+        },
+        {
+          "word_display": "пр_возмочь",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и"
+          ],
+          "explanation": "прЕвозмочь."
+        },
+        {
+          "word_display": "пр_ключение",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "прИключение."
+        },
+        {
+          "word_display": "пр_рогатива",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и"
+          ],
+          "explanation": "прЕрогатива."
+        },
+        {
+          "word_display": "пр_лежный",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "прИлежный."
+        },
+        {
+          "word_display": "беспр_страстный",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "беспрИстрастный."
+        },
+        {
+          "word_display": "пр_менять",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "прИменять."
+        },
+        {
+          "word_display": "пр_оритет",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "прИоритет."
+        },
+        {
+          "word_display": "пр_скорбный",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "прИскорбный."
+        },
+        {
+          "word_display": "непр_менно",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и"
+          ],
+          "explanation": "непрЕменно."
+        },
+        {
+          "word_display": "пр_сниться",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "прИсниться."
+        },
+        {
+          "word_display": "пр_поднести",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и"
+          ],
+          "explanation": "прЕподнести."
+        },
+        {
+          "word_display": "пр_страстный",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "прИстрастный."
+        },
+        {
+          "word_display": "пр_успеть",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и"
+          ],
+          "explanation": "прЕуспеть."
+        },
+        {
+          "word_display": "пр_тязание",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "прИтязание."
+        },
+        {
+          "word_display": "пр_чудливый",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "прИчудливый."
+        },
+        {
+          "word_display": "пр_хотливый",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "прИхотливый."
+        },
+        {
+          "word_display": "пр_знать(ся)",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "прИзнать(ся)."
+        },
+        {
+          "word_display": "пр_целиться",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "прИцелиться."
+        },
+        {
+          "word_display": "пр_сечь",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и"
+          ],
+          "explanation": "прЕсечь."
+        },
+        {
+          "word_display": "пр_людия",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и"
+          ],
+          "explanation": "прЕлюдия."
+        },
+        {
+          "word_display": "пр_слушиваться",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "прИслушиваться."
+        },
+        {
+          "word_display": "пр_смотреться",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "прИсмотреться."
+        },
+        {
+          "word_display": "пр_выкнуть",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "прИвыкнуть."
+        },
+        {
+          "word_display": "пр_норовиться",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "прИноровиться."
+        },
+        {
+          "word_display": "непр_миримый",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "непрИмиримый."
+        },
+        {
+          "word_display": "пр_мета",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "прИмета."
+        },
+        {
+          "word_display": "пр_готовить",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "прИготовить."
+        },
+        {
+          "word_display": "пр_рост",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "прИрост."
+        },
+        {
+          "word_display": "пр_умножить",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "прИумножить."
+        },
+        {
+          "word_display": "непр_глядный",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "непрИглядный."
+        },
+        {
+          "word_display": "пр_митивный",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "прИмитивный."
+        },
+        {
+          "word_display": "пр_грешение",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и"
+          ],
+          "explanation": "прЕгрешение."
+        },
+        {
+          "word_display": "пр_вентивный",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и"
+          ],
+          "explanation": "прЕвентивный."
+        },
+        {
+          "word_display": "пр_налечь",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "приналечь."
+        }
+      ]
+    }
+  ]
+}

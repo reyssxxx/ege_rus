@@ -1,0 +1,6273 @@
+{
+  "task_number": 9,
+  "task_name": "Словарные слова",
+  "subcategories": [
+    {
+      "code": "dictionary",
+      "name": "Словарные слова",
+      "rule": "Непроверяемые гласные — запомните написание.",
+      "questions": [
+        {
+          "word_display": "аб_туриент",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: абИтуриент."
+        },
+        {
+          "word_display": "аб_немент",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: абОнЕмент."
+        },
+        {
+          "word_display": "абон_мент",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: абОнЕмент."
+        },
+        {
+          "word_display": "абр_кос",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: абрИкос."
+        },
+        {
+          "word_display": "ак_демия",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: акАдемия."
+        },
+        {
+          "word_display": "акв_марин",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: аквАмАрин."
+        },
+        {
+          "word_display": "аквам_рин",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: аквАмАрин."
+        },
+        {
+          "word_display": "акв_рель",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: аквАрель."
+        },
+        {
+          "word_display": "аккомпан_атор",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: аккомпанИатор."
+        },
+        {
+          "word_display": "анн_тация",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: аннОтация."
+        },
+        {
+          "word_display": "антр_соли",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: антрЕсоли."
+        },
+        {
+          "word_display": "ап_лляция",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: апЕлляция."
+        },
+        {
+          "word_display": "_пеллировать",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: Апеллировать."
+        },
+        {
+          "word_display": "апл_дировать",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: аплОдировать."
+        },
+        {
+          "word_display": "апл_дисменты",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: аплОдИсменты."
+        },
+        {
+          "word_display": "аплод_сменты",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: аплОдИсменты."
+        },
+        {
+          "word_display": "апп_ратура",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: аппАрАтура."
+        },
+        {
+          "word_display": "аппар_тура",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: аппАрАтура."
+        },
+        {
+          "word_display": "апп_тит",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: аппЕтит."
+        },
+        {
+          "word_display": "ар_мат",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: арОмат."
+        },
+        {
+          "word_display": "арх_тектор",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: архИтектор."
+        },
+        {
+          "word_display": "_сфальт",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: Асфальт."
+        },
+        {
+          "word_display": "асф_льтировать",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: асфАльтировать."
+        },
+        {
+          "word_display": "атм_сфера",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: атмОсфера."
+        },
+        {
+          "word_display": "аттр_кцион",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: аттрАкцион."
+        },
+        {
+          "word_display": "аукц_он",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: аукцИон."
+        },
+        {
+          "word_display": "б_гаж",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: бАгаж."
+        },
+        {
+          "word_display": "б_гровый",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: бАгровый."
+        },
+        {
+          "word_display": "б_гряный",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: бАгряный."
+        },
+        {
+          "word_display": "б_дминтон",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: бАдмИнтон."
+        },
+        {
+          "word_display": "бадм_нтон",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: бАдмИнтон."
+        },
+        {
+          "word_display": "б_лансировать",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: бАлАнсировать."
+        },
+        {
+          "word_display": "бал_нсировать",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: бАлАнсировать."
+        },
+        {
+          "word_display": "б_лкон",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: бАлкон."
+        },
+        {
+          "word_display": "б_рельеф",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: бАрЕльеф."
+        },
+        {
+          "word_display": "бар_льеф",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: бАрЕльеф."
+        },
+        {
+          "word_display": "б_скетбол",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: бАскЕтбол."
+        },
+        {
+          "word_display": "баск_тбол",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: бАскЕтбол."
+        },
+        {
+          "word_display": "б_ссейн",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: бАссейн."
+        },
+        {
+          "word_display": "б_рза",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: бЕрза."
+        },
+        {
+          "word_display": "б_рюзовый",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: бИрюзовый."
+        },
+        {
+          "word_display": "б_гатый",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: бОгатый."
+        },
+        {
+          "word_display": "б_гатырь",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: бОгатырь."
+        },
+        {
+          "word_display": "бр_шюра",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: брОшЮра."
+        },
+        {
+          "word_display": "брош_ра",
+          "correct_answer": "ю",
+          "wrong_options": [
+            "у"
+          ],
+          "explanation": "Словарное слово: брОшЮра."
+        },
+        {
+          "word_display": "б_ллетень",
+          "correct_answer": "ю",
+          "wrong_options": [
+            "у"
+          ],
+          "explanation": "Словарное слово: бЮллЕтень."
+        },
+        {
+          "word_display": "бюлл_тень",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: бЮллЕтень."
+        },
+        {
+          "word_display": "в_кцина",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: вАкцина."
+        },
+        {
+          "word_display": "в_риант",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: вАрИант."
+        },
+        {
+          "word_display": "вар_ант",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: вАрИант."
+        },
+        {
+          "word_display": "в_лосипед",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: вЕлОсИпед."
+        },
+        {
+          "word_display": "вел_сипед",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: вЕлОсИпед."
+        },
+        {
+          "word_display": "велос_пед",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: вЕлОсИпед."
+        },
+        {
+          "word_display": "в_нтилятор",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: вЕнтИлятор."
+        },
+        {
+          "word_display": "вент_лятор",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: вЕнтИлятор."
+        },
+        {
+          "word_display": "в_рмишель",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: вЕрмИшель."
+        },
+        {
+          "word_display": "верм_шель",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: вЕрмИшель."
+        },
+        {
+          "word_display": "в_стибюль",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: вЕстИбюль."
+        },
+        {
+          "word_display": "вест_бюль",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: вЕстИбюль."
+        },
+        {
+          "word_display": "в_теран",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: вЕтЕран."
+        },
+        {
+          "word_display": "вет_ран",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: вЕтЕран."
+        },
+        {
+          "word_display": "в_негрет",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: вИнЕгрет."
+        },
+        {
+          "word_display": "вин_грет",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: вИнЕгрет."
+        },
+        {
+          "word_display": "в_ртуальный",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: вИртуальный."
+        },
+        {
+          "word_display": "в_ртуоз",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: вИртуоз."
+        },
+        {
+          "word_display": "в_траж",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: вИтраж."
+        },
+        {
+          "word_display": "вл_делец",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: влАделец."
+        },
+        {
+          "word_display": "возр_жать",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: возрАжать."
+        },
+        {
+          "word_display": "в_кзал",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: вОкзал."
+        },
+        {
+          "word_display": "в_лебол",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: вОлебол."
+        },
+        {
+          "word_display": "вообр_жать",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: вообрАжать."
+        },
+        {
+          "word_display": "вопл_щать",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: воплОщать."
+        },
+        {
+          "word_display": "вп_чатлить",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: впЕчатлить."
+        },
+        {
+          "word_display": "выр_зительный",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: вырАзительный."
+        },
+        {
+          "word_display": "г_зон",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: гАзон."
+        },
+        {
+          "word_display": "г_лактический",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: гАлАктический."
+        },
+        {
+          "word_display": "гал_ктический",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: гАлАктический."
+        },
+        {
+          "word_display": "г_лерея",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: гАлЕрея."
+        },
+        {
+          "word_display": "гал_рея",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: гАлЕрея."
+        },
+        {
+          "word_display": "г_рмония",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: гАрмония."
+        },
+        {
+          "word_display": "г_рнизон",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: гАрнИзон."
+        },
+        {
+          "word_display": "гарн_зон",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: гАрнИзон."
+        },
+        {
+          "word_display": "г_олог",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: гЕолог."
+        },
+        {
+          "word_display": "г_рой",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: гЕрой."
+        },
+        {
+          "word_display": "г_потеза",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: гИпотЕза."
+        },
+        {
+          "word_display": "гипот_за",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: гИпотЕза."
+        },
+        {
+          "word_display": "г_рмон",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: гОрмон."
+        },
+        {
+          "word_display": "г_рячий",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: гОрячий."
+        },
+        {
+          "word_display": "г_ризонт",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: гОрИзонт."
+        },
+        {
+          "word_display": "гор_зонт",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: гОрИзонт."
+        },
+        {
+          "word_display": "гр_мматика",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: грАмматика."
+        },
+        {
+          "word_display": "грам_та",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: грамОта."
+        },
+        {
+          "word_display": "гр_мадный",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: грОмадный."
+        },
+        {
+          "word_display": "гр_моздкий",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: грОмоздкий."
+        },
+        {
+          "word_display": "д_баты",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: дЕбаты."
+        },
+        {
+          "word_display": "д_корация",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: дЕкорация."
+        },
+        {
+          "word_display": "д_ликатес",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: дЕлИкАтес."
+        },
+        {
+          "word_display": "дел_катес",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: дЕлИкАтес."
+        },
+        {
+          "word_display": "делик_тес",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: дЕлИкАтес."
+        },
+        {
+          "word_display": "д_ликатный",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: дЕлИкатный."
+        },
+        {
+          "word_display": "дел_катный",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: дЕлИкатный."
+        },
+        {
+          "word_display": "д_мократ",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: дЕмОкрат."
+        },
+        {
+          "word_display": "дем_крат",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: дЕмОкрат."
+        },
+        {
+          "word_display": "д_монстрировать",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: дЕмОнстрировать."
+        },
+        {
+          "word_display": "дем_нстрировать",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: дЕмОнстрировать."
+        },
+        {
+          "word_display": "д_алог",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: дИалог."
+        },
+        {
+          "word_display": "д_апазон",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: дИапАзон."
+        },
+        {
+          "word_display": "диап_зон",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: дИапАзон."
+        },
+        {
+          "word_display": "д_намичный",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: дИнАмичный."
+        },
+        {
+          "word_display": "дин_мичный",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: дИнАмичный."
+        },
+        {
+          "word_display": "д_рижёр",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: дИрИжёр."
+        },
+        {
+          "word_display": "дир_жёр",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: дИрИжёр."
+        },
+        {
+          "word_display": "д_спетчер",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: дИспЕтчер."
+        },
+        {
+          "word_display": "дисп_тчер",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: дИспЕтчер."
+        },
+        {
+          "word_display": "д_станция",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: дИстанция."
+        },
+        {
+          "word_display": "д_сциплина",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: дИсцИплина."
+        },
+        {
+          "word_display": "дисц_плина",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: дИсцИплина."
+        },
+        {
+          "word_display": "ж_лание",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: жЕлание."
+        },
+        {
+          "word_display": "ж_раф",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: жИраф."
+        },
+        {
+          "word_display": "ж_кей",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: жОкей."
+        },
+        {
+          "word_display": "ж_нглёр",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: жОнглёр."
+        },
+        {
+          "word_display": "ж_ри",
+          "correct_answer": "ю",
+          "wrong_options": [
+            "у"
+          ],
+          "explanation": "Словарное слово: жЮри."
+        },
+        {
+          "word_display": "зн_комить",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: знАкомить."
+        },
+        {
+          "word_display": "зн_менитый",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: знАмЕнитый."
+        },
+        {
+          "word_display": "знам_нитый",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: знАмЕнитый."
+        },
+        {
+          "word_display": "зн_меновать",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: знАменовать."
+        },
+        {
+          "word_display": "игн_рировать",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: игнОрировать."
+        },
+        {
+          "word_display": "ид_ал",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: идЕал."
+        },
+        {
+          "word_display": "ижд_венец",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: иждИвенец."
+        },
+        {
+          "word_display": "иллюз_онист",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: иллюзИОнист."
+        },
+        {
+          "word_display": "иллюзи_нист",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: иллюзИОнист."
+        },
+        {
+          "word_display": "инд_вид",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: индИвид."
+        },
+        {
+          "word_display": "ин_й",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: инЕй."
+        },
+        {
+          "word_display": "инж_нер",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: инжЕнер."
+        },
+        {
+          "word_display": "ин_циатива",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: инИцИатива."
+        },
+        {
+          "word_display": "иниц_атива",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: инИцИатива."
+        },
+        {
+          "word_display": "инт_ллект",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: интЕллект."
+        },
+        {
+          "word_display": "инт_ллигент",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: интЕллигент."
+        },
+        {
+          "word_display": "инт_нсивный",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: интЕнсивный."
+        },
+        {
+          "word_display": "инт_рьер",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: интЕрьер."
+        },
+        {
+          "word_display": "иск_зить",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: искАзить."
+        },
+        {
+          "word_display": "ист_на",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: истИна."
+        },
+        {
+          "word_display": "к_мпания",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: кАмпания."
+        },
+        {
+          "word_display": "к_никулы",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: кАникулы."
+        },
+        {
+          "word_display": "к_нитель",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: кАнИтель."
+        },
+        {
+          "word_display": "кан_тель",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: кАнИтель."
+        },
+        {
+          "word_display": "к_нонада",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: кАнОнада."
+        },
+        {
+          "word_display": "кан_нада",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: кАнОнада."
+        },
+        {
+          "word_display": "к_нцелярия",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: кАнцЕлярия."
+        },
+        {
+          "word_display": "канц_лярия",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: кАнцЕлярия."
+        },
+        {
+          "word_display": "к_пюшон",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: кАпюшОн."
+        },
+        {
+          "word_display": "капюш_н",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: кАпюшОн."
+        },
+        {
+          "word_display": "к_рдинальный",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: кАрдИнальный."
+        },
+        {
+          "word_display": "кард_нальный",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: кАрдИнальный."
+        },
+        {
+          "word_display": "к_рикатура",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: кАрИкАтура."
+        },
+        {
+          "word_display": "кар_катура",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: кАрИкАтура."
+        },
+        {
+          "word_display": "карик_тура",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: кАрИкАтура."
+        },
+        {
+          "word_display": "к_сатка",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: кАсатка."
+        },
+        {
+          "word_display": "к_такомба",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: кАтАкомба."
+        },
+        {
+          "word_display": "кат_комба",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: кАтАкомба."
+        },
+        {
+          "word_display": "к_тастрофа",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: кАтАстрофа."
+        },
+        {
+          "word_display": "кат_строфа",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: кАтАстрофа."
+        },
+        {
+          "word_display": "кв_лификация",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: квАлИфИкация."
+        },
+        {
+          "word_display": "квал_фикация",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: квАлИфИкация."
+        },
+        {
+          "word_display": "квалиф_кация",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: квАлИфИкация."
+        },
+        {
+          "word_display": "кв_танция",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: квИтанция."
+        },
+        {
+          "word_display": "к_нематограф",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: кИнЕмАтограф."
+        },
+        {
+          "word_display": "кин_матограф",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: кИнЕмАтограф."
+        },
+        {
+          "word_display": "кинем_тограф",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: кИнЕмАтограф."
+        },
+        {
+          "word_display": "к_варный",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: кОварный."
+        },
+        {
+          "word_display": "к_лдун",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: кОлдун."
+        },
+        {
+          "word_display": "к_лдовать",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: кОлдОвать."
+        },
+        {
+          "word_display": "колд_вать",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: кОлдОвать."
+        },
+        {
+          "word_display": "к_лебание",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: кОлЕбание."
+        },
+        {
+          "word_display": "кол_бание",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: кОлЕбание."
+        },
+        {
+          "word_display": "к_ллектив",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: кОллЕктив."
+        },
+        {
+          "word_display": "колл_ктив",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: кОллЕктив."
+        },
+        {
+          "word_display": "к_ллекция",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: кОллекция."
+        },
+        {
+          "word_display": "к_лоссальный",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: кОлОссальный."
+        },
+        {
+          "word_display": "кол_ссальный",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: кОлОссальный."
+        },
+        {
+          "word_display": "к_лыхать",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: кОлыхать."
+        },
+        {
+          "word_display": "к_мбинация",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: кОмбИнация."
+        },
+        {
+          "word_display": "комб_нация",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: кОмбИнация."
+        },
+        {
+          "word_display": "к_медия",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: кОмедия."
+        },
+        {
+          "word_display": "к_мпания",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: кОмпания."
+        },
+        {
+          "word_display": "к_мпетентный",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: кОмпЕтентный."
+        },
+        {
+          "word_display": "комп_тентный",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: кОмпЕтентный."
+        },
+        {
+          "word_display": "к_мпонент",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: кОмпОнент."
+        },
+        {
+          "word_display": "комп_нент",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: кОмпОнент."
+        },
+        {
+          "word_display": "к_мпьютер",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: кОмпьютер."
+        },
+        {
+          "word_display": "к_мфорт",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: кОмфорт."
+        },
+        {
+          "word_display": "к_нверт",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: кОнверт."
+        },
+        {
+          "word_display": "к_нкурент",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: кОнкурент."
+        },
+        {
+          "word_display": "к_нтинент",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: кОнтИнент."
+        },
+        {
+          "word_display": "конт_нент",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: кОнтИнент."
+        },
+        {
+          "word_display": "к_нференция",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: кОнфЕренция."
+        },
+        {
+          "word_display": "конф_ренция",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: кОнфЕренция."
+        },
+        {
+          "word_display": "к_нфликт",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: кОнфликт."
+        },
+        {
+          "word_display": "к_нфорка",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: кОнфорка."
+        },
+        {
+          "word_display": "к_рифей",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: кОрИфей."
+        },
+        {
+          "word_display": "кор_фей",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: кОрИфей."
+        },
+        {
+          "word_display": "к_ричневый",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: кОричневый."
+        },
+        {
+          "word_display": "к_рзина",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: кОрзина."
+        },
+        {
+          "word_display": "к_роль",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: кОроль."
+        },
+        {
+          "word_display": "к_сатка",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: кОсатка."
+        },
+        {
+          "word_display": "к_смос",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: кОсмос."
+        },
+        {
+          "word_display": "кр_мешный",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: крОмешный."
+        },
+        {
+          "word_display": "л_биринт",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: лАбИринт."
+        },
+        {
+          "word_display": "лаб_ринт",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: лАбИринт."
+        },
+        {
+          "word_display": "л_генда",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: лЕгенда."
+        },
+        {
+          "word_display": "л_леять",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: лЕлеять."
+        },
+        {
+          "word_display": "л_берал",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: лИбЕрал."
+        },
+        {
+          "word_display": "либ_рал",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: лИбЕрал."
+        },
+        {
+          "word_display": "м_жор",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: мАжор."
+        },
+        {
+          "word_display": "м_жорный",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: мАжорный."
+        },
+        {
+          "word_display": "м_териал",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: мАтериал."
+        },
+        {
+          "word_display": "мгн_вение",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: мгнОвение."
+        },
+        {
+          "word_display": "м_нталитет",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: мЕнтАлитет."
+        },
+        {
+          "word_display": "мент_литет",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: мЕнтАлитет."
+        },
+        {
+          "word_display": "м_ридиан",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: мЕрИдиан."
+        },
+        {
+          "word_display": "мер_диан",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: мЕрИдиан."
+        },
+        {
+          "word_display": "м_роприятие",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: мЕрОприятие."
+        },
+        {
+          "word_display": "мер_приятие",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: мЕрОприятие."
+        },
+        {
+          "word_display": "м_тафора",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: мЕтафора."
+        },
+        {
+          "word_display": "м_ханизм",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: мЕханизм."
+        },
+        {
+          "word_display": "м_нерал",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: мИнЕрал."
+        },
+        {
+          "word_display": "мин_рал",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: мИнЕрал."
+        },
+        {
+          "word_display": "м_нор",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: мИнор."
+        },
+        {
+          "word_display": "м_нолит",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: мОнОлит."
+        },
+        {
+          "word_display": "мон_лит",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: мОнОлит."
+        },
+        {
+          "word_display": "м_раторий",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: мОрАторий."
+        },
+        {
+          "word_display": "мор_торий",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: мОрАторий."
+        },
+        {
+          "word_display": "м_тив",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: мОтив."
+        },
+        {
+          "word_display": "м_теж",
+          "correct_answer": "я",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "Словарное слово: мЯтеж."
+        },
+        {
+          "word_display": "нав_ждение",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: навАждение."
+        },
+        {
+          "word_display": "н_секомые",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: нАсЕкомые."
+        },
+        {
+          "word_display": "нас_комые",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: нАсЕкомые."
+        },
+        {
+          "word_display": "насл_ждаться",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: наслАждаться."
+        },
+        {
+          "word_display": "недос_гаемый",
+          "correct_answer": "я",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "Словарное слово: недосЯгаемый."
+        },
+        {
+          "word_display": "н_велла",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: нОвелла."
+        },
+        {
+          "word_display": "об_яние",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: обАяние."
+        },
+        {
+          "word_display": "об_ятельный",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: обАятельный."
+        },
+        {
+          "word_display": "об_тать",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: обИтать."
+        },
+        {
+          "word_display": "обн_ружить",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: обнАружить."
+        },
+        {
+          "word_display": "об_няние",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: обОняние."
+        },
+        {
+          "word_display": "об_нятельный",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: обОнятельный."
+        },
+        {
+          "word_display": "об_рона",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: обОрона."
+        },
+        {
+          "word_display": "од_леть",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: одОлеть."
+        },
+        {
+          "word_display": "оз_рной",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: озОрной."
+        },
+        {
+          "word_display": "оп_кун",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: опЕкун."
+        },
+        {
+          "word_display": "опт_мист",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: оптИмист."
+        },
+        {
+          "word_display": "ор_нжерея",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: орАнжЕрея."
+        },
+        {
+          "word_display": "оранж_рея",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: орАнжЕрея."
+        },
+        {
+          "word_display": "_рбита",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: Орбита."
+        },
+        {
+          "word_display": "орг_низовать",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: оргАнИзовать."
+        },
+        {
+          "word_display": "орган_зовать",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: оргАнИзовать."
+        },
+        {
+          "word_display": "ор_гинальный",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: орИгИнальный."
+        },
+        {
+          "word_display": "ориг_нальный",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: орИгИнальный."
+        },
+        {
+          "word_display": "ор_ентировать",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: орИЕнтировать."
+        },
+        {
+          "word_display": "ори_нтировать",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: орИЕнтировать."
+        },
+        {
+          "word_display": "_рнамент",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: Орнамент."
+        },
+        {
+          "word_display": "ост_рожный",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: остОрожный."
+        },
+        {
+          "word_display": "оф_цер",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: офИцер."
+        },
+        {
+          "word_display": "ош_ломить",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: ошЕлОмить."
+        },
+        {
+          "word_display": "ошел_мить",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: ошЕлОмить."
+        },
+        {
+          "word_display": "п_лисадник",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: пАлИсадник."
+        },
+        {
+          "word_display": "пал_садник",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: пАлИсадник."
+        },
+        {
+          "word_display": "п_литра",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: пАлитра."
+        },
+        {
+          "word_display": "п_норама",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: пАнОрама."
+        },
+        {
+          "word_display": "пан_рама",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: пАнОрама."
+        },
+        {
+          "word_display": "панц_рь",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: панцИрь."
+        },
+        {
+          "word_display": "п_раграф",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: пАрАграф."
+        },
+        {
+          "word_display": "пар_граф",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: пАрАграф."
+        },
+        {
+          "word_display": "п_радокс",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: пАрАдокс."
+        },
+        {
+          "word_display": "пар_докс",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: пАрАдокс."
+        },
+        {
+          "word_display": "п_рашют",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: пАрАшЮт."
+        },
+        {
+          "word_display": "пар_шют",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: пАрАшЮт."
+        },
+        {
+          "word_display": "параш_т",
+          "correct_answer": "ю",
+          "wrong_options": [
+            "у"
+          ],
+          "explanation": "Словарное слово: пАрАшЮт."
+        },
+        {
+          "word_display": "п_триот",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: пАтриот."
+        },
+        {
+          "word_display": "п_заж",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: пЕзаж."
+        },
+        {
+          "word_display": "п_рила",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: пЕрила."
+        },
+        {
+          "word_display": "п_риод",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: пЕриОд."
+        },
+        {
+          "word_display": "пери_д",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: пЕриОд."
+        },
+        {
+          "word_display": "п_ссимист",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: пЕссИмист."
+        },
+        {
+          "word_display": "песс_мист",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: пЕссИмист."
+        },
+        {
+          "word_display": "подл_нный",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: подлИнный."
+        },
+        {
+          "word_display": "подр_жать",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: подрАжать."
+        },
+        {
+          "word_display": "п_зиция",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: пОзиция."
+        },
+        {
+          "word_display": "п_кой",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: пОкой."
+        },
+        {
+          "word_display": "пок_ление",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: покОление."
+        },
+        {
+          "word_display": "п_лемика",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: пОлемика."
+        },
+        {
+          "word_display": "п_лировать",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: пОлИровать."
+        },
+        {
+          "word_display": "пол_ровать",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: пОлИровать."
+        },
+        {
+          "word_display": "пор_жать",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: порАжать."
+        },
+        {
+          "word_display": "пор_зить",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: порАзить."
+        },
+        {
+          "word_display": "пос_щать",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: посЕщать."
+        },
+        {
+          "word_display": "прав_ло",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: правИло."
+        },
+        {
+          "word_display": "предв_рительный",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: предвАрительный."
+        },
+        {
+          "word_display": "пр_зентация",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: прЕзЕнтация."
+        },
+        {
+          "word_display": "през_нтация",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: прЕзЕнтация."
+        },
+        {
+          "word_display": "пр_зидент",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: прЕзИдент."
+        },
+        {
+          "word_display": "през_дент",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: прЕзИдент."
+        },
+        {
+          "word_display": "пр_зидиум",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: прЕзидиум."
+        },
+        {
+          "word_display": "пр_образить",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: прЕобрАзить."
+        },
+        {
+          "word_display": "преобр_зить",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: прЕобрАзить."
+        },
+        {
+          "word_display": "пр_одолеть",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: прЕодОлеть."
+        },
+        {
+          "word_display": "преод_леть",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: прЕодОлеть."
+        },
+        {
+          "word_display": "пр_цедент",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: прЕцЕдент."
+        },
+        {
+          "word_display": "прец_дент",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: прЕцЕдент."
+        },
+        {
+          "word_display": "пр_вилегия",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: прИвИлегия."
+        },
+        {
+          "word_display": "прив_легия",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: прИвИлегия."
+        },
+        {
+          "word_display": "пр_митивный",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: прИмИтивный."
+        },
+        {
+          "word_display": "прим_тивный",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: прИмИтивный."
+        },
+        {
+          "word_display": "пр_оритет",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: прИорИтет."
+        },
+        {
+          "word_display": "приор_тет",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: прИорИтет."
+        },
+        {
+          "word_display": "пр_винция",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: прОвинция."
+        },
+        {
+          "word_display": "пр_воцировать",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: прОвОцировать."
+        },
+        {
+          "word_display": "пров_цировать",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: прОвОцировать."
+        },
+        {
+          "word_display": "пр_ницательный",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: прОнИцательный."
+        },
+        {
+          "word_display": "прон_цательный",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: прОнИцательный."
+        },
+        {
+          "word_display": "р_диатор",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: рАдИатор."
+        },
+        {
+          "word_display": "рад_атор",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: рАдИатор."
+        },
+        {
+          "word_display": "рац_ональный",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: рацИональный."
+        },
+        {
+          "word_display": "р_алист",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: рЕАлист."
+        },
+        {
+          "word_display": "ре_лист",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: рЕАлист."
+        },
+        {
+          "word_display": "р_жиссёр",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: рЕжИссёр."
+        },
+        {
+          "word_display": "реж_ссёр",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: рЕжИссёр."
+        },
+        {
+          "word_display": "р_зидент",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: рЕзИдент."
+        },
+        {
+          "word_display": "рез_дент",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: рЕзИдент."
+        },
+        {
+          "word_display": "р_зиденция",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: рЕзИденция."
+        },
+        {
+          "word_display": "рез_денция",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: рЕзИденция."
+        },
+        {
+          "word_display": "р_месло",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: рЕмЕсло."
+        },
+        {
+          "word_display": "рем_сло",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: рЕмЕсло."
+        },
+        {
+          "word_display": "р_ставрация",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: рЕстАврация."
+        },
+        {
+          "word_display": "рест_врация",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: рЕстАврация."
+        },
+        {
+          "word_display": "р_ферат",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: рЕфЕрат."
+        },
+        {
+          "word_display": "реф_рат",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: рЕфЕрат."
+        },
+        {
+          "word_display": "р_форма",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: рЕформа."
+        },
+        {
+          "word_display": "р_цензия",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: рЕцензия."
+        },
+        {
+          "word_display": "р_торика",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: рИторика."
+        },
+        {
+          "word_display": "р_весники",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: рОвесники."
+        },
+        {
+          "word_display": "р_мантичный",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: рОмантичный."
+        },
+        {
+          "word_display": "с_лют",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: сАлют."
+        },
+        {
+          "word_display": "с_тира",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: сАтира."
+        },
+        {
+          "word_display": "св_рливый",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: свАрливый."
+        },
+        {
+          "word_display": "св_детель",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: свИдетель."
+        },
+        {
+          "word_display": "с_зон",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: сЕзон."
+        },
+        {
+          "word_display": "с_мпатия",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: сИмпатия."
+        },
+        {
+          "word_display": "с_мптом",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: сИмптом."
+        },
+        {
+          "word_display": "с_мфония",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: сИмфония."
+        },
+        {
+          "word_display": "с_нхронный",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: сИнхронный."
+        },
+        {
+          "word_display": "с_рень",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: сИрень."
+        },
+        {
+          "word_display": "с_стема",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: сИстема."
+        },
+        {
+          "word_display": "см_тение",
+          "correct_answer": "я",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "Словарное слово: смЯтение."
+        },
+        {
+          "word_display": "сн_рядить",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: снАрЯдить."
+        },
+        {
+          "word_display": "снар_дить",
+          "correct_answer": "я",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "Словарное слово: снАрЯдить."
+        },
+        {
+          "word_display": "сокр_венный",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: сокрОвенный."
+        },
+        {
+          "word_display": "с_нет",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: сОнет."
+        },
+        {
+          "word_display": "состр_дать",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: сострАдать."
+        },
+        {
+          "word_display": "сост_заться",
+          "correct_answer": "я",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "Словарное слово: состЯзаться."
+        },
+        {
+          "word_display": "с_циальный",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: сОцИальный."
+        },
+        {
+          "word_display": "соц_альный",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: сОцИальный."
+        },
+        {
+          "word_display": "сп_ртакиада",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: спАртакиада."
+        },
+        {
+          "word_display": "сп_койный",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: спОкойный."
+        },
+        {
+          "word_display": "ст_дион",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: стАдИон."
+        },
+        {
+          "word_display": "стад_он",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: стАдИон."
+        },
+        {
+          "word_display": "ст_пендия",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: стИпендия."
+        },
+        {
+          "word_display": "стр_ховать",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: стрАховать."
+        },
+        {
+          "word_display": "стр_миться",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: стрЕмиться."
+        },
+        {
+          "word_display": "сув_ренитет",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: сувЕренИтет."
+        },
+        {
+          "word_display": "суверен_тет",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: сувЕренИтет."
+        },
+        {
+          "word_display": "сув_нир",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: сувЕнир."
+        },
+        {
+          "word_display": "т_лант",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: тАлант."
+        },
+        {
+          "word_display": "т_ория",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: тЕория."
+        },
+        {
+          "word_display": "т_рритория",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: тЕррИтория."
+        },
+        {
+          "word_display": "терр_тория",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: тЕррИтория."
+        },
+        {
+          "word_display": "т_ржество",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: тОржество."
+        },
+        {
+          "word_display": "тр_диция",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: трАдиция."
+        },
+        {
+          "word_display": "тр_фарет",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: трАфАрет."
+        },
+        {
+          "word_display": "траф_рет",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: трАфАрет."
+        },
+        {
+          "word_display": "тр_вога",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: трЕвога."
+        },
+        {
+          "word_display": "тр_мвай",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: трАмвай."
+        },
+        {
+          "word_display": "тр_ллебус",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: трОллебус."
+        },
+        {
+          "word_display": "тр_стник",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: трОстник."
+        },
+        {
+          "word_display": "тр_туар",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: трОтуар."
+        },
+        {
+          "word_display": "ун_верситет",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: унИвЕрситет."
+        },
+        {
+          "word_display": "унив_рситет",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: унИвЕрситет."
+        },
+        {
+          "word_display": "ун_кальный",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: унИкальный."
+        },
+        {
+          "word_display": "ун_чтожить",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: унИчтожить."
+        },
+        {
+          "word_display": "утр_мбовать",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: утрАмбовать."
+        },
+        {
+          "word_display": "ф_нтастика",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: фАнтастика."
+        },
+        {
+          "word_display": "ф_стиваль",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: фЕстИваль."
+        },
+        {
+          "word_display": "фест_валь",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: фЕстИваль."
+        },
+        {
+          "word_display": "ф_гура",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: фИгура."
+        },
+        {
+          "word_display": "ф_нансы",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: фИнансы."
+        },
+        {
+          "word_display": "ф_олетовый",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: фИОлетовый."
+        },
+        {
+          "word_display": "фи_летовый",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: фИОлетовый."
+        },
+        {
+          "word_display": "фр_гмент",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: фрАгмент."
+        },
+        {
+          "word_display": "фраз_ология",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: фразЕология."
+        },
+        {
+          "word_display": "ха_с",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: хаОс."
+        },
+        {
+          "word_display": "х_рактер",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: хАрактер."
+        },
+        {
+          "word_display": "ц_мент",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: цЕмент."
+        },
+        {
+          "word_display": "ц_вилизация",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: цИвИлИзация."
+        },
+        {
+          "word_display": "цив_лизация",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: цИвИлИзация."
+        },
+        {
+          "word_display": "цивил_зация",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: цИвИлИзация."
+        },
+        {
+          "word_display": "ц_клон",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: цИклон."
+        },
+        {
+          "word_display": "ц_линдр",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: цИлиндр."
+        },
+        {
+          "word_display": "ц_стерна",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: цИстерна."
+        },
+        {
+          "word_display": "ц_тата",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: цИтата."
+        },
+        {
+          "word_display": "ц_ган",
+          "correct_answer": "ы",
+          "wrong_options": [
+            "и"
+          ],
+          "explanation": "Словарное слово: цЫган."
+        },
+        {
+          "word_display": "ц_плёнок",
+          "correct_answer": "ы",
+          "wrong_options": [
+            "и"
+          ],
+          "explanation": "Словарное слово: цЫплёнок."
+        },
+        {
+          "word_display": "ц_почки",
+          "correct_answer": "ы",
+          "wrong_options": [
+            "и"
+          ],
+          "explanation": "Словарное слово: цЫпочки."
+        },
+        {
+          "word_display": "ч_ловек",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: чЕлОвек."
+        },
+        {
+          "word_display": "чел_век",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: чЕлОвек."
+        },
+        {
+          "word_display": "ч_мпион",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: чЕмпИон."
+        },
+        {
+          "word_display": "чемп_он",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: чЕмпИон."
+        },
+        {
+          "word_display": "ш_ренга",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: шЕренга."
+        },
+        {
+          "word_display": "ш_колад",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: шОкОлад."
+        },
+        {
+          "word_display": "шок_лад",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: шОкОлад."
+        },
+        {
+          "word_display": "ш_ссе",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: шОссе."
+        },
+        {
+          "word_display": "ш_фёр",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: шОфёр."
+        },
+        {
+          "word_display": "эв_люция",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: эвОлюция."
+        },
+        {
+          "word_display": "эк_номический",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: экОнОмический."
+        },
+        {
+          "word_display": "экон_мический",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: экОнОмический."
+        },
+        {
+          "word_display": "эксп_римент",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: экспЕрИмент."
+        },
+        {
+          "word_display": "экспер_мент",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: экспЕрИмент."
+        },
+        {
+          "word_display": "эксп_нат",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: экспОнат."
+        },
+        {
+          "word_display": "экстр_мальный",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: экстрЕмальный."
+        },
+        {
+          "word_display": "_лектроника",
+          "correct_answer": "э",
+          "wrong_options": [
+            "а",
+            "о"
+          ],
+          "explanation": "Словарное слово: Электроника."
+        },
+        {
+          "word_display": "энц_клопедия",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: энцИклОпедия."
+        },
+        {
+          "word_display": "энцикл_педия",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: энцИклОпедия."
+        },
+        {
+          "word_display": "эст_када",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: эстАкада."
+        },
+        {
+          "word_display": "абр_косовый",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: абрИкосовый."
+        },
+        {
+          "word_display": "ак_демический",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: акАдемический."
+        },
+        {
+          "word_display": "акв_рельный",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: аквАрельный."
+        },
+        {
+          "word_display": "акк_мпанировать",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: аккОмпАнировать."
+        },
+        {
+          "word_display": "аккомп_нировать",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: аккОмпАнировать."
+        },
+        {
+          "word_display": "ар_матный",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: арОматный."
+        },
+        {
+          "word_display": "арх_тектура",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: архИтектура."
+        },
+        {
+          "word_display": "атм_сферный",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: атмОсферный."
+        },
+        {
+          "word_display": "б_гажный",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: бАгажный."
+        },
+        {
+          "word_display": "б_гроветь",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: бАгроветь."
+        },
+        {
+          "word_display": "б_ланс",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: бАланс."
+        },
+        {
+          "word_display": "б_лконный",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: бАлконный."
+        },
+        {
+          "word_display": "б_скетбольный",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: бАскЕтбольный."
+        },
+        {
+          "word_display": "баск_тбольный",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: бАскЕтбольный."
+        },
+        {
+          "word_display": "б_рёзовый",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: бЕрёзовый."
+        },
+        {
+          "word_display": "б_гатство",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: бОгатство."
+        },
+        {
+          "word_display": "бр_шюровать",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: брОшЮровать."
+        },
+        {
+          "word_display": "брош_ровать",
+          "correct_answer": "ю",
+          "wrong_options": [
+            "у"
+          ],
+          "explanation": "Словарное слово: брОшЮровать."
+        },
+        {
+          "word_display": "в_кцинация",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: вАкцинация."
+        },
+        {
+          "word_display": "в_кцинировать",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: вАкцинировать."
+        },
+        {
+          "word_display": "в_риативный",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: вАрИативный."
+        },
+        {
+          "word_display": "вар_ативный",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: вАрИативный."
+        },
+        {
+          "word_display": "в_лосипедный",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: вЕлОсИпедный."
+        },
+        {
+          "word_display": "вел_сипедный",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: вЕлОсИпедный."
+        },
+        {
+          "word_display": "велос_педный",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: вЕлОсИпедный."
+        },
+        {
+          "word_display": "в_нтиляторный",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: вЕнтИляторный."
+        },
+        {
+          "word_display": "вент_ляторный",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: вЕнтИляторный."
+        },
+        {
+          "word_display": "в_теранский",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: вЕтЕранский."
+        },
+        {
+          "word_display": "вет_ранский",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: вЕтЕранский."
+        },
+        {
+          "word_display": "в_ртуозный",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: вИртуозный."
+        },
+        {
+          "word_display": "в_тражный",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: вИтражный."
+        },
+        {
+          "word_display": "вл_деть",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: влАдеть."
+        },
+        {
+          "word_display": "возр_жение",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: возрАжение."
+        },
+        {
+          "word_display": "в_кзальный",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: вОкзальный."
+        },
+        {
+          "word_display": "в_лейбольный",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: вОлейбольный."
+        },
+        {
+          "word_display": "вообр_жение",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: вообрАжение."
+        },
+        {
+          "word_display": "вопл_тить",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: воплОтить."
+        },
+        {
+          "word_display": "вопл_щение",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: воплОщение."
+        },
+        {
+          "word_display": "вп_чатление",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: впЕчатление."
+        },
+        {
+          "word_display": "выр_зить",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: вырАзить."
+        },
+        {
+          "word_display": "выр_жать",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: вырАжать."
+        },
+        {
+          "word_display": "выр_жение",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: вырАжение."
+        },
+        {
+          "word_display": "г_лактика",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: гАлактика."
+        },
+        {
+          "word_display": "г_рмоничный",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: гАрмоничный."
+        },
+        {
+          "word_display": "г_ологический",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: гЕологический."
+        },
+        {
+          "word_display": "г_ология",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: гЕология."
+        },
+        {
+          "word_display": "г_роизм",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: гЕроизм."
+        },
+        {
+          "word_display": "г_роический",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: гЕроический."
+        },
+        {
+          "word_display": "г_потетический",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: гИпотЕтический."
+        },
+        {
+          "word_display": "гипот_тический",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: гИпотЕтический."
+        },
+        {
+          "word_display": "г_ризонтальный",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: гОрИзонтальный."
+        },
+        {
+          "word_display": "гор_зонтальный",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: гОрИзонтальный."
+        },
+        {
+          "word_display": "гр_мматический",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: грАмматический."
+        },
+        {
+          "word_display": "грам_тный",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: грамОтный."
+        },
+        {
+          "word_display": "гр_моздить",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: грОмоздить."
+        },
+        {
+          "word_display": "д_кларация",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: дЕклАрация."
+        },
+        {
+          "word_display": "декл_рация",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: дЕклАрация."
+        },
+        {
+          "word_display": "д_коративный",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: дЕкоративный."
+        },
+        {
+          "word_display": "д_мократичный",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: дЕмОкратичный."
+        },
+        {
+          "word_display": "дем_кратичный",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: дЕмОкратичный."
+        },
+        {
+          "word_display": "д_монстрация",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: дЕмОнстрация."
+        },
+        {
+          "word_display": "дем_нстрация",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: дЕмОнстрация."
+        },
+        {
+          "word_display": "д_алоговый",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: дИалоговый."
+        },
+        {
+          "word_display": "д_алогический",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: дИалогический."
+        },
+        {
+          "word_display": "д_намика",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: дИнамика."
+        },
+        {
+          "word_display": "д_намический",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: дИнамический."
+        },
+        {
+          "word_display": "д_рижировать",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: дИрИжировать."
+        },
+        {
+          "word_display": "дир_жировать",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: дИрИжировать."
+        },
+        {
+          "word_display": "д_спетчерский",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: дИспетчерский."
+        },
+        {
+          "word_display": "д_станционный",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: дИстанционный."
+        },
+        {
+          "word_display": "д_сциплинарный",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: дИсцИплинарный."
+        },
+        {
+          "word_display": "дисц_плинарный",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: дИсцИплинарный."
+        },
+        {
+          "word_display": "д_сциплинировать",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: дИсцИплинировать."
+        },
+        {
+          "word_display": "дисц_плинировать",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: дИсцИплинировать."
+        },
+        {
+          "word_display": "ж_лать",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: жЕлать."
+        },
+        {
+          "word_display": "зн_комиться",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: знАкомиться."
+        },
+        {
+          "word_display": "зн_комый",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: знАкомый."
+        },
+        {
+          "word_display": "ид_ализировать",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: идЕализировать."
+        },
+        {
+          "word_display": "ид_алист",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: идЕалист."
+        },
+        {
+          "word_display": "ид_альный",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: идЕальный."
+        },
+        {
+          "word_display": "иллюз_я",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: иллюзИя."
+        },
+        {
+          "word_display": "инд_видуальный",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: индИвидуальный."
+        },
+        {
+          "word_display": "инж_нерный",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: инжЕнерный."
+        },
+        {
+          "word_display": "инж_нерский",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: инжЕнерский."
+        },
+        {
+          "word_display": "ин_циативный",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: инИцИативный."
+        },
+        {
+          "word_display": "иниц_ативный",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: инИцИативный."
+        },
+        {
+          "word_display": "инт_ллектуальный",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: интЕллектуальный."
+        },
+        {
+          "word_display": "инт_ллигентный",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: интЕллигентный."
+        },
+        {
+          "word_display": "инт_ллигенция",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: интЕллигенция."
+        },
+        {
+          "word_display": "инт_рьерный",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: интЕрьерный."
+        },
+        {
+          "word_display": "иск_жение",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: искАжение."
+        },
+        {
+          "word_display": "ист_нный",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: истИнный."
+        },
+        {
+          "word_display": "к_морка",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: кАморка."
+        },
+        {
+          "word_display": "к_нцелярский",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: кАнцЕлярский."
+        },
+        {
+          "word_display": "канц_лярский",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: кАнцЕлярский."
+        },
+        {
+          "word_display": "к_рикатурный",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: кАрИкАтурный."
+        },
+        {
+          "word_display": "кар_катурный",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: кАрИкАтурный."
+        },
+        {
+          "word_display": "карик_турный",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: кАрИкАтурный."
+        },
+        {
+          "word_display": "к_рикатурист",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: кАрИкАтурист."
+        },
+        {
+          "word_display": "кар_катурист",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: кАрИкАтурист."
+        },
+        {
+          "word_display": "карик_турист",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: кАрИкАтурист."
+        },
+        {
+          "word_display": "к_варство",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: кОварство."
+        },
+        {
+          "word_display": "к_лдовской",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: кОлдовской."
+        },
+        {
+          "word_display": "к_лебаться",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: кОлЕбаться."
+        },
+        {
+          "word_display": "кол_баться",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: кОлЕбаться."
+        },
+        {
+          "word_display": "к_ллективный",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: кОллЕктивный."
+        },
+        {
+          "word_display": "колл_ктивный",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: кОллЕктивный."
+        },
+        {
+          "word_display": "к_ллекционный",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: кОллекционный."
+        },
+        {
+          "word_display": "к_ллекционировать",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: кОллекционировать."
+        },
+        {
+          "word_display": "к_лыхаться",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: кОлыхаться."
+        },
+        {
+          "word_display": "к_мбинировать",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: кОмбИнировать."
+        },
+        {
+          "word_display": "комб_нировать",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: кОмбИнировать."
+        },
+        {
+          "word_display": "к_медийный",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: кОмедийный."
+        },
+        {
+          "word_display": "к_мпетенция",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: кОмпЕтенция."
+        },
+        {
+          "word_display": "комп_тенция",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: кОмпЕтенция."
+        },
+        {
+          "word_display": "к_мпьютерный",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: кОмпьютерный."
+        },
+        {
+          "word_display": "к_мфортный",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: кОмфортный."
+        },
+        {
+          "word_display": "к_нкуренция",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: кОнкуренция."
+        },
+        {
+          "word_display": "к_нфликтовать",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: кОнфликтовать."
+        },
+        {
+          "word_display": "к_ролевство",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: кОролевство."
+        },
+        {
+          "word_display": "к_смический",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: кОсмический."
+        },
+        {
+          "word_display": "л_гендарный",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: лЕгендарный."
+        },
+        {
+          "word_display": "л_беральный",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: лИбЕральный."
+        },
+        {
+          "word_display": "либ_ральный",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: лИбЕральный."
+        },
+        {
+          "word_display": "л_нгвистический",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: лИнгвистический."
+        },
+        {
+          "word_display": "м_териальный",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: мАтерИальный."
+        },
+        {
+          "word_display": "матер_альный",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: мАтерИальный."
+        },
+        {
+          "word_display": "м_териализм",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: мАтерИализм."
+        },
+        {
+          "word_display": "матер_ализм",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: мАтерИализм."
+        },
+        {
+          "word_display": "м_териализовать",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: мАтерИализовать."
+        },
+        {
+          "word_display": "матер_ализовать",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: мАтерИализовать."
+        },
+        {
+          "word_display": "мгн_венный",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: мгнОвенный."
+        },
+        {
+          "word_display": "м_нтальный",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: мЕнтальный."
+        },
+        {
+          "word_display": "м_тафорический",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: мЕтафорический."
+        },
+        {
+          "word_display": "м_ханический",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: мЕханический."
+        },
+        {
+          "word_display": "м_неральный",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: мИнЕральный."
+        },
+        {
+          "word_display": "мин_ральный",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: мИнЕральный."
+        },
+        {
+          "word_display": "м_норный",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: мИнорный."
+        },
+        {
+          "word_display": "м_нолитный",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: мОнОлитный."
+        },
+        {
+          "word_display": "мон_литный",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: мОнОлитный."
+        },
+        {
+          "word_display": "м_тивировать",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: мОтивировать."
+        },
+        {
+          "word_display": "м_тивация",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: мОтивация."
+        },
+        {
+          "word_display": "м_тежный",
+          "correct_answer": "я",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "Словарное слово: мЯтежный."
+        },
+        {
+          "word_display": "насл_ждение",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: наслАждение."
+        },
+        {
+          "word_display": "об_татель",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: обИтатель."
+        },
+        {
+          "word_display": "об_ронять",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: обОронять."
+        },
+        {
+          "word_display": "оз_рничать",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: озОрничать."
+        },
+        {
+          "word_display": "оз_рник",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: озОрник."
+        },
+        {
+          "word_display": "оп_кунский",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: опЕкунский."
+        },
+        {
+          "word_display": "опт_мистичный",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: оптИмистичный."
+        },
+        {
+          "word_display": "опт_мизм",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: оптИмизм."
+        },
+        {
+          "word_display": "_рбитальный",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: Орбитальный."
+        },
+        {
+          "word_display": "орг_низация",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: оргАнИзация."
+        },
+        {
+          "word_display": "орган_зация",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: оргАнИзация."
+        },
+        {
+          "word_display": "ор_ентир",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: орИЕнтир."
+        },
+        {
+          "word_display": "ори_нтир",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: орИЕнтир."
+        },
+        {
+          "word_display": "ор_ентироваться",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: орИЕнтироваться."
+        },
+        {
+          "word_display": "ори_нтироваться",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: орИЕнтироваться."
+        },
+        {
+          "word_display": "ор_ентация",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: орИЕнтация."
+        },
+        {
+          "word_display": "ори_нтация",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: орИЕнтация."
+        },
+        {
+          "word_display": "ост_рожность",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: остОрожность."
+        },
+        {
+          "word_display": "оф_церский",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: офИцерский."
+        },
+        {
+          "word_display": "ош_ломительный",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: ошЕлОмительный."
+        },
+        {
+          "word_display": "ошел_мительный",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: ошЕлОмительный."
+        },
+        {
+          "word_display": "ош_ломлённый",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: ошЕлОмлённый."
+        },
+        {
+          "word_display": "ошел_млённый",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: ошЕлОмлённый."
+        },
+        {
+          "word_display": "п_норамный",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: пАнОрамный."
+        },
+        {
+          "word_display": "пан_рамный",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: пАнОрамный."
+        },
+        {
+          "word_display": "п_радоксальный",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: пАрАдоксальный."
+        },
+        {
+          "word_display": "пар_доксальный",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: пАрАдоксальный."
+        },
+        {
+          "word_display": "п_триотизм",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: пАтриотизм."
+        },
+        {
+          "word_display": "п_триотический",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: пАтриотический."
+        },
+        {
+          "word_display": "п_йзажный",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: пЕйзажный."
+        },
+        {
+          "word_display": "п_риодический",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: пЕриОдический."
+        },
+        {
+          "word_display": "пери_дический",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: пЕриОдический."
+        },
+        {
+          "word_display": "п_ссимистичный",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: пЕссИмистичный."
+        },
+        {
+          "word_display": "песс_мистичный",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: пЕссИмистичный."
+        },
+        {
+          "word_display": "п_ссимизм",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: пЕссИмизм."
+        },
+        {
+          "word_display": "песс_мизм",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: пЕссИмизм."
+        },
+        {
+          "word_display": "подр_жание",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: подрАжание."
+        },
+        {
+          "word_display": "подр_жатель",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: подрАжатель."
+        },
+        {
+          "word_display": "п_лемичный",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: пОлемичный."
+        },
+        {
+          "word_display": "п_лированный",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: пОлИрованный."
+        },
+        {
+          "word_display": "пол_рованный",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: пОлИрованный."
+        },
+        {
+          "word_display": "пор_жение",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: порАжение."
+        },
+        {
+          "word_display": "пор_зительный",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: порАзительный."
+        },
+        {
+          "word_display": "пос_щение",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: посЕщение."
+        },
+        {
+          "word_display": "пос_титель",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: посЕтитель."
+        },
+        {
+          "word_display": "прав_льный",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: правИльный."
+        },
+        {
+          "word_display": "пр_зидентский",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: прЕзИдентский."
+        },
+        {
+          "word_display": "през_дентский",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: прЕзИдентский."
+        },
+        {
+          "word_display": "пр_ображение",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: прЕобрАжение."
+        },
+        {
+          "word_display": "преобр_жение",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: прЕобрАжение."
+        },
+        {
+          "word_display": "пр_образовать",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: прЕобрАзовать."
+        },
+        {
+          "word_display": "преобр_зовать",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: прЕобрАзовать."
+        },
+        {
+          "word_display": "пр_образование",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: прЕобрАзование."
+        },
+        {
+          "word_display": "преобр_зование",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: прЕобрАзование."
+        },
+        {
+          "word_display": "пр_образователь",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: прЕобрАзователь."
+        },
+        {
+          "word_display": "преобр_зователь",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: прЕобрАзователь."
+        },
+        {
+          "word_display": "пр_одоление",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: прЕодОление."
+        },
+        {
+          "word_display": "преод_ление",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: прЕодОление."
+        },
+        {
+          "word_display": "пр_вилегированный",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: прИвИлегированный."
+        },
+        {
+          "word_display": "прив_легированный",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: прИвИлегированный."
+        },
+        {
+          "word_display": "пр_оритетный",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: прИорИтетный."
+        },
+        {
+          "word_display": "приор_тетный",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: прИорИтетный."
+        },
+        {
+          "word_display": "пр_винциальный",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: прОвинциальный."
+        },
+        {
+          "word_display": "рац_онализировать",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: рацИонализировать."
+        },
+        {
+          "word_display": "р_алистичный",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: рЕАлистичный."
+        },
+        {
+          "word_display": "ре_листичный",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: рЕАлистичный."
+        },
+        {
+          "word_display": "р_ализм",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: рЕАлизм."
+        },
+        {
+          "word_display": "ре_лизм",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: рЕАлизм."
+        },
+        {
+          "word_display": "р_жиссёрский",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: рЕжИссёрский."
+        },
+        {
+          "word_display": "реж_ссёрский",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: рЕжИссёрский."
+        },
+        {
+          "word_display": "р_месленный",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: рЕмЕсленный."
+        },
+        {
+          "word_display": "рем_сленный",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: рЕмЕсленный."
+        },
+        {
+          "word_display": "р_ставрационный",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: рЕстАврационный."
+        },
+        {
+          "word_display": "рест_врационный",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: рЕстАврационный."
+        },
+        {
+          "word_display": "р_ферировать",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: рЕфЕрировать."
+        },
+        {
+          "word_display": "реф_рировать",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: рЕфЕрировать."
+        },
+        {
+          "word_display": "р_форматор",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: рЕформатор."
+        },
+        {
+          "word_display": "р_формировать",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: рЕформировать."
+        },
+        {
+          "word_display": "р_цензент",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: рЕцензент."
+        },
+        {
+          "word_display": "р_цензировать",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: рЕцензировать."
+        },
+        {
+          "word_display": "р_торический",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: рИторический."
+        },
+        {
+          "word_display": "р_мантический",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: рОмантический."
+        },
+        {
+          "word_display": "р_мантизм",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: рОмантизм."
+        },
+        {
+          "word_display": "с_лютовать",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: сАлютовать."
+        },
+        {
+          "word_display": "с_тирический",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: сАтирический."
+        },
+        {
+          "word_display": "с_зонный",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: сЕзонный."
+        },
+        {
+          "word_display": "с_мпатичный",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: сИмпатичный."
+        },
+        {
+          "word_display": "с_мфонический",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: сИмфонический."
+        },
+        {
+          "word_display": "с_реневый",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: сИреневый."
+        },
+        {
+          "word_display": "с_стематичный",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: сИстематичный."
+        },
+        {
+          "word_display": "с_стематизировать",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: сИстематизировать."
+        },
+        {
+          "word_display": "сн_ряжение",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: снАрЯжение."
+        },
+        {
+          "word_display": "снар_жение",
+          "correct_answer": "я",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "Словарное слово: снАрЯжение."
+        },
+        {
+          "word_display": "состр_дание",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: сострАдание."
+        },
+        {
+          "word_display": "сост_зание",
+          "correct_answer": "я",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "Словарное слово: состЯзание."
+        },
+        {
+          "word_display": "стр_ховка",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: стрАховка."
+        },
+        {
+          "word_display": "стр_мление",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: стрЕмление."
+        },
+        {
+          "word_display": "сув_ренный",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: сувЕренный."
+        },
+        {
+          "word_display": "сум_речный",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: сумЕречный."
+        },
+        {
+          "word_display": "т_лантливый",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: тАлантливый."
+        },
+        {
+          "word_display": "т_оретический",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: тЕоретический."
+        },
+        {
+          "word_display": "т_рриториальный",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: тЕррИториальный."
+        },
+        {
+          "word_display": "терр_ториальный",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: тЕррИториальный."
+        },
+        {
+          "word_display": "т_ржественный",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: тОржественный."
+        },
+        {
+          "word_display": "тр_диционный",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: трАдиционный."
+        },
+        {
+          "word_display": "тр_фаретный",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: трАфАретный."
+        },
+        {
+          "word_display": "траф_ретный",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: трАфАретный."
+        },
+        {
+          "word_display": "тр_вожный",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: трЕвожный."
+        },
+        {
+          "word_display": "тр_вожить",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: трЕвожить."
+        },
+        {
+          "word_display": "тр_мвайный",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: трАмвайный."
+        },
+        {
+          "word_display": "тр_ллейбусный",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: трОллейбусный."
+        },
+        {
+          "word_display": "тр_стниковый",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: трОстниковый."
+        },
+        {
+          "word_display": "уг_щать",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: угОщать."
+        },
+        {
+          "word_display": "уг_щение",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: угОщение."
+        },
+        {
+          "word_display": "ун_верситетский",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: унИвЕрситетский."
+        },
+        {
+          "word_display": "унив_рситетский",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: унИвЕрситетский."
+        },
+        {
+          "word_display": "у_звлённый",
+          "correct_answer": "я",
+          "wrong_options": [
+            "е"
+          ],
+          "explanation": "Словарное слово: уЯзвлённый."
+        },
+        {
+          "word_display": "ф_нтастический",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: фАнтастический."
+        },
+        {
+          "word_display": "ф_гурировать",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: фИгурировать."
+        },
+        {
+          "word_display": "ф_гурист",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: фИгурист."
+        },
+        {
+          "word_display": "ф_гурный",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: фИгурный."
+        },
+        {
+          "word_display": "ф_нансовый",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: фИнансовый."
+        },
+        {
+          "word_display": "фр_гментарный",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: фрАгментарный."
+        },
+        {
+          "word_display": "фраз_ологический",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: фразЕологический."
+        },
+        {
+          "word_display": "ха_тичный",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: хаОтичный."
+        },
+        {
+          "word_display": "х_рактерный",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: хАрактерный."
+        },
+        {
+          "word_display": "х_рактеризовать",
+          "correct_answer": "а",
+          "wrong_options": [
+            "о"
+          ],
+          "explanation": "Словарное слово: хАрактеризовать."
+        },
+        {
+          "word_display": "ц_ментный",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: цЕментный."
+        },
+        {
+          "word_display": "ц_вилизационный",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: цИвИлИзационный."
+        },
+        {
+          "word_display": "цив_лизационный",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: цИвИлИзационный."
+        },
+        {
+          "word_display": "цивил_зационный",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: цИвИлИзационный."
+        },
+        {
+          "word_display": "ц_вилизованный",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: цИвИлИзованный."
+        },
+        {
+          "word_display": "цив_лизованный",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: цИвИлИзованный."
+        },
+        {
+          "word_display": "цивил_зованный",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: цИвИлИзованный."
+        },
+        {
+          "word_display": "ц_линдрический",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: цИлиндрический."
+        },
+        {
+          "word_display": "ц_тировать",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: цИтировать."
+        },
+        {
+          "word_display": "ч_ловеческий",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: чЕлОвеческий."
+        },
+        {
+          "word_display": "чел_веческий",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: чЕлОвеческий."
+        },
+        {
+          "word_display": "ч_ловечный",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: чЕлОвечный."
+        },
+        {
+          "word_display": "чел_вечный",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: чЕлОвечный."
+        },
+        {
+          "word_display": "ч_мпионат",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: чЕмпИонат."
+        },
+        {
+          "word_display": "чемп_онат",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: чЕмпИонат."
+        },
+        {
+          "word_display": "ч_мпионский",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: чЕмпИонский."
+        },
+        {
+          "word_display": "чемп_онский",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: чЕмпИонский."
+        },
+        {
+          "word_display": "ш_коладный",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: шОкОладный."
+        },
+        {
+          "word_display": "шок_ладный",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: шОкОладный."
+        },
+        {
+          "word_display": "ш_ссейный",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: шОссейный."
+        },
+        {
+          "word_display": "ш_фёрский",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: шОфёрский."
+        },
+        {
+          "word_display": "эв_люционировать",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: эвОлюционировать."
+        },
+        {
+          "word_display": "эк_номика",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: экОномика."
+        },
+        {
+          "word_display": "эк_номичный",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: экОномичный."
+        },
+        {
+          "word_display": "эксп_риментальный",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: экспЕрИментальный."
+        },
+        {
+          "word_display": "экспер_ментальный",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: экспЕрИментальный."
+        },
+        {
+          "word_display": "эксп_риментировать",
+          "correct_answer": "е",
+          "wrong_options": [
+            "и",
+            "я"
+          ],
+          "explanation": "Словарное слово: экспЕрИментировать."
+        },
+        {
+          "word_display": "экспер_ментировать",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: экспЕрИментировать."
+        },
+        {
+          "word_display": "_лектрический",
+          "correct_answer": "э",
+          "wrong_options": [
+            "а",
+            "о"
+          ],
+          "explanation": "Словарное слово: Электрический."
+        },
+        {
+          "word_display": "_лектричество",
+          "correct_answer": "э",
+          "wrong_options": [
+            "а",
+            "о"
+          ],
+          "explanation": "Словарное слово: Электричество."
+        },
+        {
+          "word_display": "энц_клопедист",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: энцИклОпедист."
+        },
+        {
+          "word_display": "энцикл_педист",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: энцИклОпедист."
+        },
+        {
+          "word_display": "энц_клопедический",
+          "correct_answer": "и",
+          "wrong_options": [
+            "е",
+            "ы"
+          ],
+          "explanation": "Словарное слово: энцИклОпедический."
+        },
+        {
+          "word_display": "энцикл_педический",
+          "correct_answer": "о",
+          "wrong_options": [
+            "а"
+          ],
+          "explanation": "Словарное слово: энцИклОпедический."
+        }
+      ]
+    }
+  ]
+}
