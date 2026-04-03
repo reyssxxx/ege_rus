@@ -1,4 +1,5 @@
 import asyncio
+import logging
 
 import aiosqlite
 from aiogram import Router, F
@@ -14,8 +15,10 @@ from keyboards.menu import main_menu_keyboard
 from services.quiz_engine import get_next_question, build_options, check_answer
 from states.quiz import QuizState
 from utils.formatting import format_question_text, format_feedback_text, format_session_summary
+from utils.safe_edit import safe_edit_text, safe_edit_reply_markup
 
 router = Router()
+logger = logging.getLogger(__name__)
 
 FEEDBACK_DELAY = 0.8  # seconds before auto-advancing on correct answer
 
@@ -23,14 +26,15 @@ FEEDBACK_DELAY = 0.8  # seconds before auto-advancing on correct answer
 async def send_question(callback: CallbackQuery, state: FSMContext, db: aiosqlite.Connection):
     """Fetch next question and display it."""
     data = await state.get_data()
-    task_number = data["task_number"]
+    task_number = data.get("task_number")
     subcategory = data.get("subcategory")
     streak = data.get("streak", 0)
     session_total = data.get("session_total", 0)
 
     question = await get_next_question(db, callback.from_user.id, task_number, subcategory)
     if not question:
-        await callback.message.edit_text(
+        await safe_edit_text(
+            callback,
             "В этой категории пока нет вопросов.",
             reply_markup=main_menu_keyboard(),
         )
@@ -56,7 +60,8 @@ async def send_question(callback: CallbackQuery, state: FSMContext, db: aiosqlit
         session_total=session_total,
     )
 
-    await callback.message.edit_text(
+    await safe_edit_text(
+        callback,
         text=text,
         reply_markup=answer_keyboard(question.id, options),
     )
@@ -75,6 +80,10 @@ async def cb_answer(
 
     if callback_data.qid != question_id:
         await callback.answer("Этот вопрос уже неактуален.")
+        return
+
+    if not options_order or callback_data.idx >= len(options_order):
+        await callback.answer("Ошибка: неверный вариант ответа.")
         return
 
     question = await get_question_by_id(db, question_id)
@@ -115,22 +124,23 @@ async def cb_answer(
 
     if is_correct:
         # Auto-advance to next question after brief feedback
-        await callback.message.edit_text(text=text, reply_markup=stop_keyboard())
+        await safe_edit_text(callback, text=text, reply_markup=stop_keyboard())
         await callback.answer()
         await asyncio.sleep(FEEDBACK_DELAY)
+        # Проверяем состояние после сна — пользователь мог нажать стоп/сменить тему
         current_state = await state.get_state()
         if current_state == QuizState.reviewing:
             await send_question(callback, state, db)
     else:
         # Wrong answer — session stops, offer restart
-        await callback.message.edit_text(text=text, reply_markup=wrong_answer_keyboard())
+        await safe_edit_text(callback, text=text, reply_markup=wrong_answer_keyboard())
         await callback.answer()
 
 
 @router.callback_query(QuizControl.filter(F.action == "pause"), QuizState.reviewing)
 async def cb_pause(callback: CallbackQuery, state: FSMContext):
     await state.set_state(QuizState.paused)
-    await callback.message.edit_reply_markup(reply_markup=paused_keyboard())
+    await safe_edit_reply_markup(callback, reply_markup=paused_keyboard())
     await callback.answer()
 
 
@@ -140,6 +150,10 @@ async def cb_continue(
     state: FSMContext,
     db: aiosqlite.Connection,
 ):
+    data = await state.get_data()
+    if "task_number" not in data:
+        await callback.answer("Ошибка: данные сессии потеряны. Начни заново.")
+        return
     await send_question(callback, state, db)
     await callback.answer()
 
@@ -156,13 +170,12 @@ async def cb_restart(
     if "task_number" not in data:
         from keyboards.category import tasks_keyboard
         await state.set_state(QuizState.choosing_category)
-        await callback.message.edit_text("Выбери задание:", reply_markup=tasks_keyboard())
+        await safe_edit_text(callback, "Выбери задание:", reply_markup=tasks_keyboard())
         await callback.answer()
         return
 
     await state.update_data(
         subcategory=None,
-        session_correct=0,
         session_total=0,
         streak=0,
     )
@@ -178,7 +191,7 @@ async def cb_stop_quiz(callback: CallbackQuery, state: FSMContext):
 
     text = format_session_summary(streak, session_total)
     await state.clear()
-    await callback.message.edit_text(text=text, reply_markup=main_menu_keyboard())
+    await safe_edit_text(callback, text=text, reply_markup=main_menu_keyboard())
     await callback.answer()
 
 
@@ -188,7 +201,8 @@ async def cb_change_category(callback: CallbackQuery, state: FSMContext):
 
     await state.clear()
     await state.set_state(QuizState.choosing_category)
-    await callback.message.edit_text(
+    await safe_edit_text(
+        callback,
         "Выбери задание:",
         reply_markup=tasks_keyboard(),
     )

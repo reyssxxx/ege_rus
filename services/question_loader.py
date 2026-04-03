@@ -1,10 +1,13 @@
 import json
+import logging
 import os
+from pathlib import Path
 
 import aiosqlite
 
+logger = logging.getLogger(__name__)
 
-DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data")
+DATA_DIR = Path(__file__).resolve().parent.parent / "data"
 
 JSON_FILES = [
     "task_04_orthoepy.json",
@@ -32,39 +35,53 @@ async def load_questions_if_needed(db_path: str):
             # Compare modification times: if any JSON is newer than DB, reload
             db_mtime = os.path.getmtime(db_path)
             any_newer = any(
-                os.path.exists(os.path.join(DATA_DIR, f)) and os.path.getmtime(os.path.join(DATA_DIR, f)) > db_mtime
+                (DATA_DIR / f).exists() and (DATA_DIR / f).stat().st_mtime > db_mtime
                 for f in JSON_FILES
             )
             if not any_newer:
                 return
             await db.execute("DELETE FROM questions")
 
+        questions_to_insert = []
+
         for filename in JSON_FILES:
-            filepath = os.path.join(DATA_DIR, filename)
-            if not os.path.exists(filepath):
+            filepath = DATA_DIR / filename
+            if not filepath.exists():
+                logger.warning("JSON file not found: %s", filepath)
                 continue
 
-            with open(filepath, "r", encoding="utf-8") as f:
-                data = json.load(f)
+            try:
+                with open(filepath, "r", encoding="utf-8") as f:
+                    data = json.load(f)
+            except json.JSONDecodeError as e:
+                logger.error("Invalid JSON in %s: %s", filepath, e)
+                continue
 
-            task_number = data["task_number"]
+            task_number = data.get("task_number")
+            if task_number is None:
+                logger.warning("Missing task_number in %s", filepath)
+                continue
 
             for subcat in data.get("subcategories", []):
                 subcategory = subcat.get("name")
                 for q in subcat.get("questions", []):
-                    await db.execute(
-                        """
-                        INSERT INTO questions (task_number, subcategory, word_display, correct_answer, wrong_options, explanation)
-                        VALUES (?, ?, ?, ?, ?, ?)
-                        """,
-                        (
-                            task_number,
-                            subcategory,
-                            q["word_display"],
-                            q["correct_answer"],
-                            json.dumps(q["wrong_options"], ensure_ascii=False),
-                            q["explanation"],
-                        ),
-                    )
+                    questions_to_insert.append((
+                        task_number,
+                        subcategory,
+                        q["word_display"],
+                        q["correct_answer"],
+                        json.dumps(q["wrong_options"], ensure_ascii=False),
+                        q["explanation"],
+                    ))
+
+        if questions_to_insert:
+            await db.executemany(
+                """
+                INSERT INTO questions (task_number, subcategory, word_display, correct_answer, wrong_options, explanation)
+                VALUES (?, ?, ?, ?, ?, ?)
+                """,
+                questions_to_insert,
+            )
+            logger.info("Loaded %d questions from JSON files", len(questions_to_insert))
 
         await db.commit()

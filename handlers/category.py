@@ -1,3 +1,5 @@
+import logging
+
 import aiosqlite
 from aiogram import Router, F
 from aiogram.types import CallbackQuery
@@ -9,14 +11,16 @@ from keyboards.category import tasks_keyboard, task_info_keyboard
 from states.quiz import QuizState
 from handlers.quiz import send_question
 from utils.formatting import format_task_info
+from utils.safe_edit import safe_edit_text
 
 router = Router()
+logger = logging.getLogger(__name__)
 
 
 @router.callback_query(MenuAction.filter(F.action == "tasks"))
 async def cb_show_tasks(callback: CallbackQuery, state: FSMContext):
     await state.set_state(QuizState.choosing_category)
-    await callback.message.edit_text("Выбери задание:", reply_markup=tasks_keyboard())
+    await safe_edit_text(callback, "Выбери задание:", reply_markup=tasks_keyboard())
     await callback.answer()
 
 
@@ -34,7 +38,7 @@ async def cb_show_task_info(
     await state.update_data(task_number=task_number)
 
     text = format_task_info(task_number, total, accuracy)
-    await callback.message.edit_text(text, reply_markup=task_info_keyboard(task_number))
+    await safe_edit_text(callback, text, reply_markup=task_info_keyboard(task_number))
     await callback.answer()
 
 
@@ -48,7 +52,6 @@ async def cb_start_task(
     await state.update_data(
         task_number=callback_data.task,
         subcategory=None,
-        session_correct=0,
         session_total=0,
         streak=0,
     )

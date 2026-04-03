@@ -6,7 +6,6 @@ set -e
 
 BOT_DIR="/opt/ege_bot"
 REPO_URL="https://github.com/reyssxxx/ege_rus.git"
-BOT_TOKEN="8760608838:AAHmxfGzSIxgg9OuyVtZhQHR5ljAzZZwbh8"
 
 echo "=== EGE Bot Deployment ==="
 echo "Установка зависимостей..."
@@ -24,12 +23,16 @@ git clone $REPO_URL . 2>/dev/null || {
     git pull origin main 2>/dev/null || true
 }
 
-# Создание .env файла
-echo "Создание .env файла..."
-cat > .env << EOF
-BOT_TOKEN=$BOT_TOKEN
+# Создание .env файла (если не существует)
+if [ ! -f .env ]; then
+    echo "Создание .env файла..."
+    cat > .env << EOF
+BOT_TOKEN=your_telegram_bot_token_here
 DB_PATH=data/ege_bot.db
 EOF
+    echo "⚠️  ВАЖНО: Укажите BOT_TOKEN в файле $BOT_DIR/.env"
+    echo "   Затем запустите: systemctl restart ege-bot"
+fi
 
 # Создание виртуального окружения
 echo "Настройка Python окружения..."

@@ -1,4 +1,4 @@
-from datetime import datetime, timezone, date
+from datetime import datetime, timezone, date, timedelta
 
 import aiosqlite
 
@@ -37,8 +37,6 @@ async def update_streak(db: aiosqlite.Connection, user_id: int):
     if last_date == today:
         return
 
-    yesterday = date.today().replace(day=date.today().day)  # placeholder
-    from datetime import timedelta
     yesterday = (date.today() - timedelta(days=1)).isoformat()
 
     if last_date == yesterday:
