@@ -10,12 +10,12 @@ from db.repositories.answers import record_answer
 from db.repositories.questions import get_question_by_id
 from db.repositories.users import ensure_user, update_streak
 from keyboards.callbacks import QuizAnswer, QuizControl, TaskStart
-from keyboards.quiz import answer_keyboard, stop_keyboard, paused_keyboard, wrong_answer_keyboard
+from keyboards.quiz import answer_keyboard, stop_keyboard, continue_keyboard, wrong_answer_keyboard
 from keyboards.menu import main_menu_keyboard
 from services.quiz_engine import get_next_question, build_options, check_answer
 from states.quiz import QuizState
 from utils.formatting import format_question_text, format_feedback_text, format_session_summary
-from utils.safe_edit import safe_edit_text, safe_edit_reply_markup
+from utils.safe_edit import safe_edit_text
 
 router = Router()
 logger = logging.getLogger(__name__)
@@ -122,29 +122,29 @@ async def cb_answer(
     # Block double-tap during delay
     await state.set_state(QuizState.reviewing)
 
+    # Определяем тип задания: если пояснение длинное — ручной переход
+    has_long_explanation = question.explanation and len(question.explanation) > 50
+
     if is_correct:
-        # Auto-advance to next question after brief feedback
-        await safe_edit_text(callback, text=text, reply_markup=stop_keyboard())
-        await callback.answer()
-        await asyncio.sleep(FEEDBACK_DELAY)
-        # Проверяем состояние после сна — пользователь мог нажать стоп/сменить тему
-        current_state = await state.get_state()
-        if current_state == QuizState.reviewing:
-            await send_question(callback, state, db)
+        if has_long_explanation:
+            # Задание с пояснением — ждём нажатия "Продолжить"
+            await safe_edit_text(callback, text=text, reply_markup=continue_keyboard())
+        else:
+            # Краткое задание — авто-переход через FEEDBACK_DELAY
+            await safe_edit_text(callback, text=text, reply_markup=stop_keyboard())
+            await callback.answer()
+            await asyncio.sleep(FEEDBACK_DELAY)
+            # Проверяем состояние после сна — пользователь мог нажать стоп/сменить тему
+            current_state = await state.get_state()
+            if current_state == QuizState.reviewing:
+                await send_question(callback, state, db)
     else:
         # Wrong answer — session stops, offer restart
         await safe_edit_text(callback, text=text, reply_markup=wrong_answer_keyboard())
-        await callback.answer()
-
-
-@router.callback_query(QuizControl.filter(F.action == "pause"), QuizState.reviewing)
-async def cb_pause(callback: CallbackQuery, state: FSMContext):
-    await state.set_state(QuizState.paused)
-    await safe_edit_reply_markup(callback, reply_markup=paused_keyboard())
     await callback.answer()
 
 
-@router.callback_query(QuizControl.filter(F.action == "continue"), QuizState.paused)
+@router.callback_query(QuizControl.filter(F.action == "continue"), QuizState.reviewing)
 async def cb_continue(
     callback: CallbackQuery,
     state: FSMContext,

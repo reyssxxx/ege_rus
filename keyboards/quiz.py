@@ -16,17 +16,14 @@ def answer_keyboard(question_id: int, options: list[str]) -> InlineKeyboardMarku
 
 
 def stop_keyboard() -> InlineKeyboardMarkup:
-    """Shown briefly during correct-answer feedback (auto-advances after delay)."""
+    """Клавиатура для кратких заданий (авто-переход)."""
     return InlineKeyboardMarkup(inline_keyboard=[
-        [
-            InlineKeyboardButton(text="⏸ Пауза", callback_data=QuizControl(action="pause").pack()),
-            InlineKeyboardButton(text="⏹ Стоп",  callback_data=QuizControl(action="stop").pack()),
-        ],
+        [InlineKeyboardButton(text="⏹ Стоп", callback_data=QuizControl(action="stop").pack())],
     ])
 
 
-def paused_keyboard() -> InlineKeyboardMarkup:
-    """Shown when user paused to read the explanation."""
+def continue_keyboard() -> InlineKeyboardMarkup:
+    """Клавиатура для заданий с пояснением (ручной переход)."""
     return InlineKeyboardMarkup(inline_keyboard=[
         [InlineKeyboardButton(text="▶ Продолжить", callback_data=QuizControl(action="continue").pack())],
         [InlineKeyboardButton(text="⏹ Стоп",       callback_data=QuizControl(action="stop").pack())],

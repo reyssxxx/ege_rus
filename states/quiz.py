@@ -5,4 +5,3 @@ class QuizState(StatesGroup):
     choosing_category = State()
     answering = State()
     reviewing = State()
-    paused = State()
