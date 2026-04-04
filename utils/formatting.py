@@ -55,13 +55,15 @@ def format_feedback_text(
     explanation: str,
     streak: int,
     session_total: int,
+    best_streak: int = 0,
 ) -> str:
     if is_correct:
         result = "✅ <b>Правильно!</b>"
     else:
         result = f"❌ <b>Неправильно!</b>\n\nПравильный ответ: <b>{correct_answer}</b>"
 
-    return f"{result}\n\n💡 {explanation}\n\n🔥 {streak}  |  Вопросов: {session_total}"
+    trophy = f" | 🏆 {best_streak}" if best_streak > 0 else ""
+    return f"{result}\n\n💡 {explanation}\n\n🔥 {streak}{trophy}  |  Вопросов: {session_total}"
 
 
 def format_task_info(task_number: int, total_answered: int, accuracy: float) -> str:

@@ -19,7 +19,8 @@ CREATE TABLE IF NOT EXISTS users (
     last_active TEXT NOT NULL,
     current_streak INTEGER DEFAULT 0,
     longest_streak INTEGER DEFAULT 0,
-    last_streak_date TEXT
+    last_streak_date TEXT,
+    session_streak INTEGER DEFAULT 0
 );
 
 CREATE TABLE IF NOT EXISTS user_answers (

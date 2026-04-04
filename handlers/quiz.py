@@ -8,7 +8,7 @@ from aiogram.fsm.context import FSMContext
 
 from db.repositories.answers import record_answer
 from db.repositories.questions import get_question_by_id
-from db.repositories.users import ensure_user, update_streak
+from db.repositories.users import ensure_user, update_streak, try_update_longest_streak
 from keyboards.callbacks import QuizAnswer, QuizControl, TaskStart
 from keyboards.quiz import answer_keyboard, stop_keyboard, continue_keyboard, wrong_answer_keyboard
 from keyboards.menu import main_menu_keyboard
@@ -96,10 +96,24 @@ async def cb_answer(
 
     session_total = data.get("session_total", 0) + 1
     streak = data.get("streak", 0)
+    best_streak = 0
+    is_new_record = False
+
     if is_correct:
         streak += 1
     else:
+        # При ошибке: проверяем рекорд
+        if streak > 0:
+            is_new_record = await try_update_longest_streak(db, callback.from_user.id, streak)
         streak = 0
+
+        # Получаем обновлённый рекорд
+        cursor = await db.execute(
+            "SELECT longest_streak FROM users WHERE user_id = ?",
+            (callback.from_user.id,),
+        )
+        row = await cursor.fetchone()
+        best_streak = row["longest_streak"] if row else 0
 
     await ensure_user(db, callback.from_user.id, callback.from_user.username)
     await record_answer(db, callback.from_user.id, question_id, is_correct)
@@ -108,7 +122,12 @@ async def cb_answer(
     await state.update_data(
         session_total=session_total,
         streak=streak,
+        new_record=is_new_record,
+        best_streak=best_streak,
     )
+
+    # Для отображения используем сохранённый или полученный рекорд
+    display_best = best_streak if best_streak > 0 else data.get("best_streak", 0)
 
     text = format_feedback_text(
         is_correct=is_correct,
@@ -117,6 +136,7 @@ async def cb_answer(
         explanation=question.explanation,
         streak=streak,
         session_total=session_total,
+        best_streak=display_best,
     )
 
     # Block double-tap during delay
@@ -124,6 +144,9 @@ async def cb_answer(
 
     # Определяем тип задания: если пояснение длинное — ручной переход
     has_long_explanation = question.explanation and len(question.explanation) > 50
+
+    if is_new_record:
+        text += "\n\n🏆 <b>Новый рекорд!</b>"
 
     if is_correct:
         if has_long_explanation:

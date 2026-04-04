@@ -52,6 +52,26 @@ async def update_streak(db: aiosqlite.Connection, user_id: int):
     )
 
 
+async def try_update_longest_streak(db: aiosqlite.Connection, user_id: int, session_streak: int) -> bool:
+    """Обновить рекорд если сессионный стрик больше. Возвращает True если рекорд обновлён."""
+    cursor = await db.execute(
+        "SELECT longest_streak FROM users WHERE user_id = ?",
+        (user_id,),
+    )
+    row = await cursor.fetchone()
+    if not row:
+        return False
+
+    longest = row["longest_streak"]
+    if session_streak > longest:
+        await db.execute(
+            "UPDATE users SET longest_streak = ? WHERE user_id = ?",
+            (session_streak, user_id),
+        )
+        return True
+    return False
+
+
 async def get_user_stats(db: aiosqlite.Connection, user_id: int) -> UserStats:
     cursor = await db.execute(
         """

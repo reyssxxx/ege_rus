@@ -20,6 +20,7 @@ class UserStats:
     accuracy_pct: float
     current_streak: int
     longest_streak: int
+    session_streak: int = 0
 
 
 @dataclass
