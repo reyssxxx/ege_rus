@@ -30,6 +30,7 @@ async def send_question(callback: CallbackQuery, state: FSMContext, db: aiosqlit
     subcategory = data.get("subcategory")
     streak = data.get("streak", 0)
     session_total = data.get("session_total", 0)
+    best_streak = data.get("best_streak", 0)
 
     question = await get_next_question(db, callback.from_user.id, task_number, subcategory)
     if not question:
@@ -58,6 +59,7 @@ async def send_question(callback: CallbackQuery, state: FSMContext, db: aiosqlit
         word_display=question.word_display,
         streak=streak,
         session_total=session_total,
+        best_streak=best_streak,
     )
 
     await safe_edit_text(
@@ -197,10 +199,19 @@ async def cb_restart(
         await callback.answer()
         return
 
+    # Получаем рекорд из БД
+    cursor = await db.execute(
+        "SELECT longest_streak FROM users WHERE user_id = ?",
+        (callback.from_user.id,),
+    )
+    row = await cursor.fetchone()
+    best_streak = row["longest_streak"] if row else 0
+
     await state.update_data(
         subcategory=None,
         session_total=0,
         streak=0,
+        best_streak=best_streak,
     )
     await send_question(callback, state, db)
     await callback.answer()

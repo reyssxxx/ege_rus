@@ -17,11 +17,21 @@ logger = logging.getLogger(__name__)
 
 async def _start_all_tasks(callback: CallbackQuery, state: FSMContext, db: aiosqlite.Connection):
     from handlers.quiz import send_question
+
+    # Получаем рекорд из БД
+    cursor = await db.execute(
+        "SELECT longest_streak FROM users WHERE user_id = ?",
+        (callback.from_user.id,),
+    )
+    row = await cursor.fetchone()
+    best_streak = row["longest_streak"] if row else 0
+
     await state.update_data(
         task_number=None,
         subcategory=None,
         session_total=0,
         streak=0,
+        best_streak=best_streak,
     )
     await send_question(callback, state, db)
 

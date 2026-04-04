@@ -49,11 +49,20 @@ async def cb_start_task(
     state: FSMContext,
     db: aiosqlite.Connection,
 ):
+    # Получаем рекорд из БД
+    cursor = await db.execute(
+        "SELECT longest_streak FROM users WHERE user_id = ?",
+        (callback.from_user.id,),
+    )
+    row = await cursor.fetchone()
+    best_streak = row["longest_streak"] if row else 0
+
     await state.update_data(
         task_number=callback_data.task,
         subcategory=None,
         session_total=0,
         streak=0,
+        best_streak=best_streak,
     )
     await send_question(callback, state, db)
     await callback.answer()

@@ -27,8 +27,10 @@ def format_question_text(
     word_display: str,
     streak: int,
     session_total: int,
+    best_streak: int = 0,
 ) -> str:
     prompt = TASK_PROMPTS.get(task_number, "Выберите правильный вариант:")
+    trophy = f" | 🏆 {best_streak}" if best_streak > 0 else ""
 
     # Task 5: full sentence with gap — block quote, no centering
     if task_number == 5:
@@ -36,7 +38,7 @@ def format_question_text(
             f"{SPACER}\n"
             f"{prompt}\n\n"
             f"<blockquote>{word_display}</blockquote>\n"
-            f"🔥 {streak}  |  #{session_total + 1}"
+            f"🔥 {streak}{trophy}  |  #{session_total + 1}"
         )
 
     centered = _center_word(word_display)
@@ -44,7 +46,7 @@ def format_question_text(
         f"{SPACER}\n"
         f"{prompt}\n\n"
         f"<b>{centered}</b>\n\n"
-        f"🔥 {streak}  |  #{session_total + 1}"
+        f"🔥 {streak}{trophy}  |  #{session_total + 1}"
     )
 
 
