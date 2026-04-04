@@ -19,4 +19,8 @@ class QuizAnswer(CallbackData, prefix="ans"):
 
 
 class QuizControl(CallbackData, prefix="qctl"):
-    action: str  # "stop", "menu", "restart"
+    action: str  # "stop", "menu", "restart", "continue"
+
+
+class StatsView(CallbackData, prefix="stats"):
+    view: str  # "general", "tasks", "refresh"

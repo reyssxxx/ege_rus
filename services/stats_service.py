@@ -1,46 +1,94 @@
 import aiosqlite
 
-from db.models import UserStats, CategoryStats, ProblemWord
-from db.repositories.users import get_user_stats, get_category_stats, get_problem_words
+from db.models import UserStats, CategoryStats
+from db.repositories.users import get_user_stats, get_category_stats
 from utils.constants import TASK_NAMES
 
+
 def progress_bar(correct: int, total: int, length: int = 10) -> str:
+    """Создаёт прогресс-бар с процентом."""
     if total == 0:
-        return "░" * length
+        return "░" * length + " —"
     ratio = correct / total
     filled = round(ratio * length)
-    return "▓" * filled + "░" * (length - filled)
+    bar = "▓" * filled + "░" * (length - filled)
+    pct = round(ratio * 100)
+    return f"{bar} {pct}%"
 
 
-async def format_stats_message(db: aiosqlite.Connection, user_id: int) -> str:
+async def format_general_stats(db: aiosqlite.Connection, user_id: int) -> str:
+    """Форматирует общую статистику пользователя."""
     stats = await get_user_stats(db, user_id)
-    cat_stats = await get_category_stats(db, user_id)
-    problems = await get_problem_words(db, user_id, limit=10)
 
     if stats.total_answers == 0:
-        return "📊 <b>Статистика</b>\n\nВы ещё не ответили ни на один вопрос. Начните тренировку!"
+        return (
+            "📊 <b>Ваша статистика</b>\n"
+            f"{'━' * 28}\n\n"
+            "Вы ещё не ответили ни на один вопрос.\n"
+            "Начни тренировку — и прогресс появится! 🚀"
+        )
 
     lines = [
         "📊 <b>Ваша статистика</b>",
-        f"{'━' * 24}",
-        f"Всего ответов: {stats.total_answers}",
-        f"Правильных: {stats.correct_answers}",
-        f"Точность: {stats.accuracy_pct}%",
-        f"{progress_bar(stats.correct_answers, stats.total_answers, 15)}",
-        f"🔥 Стрик: {stats.current_streak} дн. (рекорд: {stats.longest_streak})",
+        f"{'━' * 28}",
+        "",
+        f"📝 Всего ответов: <b>{stats.total_answers}</b>",
+        f"✅ Правильных: <b>{stats.correct_answers}</b>",
+        f"🎯 Точность: <b>{stats.accuracy_pct}%</b>",
+        f"{progress_bar(stats.correct_answers, stats.total_answers, 16)}",
+        "",
+        f"🔥 Текущий стрик: <b>{stats.current_streak}</b> дн.",
+        f"🏆 Лучший стрик: <b>{stats.longest_streak}</b> дн.",
     ]
 
-    if cat_stats:
-        lines.append(f"\n<b>По заданиям:</b>")
-        for cs in cat_stats:
-            name = TASK_NAMES.get(cs.task_number, f"#{cs.task_number}")
-            sub = f" ({cs.subcategory})" if cs.subcategory else ""
-            bar = progress_bar(cs.correct_answers, cs.total_answers, 8)
-            lines.append(f"  {name}{sub}: {cs.accuracy_pct}% ({cs.total_answers} отв.) {bar}")
+    return "\n".join(lines)
 
-    if problems:
-        lines.append(f"\n<b>Проблемные слова:</b>")
-        for pw in problems[:5]:
-            lines.append(f"  • {pw.word_display} → {pw.correct_answer} ({pw.accuracy_pct}%)")
+
+async def format_category_stats(db: aiosqlite.Connection, user_id: int) -> str:
+    """Форматирует статистику по заданиям."""
+    cat_stats = await get_category_stats(db, user_id)
+
+    if not cat_stats:
+        return (
+            "📖 <b>Прогресс по заданиям</b>\n"
+            f"{'━' * 28}\n\n"
+            "Пока нет данных. Ответь на вопросы — и здесь появится прогресс! 📝"
+        )
+
+    lines = [
+        "📖 <b>Прогресс по заданиям</b>",
+        f"{'━' * 28}",
+        "",
+    ]
+
+    # Группируем по task_number
+    task_data = {}
+    for cs in cat_stats:
+        if cs.task_number not in task_data:
+            task_data[cs.task_number] = {"total": 0, "correct": 0}
+        task_data[cs.task_number]["total"] += cs.total_answers
+        task_data[cs.task_number]["correct"] += cs.correct_answers
+
+    # Сортируем по номеру задания
+    for task_num in sorted(task_data.keys()):
+        data = task_data[task_num]
+        name = TASK_NAMES.get(task_num, f"Задание {task_num}")
+        emoji = TASK_EMOJIS.get(task_num, "📝")
+        bar = progress_bar(data["correct"], data["total"], 10)
+        lines.append(f"{emoji} <b>{task_num}. {name}</b>")
+        lines.append(f"   {bar} ({data['total']} отв.)")
+        lines.append("")
 
     return "\n".join(lines)
+
+
+TASK_EMOJIS = {
+    4: "🗣",
+    5: "📚",
+    9: "🔤",
+    10: "🔡",
+    11: "🔠",
+    12: "✍️",
+    14: "🔗",
+    15: "📝",
+}
