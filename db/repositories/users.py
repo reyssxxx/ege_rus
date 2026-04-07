@@ -34,12 +34,13 @@ async def toggle_reminder(db: aiosqlite.Connection, user_id: int) -> bool:
         "SELECT reminder_enabled FROM users WHERE user_id = ?", (user_id,)
     ) as cursor:
         row = await cursor.fetchone()
-    current = bool(row[0]) if row else True
+    if row is None:
+        return True  # user not registered, do nothing meaningful
+    current = bool(row[0])
     new_val = 0 if current else 1
     await db.execute(
         "UPDATE users SET reminder_enabled = ? WHERE user_id = ?", (new_val, user_id)
     )
-    await db.commit()
     return bool(new_val)
 
 

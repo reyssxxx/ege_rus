@@ -50,7 +50,7 @@ async def main():
     await load_questions_if_needed(settings.db_path)
     logger.info("Bot starting...")
 
-    asyncio.create_task(start_reminder_loop(bot, db_manager.connection))
+    asyncio.create_task(start_reminder_loop(bot, settings.db_path))
 
     try:
         await dp.start_polling(bot)
