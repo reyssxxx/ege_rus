@@ -10,6 +10,8 @@ async def run_migrations(db: aiosqlite.Connection) -> None:
     )
     await db.commit()
 
+    # Migration files must use zero-padded 3-digit prefixes (e.g. 001_, 002_)
+    # to ensure correct sort order. Never name files with unpadded numbers (10_ etc.)
     migration_files = sorted(
         f for f in os.listdir(MIGRATIONS_DIR) if f.endswith(".sql")
     )
@@ -25,7 +27,7 @@ async def run_migrations(db: aiosqlite.Connection) -> None:
             filepath = os.path.join(MIGRATIONS_DIR, filename)
             with open(filepath, "r", encoding="utf-8") as f:
                 sql = f.read()
-            await db.executescript(sql)
+            await db.execute(sql)
             await db.execute(
                 "INSERT INTO schema_migrations (version) VALUES (?)", (version,)
             )
