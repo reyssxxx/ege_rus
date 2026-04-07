@@ -8,6 +8,7 @@ from aiogram.fsm.storage.memory import MemoryStorage
 
 from config import get_settings
 from db.engine import init_db
+from db.manager import DatabaseManager
 from handlers import register_routers
 from middlewares.db_session import DbSessionMiddleware
 from services.question_loader import load_questions_if_needed
@@ -25,16 +26,26 @@ async def main():
     )
     dp = Dispatcher(storage=MemoryStorage())
 
-    dp.message.outer_middleware(DbSessionMiddleware(settings.db_path))
-    dp.callback_query.outer_middleware(DbSessionMiddleware(settings.db_path))
+    # Инициализация БД (создание таблиц)
+    await init_db(settings.db_path)
+
+    # Менеджер БД с одним соединением и WAL режимом
+    db_manager = DatabaseManager(settings.db_path)
+    await db_manager.connect()
+
+    dp.message.outer_middleware(DbSessionMiddleware(db_manager))
+    dp.callback_query.outer_middleware(DbSessionMiddleware(db_manager))
 
     register_routers(dp)
 
-    await init_db(settings.db_path)
     await load_questions_if_needed(settings.db_path)
     logger.info("Bot starting...")
 
-    await dp.start_polling(bot)
+    try:
+        await dp.start_polling(bot)
+    finally:
+        await db_manager.close()
+        await bot.session.close()
 
 
 if __name__ == "__main__":

@@ -4,10 +4,12 @@ import aiosqlite
 from aiogram import BaseMiddleware
 from aiogram.types import TelegramObject
 
+from db.manager import DatabaseManager
+
 
 class DbSessionMiddleware(BaseMiddleware):
-    def __init__(self, db_path: str):
-        self.db_path = db_path
+    def __init__(self, db_manager: DatabaseManager):
+        self.db_manager = db_manager
 
     async def __call__(
         self,
@@ -15,9 +17,8 @@ class DbSessionMiddleware(BaseMiddleware):
         event: TelegramObject,
         data: dict[str, Any],
     ) -> Any:
-        async with aiosqlite.connect(self.db_path) as db:
-            db.row_factory = aiosqlite.Row
-            data["db"] = db
-            result = await handler(event, data)
-            await db.commit()
-            return result
+        db = self.db_manager.connection
+        data["db"] = db
+        result = await handler(event, data)
+        await db.commit()
+        return result
