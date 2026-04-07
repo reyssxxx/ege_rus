@@ -53,6 +53,7 @@ async def get_weighted_question(
     user_id: int,
     task_number: int | None,
     subcategory: str | None = None,
+    exclude_ids: list[int] | None = None,
 ) -> Question | None:
     """Pick a question weighted by error history. task_number=None means all tasks."""
     if task_number is None:
@@ -66,6 +67,13 @@ async def get_weighted_question(
         task_filter += " AND q.subcategory = ?"
         ordered_params.append(subcategory)
 
+    # Исключение уже отвеченных вопросов
+    exclude_filter = ""
+    if exclude_ids:
+        placeholders = ",".join("?" for _ in exclude_ids)
+        exclude_filter = f" AND q.id NOT IN ({placeholders})"
+        ordered_params.extend(exclude_ids)
+
     query = f"""
         SELECT q.*,
             COALESCE(uqs.times_shown, 0) AS ts,
@@ -73,7 +81,7 @@ async def get_weighted_question(
         FROM questions q
         LEFT JOIN user_question_stats uqs
             ON uqs.question_id = q.id AND uqs.user_id = ?
-        WHERE 1=1 {task_filter}
+        WHERE 1=1 {task_filter} {exclude_filter}
         ORDER BY
             CASE
                 WHEN uqs.times_shown IS NULL THEN 0

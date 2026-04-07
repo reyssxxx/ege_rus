@@ -32,12 +32,13 @@ async def send_question(callback: CallbackQuery, state: FSMContext, db: aiosqlit
     streak = data.get("streak", 0)
     session_total = data.get("session_total", 0)
     best_streak = data.get("best_streak", 0)
+    answered = data.get("answered_questions", [])
 
     # Защита: если сессия очищена (пользователь нажал стоп), не показывать вопрос
     if "task_number" not in data:
         return
 
-    question = await get_next_question(db, callback.from_user.id, task_number, subcategory)
+    question = await get_next_question(db, callback.from_user.id, task_number, subcategory, exclude_ids=answered)
     if not question:
         await safe_edit_text(
             callback,
@@ -124,6 +125,7 @@ async def cb_answer(
         session_total=session_total,
         streak=streak,
         best_streak=best_streak,
+        answered_questions=list(set(answered + [question_id])),
     )
 
     text = format_feedback_text(
