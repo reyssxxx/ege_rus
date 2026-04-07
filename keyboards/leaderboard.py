@@ -1,6 +1,8 @@
 from aiogram.filters.callback_data import CallbackData
 from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
+from keyboards.callbacks import MenuAction
+
 
 class LeaderboardView(CallbackData, prefix="lb"):
     view: str  # "streak" | "solved" | "accuracy"
@@ -18,6 +20,6 @@ def leaderboard_keyboard(active_view: str) -> InlineKeyboardMarkup:
                 btn("✅ Решено", "solved"),
                 btn("🎯 Точность", "accuracy"),
             ],
-            [InlineKeyboardButton(text="🏠 В меню", callback_data="menu:back")],
+            [InlineKeyboardButton(text="🏠 В меню", callback_data=MenuAction(action="back").pack())],
         ]
     )

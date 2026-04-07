@@ -77,4 +77,3 @@ async def cb_reminders_screen(callback: CallbackQuery, db: aiosqlite.Connection)
 async def cb_leaderboard(callback: CallbackQuery, db: aiosqlite.Connection):
     from handlers.leaderboard import _show_leaderboard
     await _show_leaderboard(callback, db, "streak", edit=True)
-    await callback.answer()
