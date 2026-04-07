@@ -15,8 +15,8 @@ async def get_admin_stats(db: aiosqlite.Connection) -> dict:
     async with db.execute(
         """
         SELECT COUNT(*) FROM users
-        WHERE last_active_date < DATE('now', '-7 days')
-           OR last_active_date IS NULL
+        WHERE (last_active_date < DATE('now', '-7 days') OR last_active_date IS NULL)
+          AND DATE(first_seen) < DATE('now')
         """
     ) as cursor:
         inactive_7d = (await cursor.fetchone())[0]
