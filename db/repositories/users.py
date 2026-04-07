@@ -13,10 +13,34 @@ async def ensure_user(db: aiosqlite.Connection, user_id: int, username: str | No
         VALUES (?, ?, ?, ?)
         ON CONFLICT(user_id) DO UPDATE SET
             username = COALESCE(?, username),
-            last_active = ?
+            last_active = ?,
+            last_active_date = date('now')
         """,
         (user_id, username, now, now, username, now),
     )
+
+
+async def get_reminder_enabled(db: aiosqlite.Connection, user_id: int) -> bool:
+    async with db.execute(
+        "SELECT reminder_enabled FROM users WHERE user_id = ?", (user_id,)
+    ) as cursor:
+        row = await cursor.fetchone()
+    return bool(row[0]) if row else True
+
+
+async def toggle_reminder(db: aiosqlite.Connection, user_id: int) -> bool:
+    """Flip reminder_enabled, return new value."""
+    async with db.execute(
+        "SELECT reminder_enabled FROM users WHERE user_id = ?", (user_id,)
+    ) as cursor:
+        row = await cursor.fetchone()
+    current = bool(row[0]) if row else True
+    new_val = 0 if current else 1
+    await db.execute(
+        "UPDATE users SET reminder_enabled = ? WHERE user_id = ?", (new_val, user_id)
+    )
+    await db.commit()
+    return bool(new_val)
 
 
 async def update_session_streak(db: aiosqlite.Connection, user_id: int, session_streak: int) -> bool:

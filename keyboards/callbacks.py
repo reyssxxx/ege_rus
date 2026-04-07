@@ -24,3 +24,7 @@ class QuizControl(CallbackData, prefix="qctl"):
 
 class StatsView(CallbackData, prefix="stats"):
     view: str  # "general", "tasks", "refresh"
+
+
+class ReminderToggle(CallbackData, prefix="rem"):
+    pass

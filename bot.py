@@ -14,6 +14,7 @@ from db.migrate import run_migrations
 from handlers import register_routers
 from middlewares.db_session import DbSessionMiddleware
 from services.question_loader import load_questions_if_needed
+from services.reminder_service import start_reminder_loop
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(name)s: %(message)s")
 logger = logging.getLogger(__name__)
@@ -48,6 +49,8 @@ async def main():
 
     await load_questions_if_needed(settings.db_path)
     logger.info("Bot starting...")
+
+    asyncio.create_task(start_reminder_loop(bot, db_manager.connection))
 
     try:
         await dp.start_polling(bot)
