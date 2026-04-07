@@ -12,4 +12,7 @@ async def init_db(db_path: str):
 
     async with aiosqlite.connect(db_path) as db:
         await db.executescript(schema_sql)
+        # WAL для конкурентных записей
+        await db.execute("PRAGMA journal_mode=WAL")
+        await db.execute("PRAGMA synchronous=NORMAL")
         await db.commit()

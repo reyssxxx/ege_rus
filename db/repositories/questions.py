@@ -100,15 +100,6 @@ async def get_weighted_question(
     return _row_to_question(row) if row else None
 
 
-async def get_subcategories(db: aiosqlite.Connection, task_number: int) -> list[str]:
-    cursor = await db.execute(
-        "SELECT DISTINCT subcategory FROM questions WHERE task_number = ? AND subcategory IS NOT NULL ORDER BY subcategory",
-        (task_number,),
-    )
-    rows = await cursor.fetchall()
-    return [row["subcategory"] for row in rows]
-
-
 async def get_task_answer_stats(
     db: aiosqlite.Connection, user_id: int, task_number: int
 ) -> tuple[int, float]:
@@ -127,18 +118,3 @@ async def get_task_answer_stats(
     correct = row["correct"] or 0
     accuracy = round(100.0 * correct / total, 1) if total > 0 else 0.0
     return total, accuracy
-
-
-async def count_questions(db: aiosqlite.Connection, task_number: int, subcategory: str | None = None) -> int:
-    if subcategory:
-        cursor = await db.execute(
-            "SELECT COUNT(*) as cnt FROM questions WHERE task_number = ? AND subcategory = ?",
-            (task_number, subcategory),
-        )
-    else:
-        cursor = await db.execute(
-            "SELECT COUNT(*) as cnt FROM questions WHERE task_number = ?",
-            (task_number,),
-        )
-    row = await cursor.fetchone()
-    return row["cnt"]
