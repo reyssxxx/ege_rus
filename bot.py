@@ -1,6 +1,7 @@
 import asyncio
 import logging
 
+import aiosqlite
 from aiogram import Bot, Dispatcher
 from aiogram.client.default import DefaultBotProperties
 from aiogram.enums import ParseMode
@@ -9,6 +10,7 @@ from aiogram.fsm.storage.memory import MemoryStorage
 from config import get_settings
 from db.engine import init_db
 from db.manager import DatabaseManager
+from db.migrate import run_migrations
 from handlers import register_routers
 from middlewares.db_session import DbSessionMiddleware
 from services.question_loader import load_questions_if_needed
@@ -25,6 +27,12 @@ async def main():
         default=DefaultBotProperties(parse_mode=ParseMode.HTML),
     )
     dp = Dispatcher(storage=MemoryStorage())
+
+    # Запуск миграций БД
+    import os
+    os.makedirs(os.path.dirname(settings.db_path), exist_ok=True)
+    async with aiosqlite.connect(settings.db_path) as migration_db:
+        await run_migrations(migration_db)
 
     # Инициализация БД (создание таблиц)
     await init_db(settings.db_path)

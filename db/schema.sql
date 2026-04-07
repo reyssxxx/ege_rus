@@ -19,7 +19,9 @@ CREATE TABLE IF NOT EXISTS users (
     username TEXT,                       -- Имя пользователя Telegram
     first_seen TEXT NOT NULL,            -- Дата первой регистрации (ISO)
     last_active TEXT NOT NULL,           -- Дата последней активности (ISO)
-    longest_streak INTEGER DEFAULT 0     -- Лучший стрик за всё время (правильных ответов подряд)
+    longest_streak INTEGER DEFAULT 0,    -- Лучший стрик за всё время (правильных ответов подряд)
+    reminder_enabled INTEGER NOT NULL DEFAULT 1,
+    last_active_date TEXT
 );
 
 -- Ответы пользователей (история)
