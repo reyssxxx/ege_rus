@@ -16,7 +16,7 @@ def answer_keyboard(question_id: int, options: list[str]) -> InlineKeyboardMarku
 
 
 def stop_keyboard() -> InlineKeyboardMarkup:
-    """Клавиатура для кратких заданий (авто-переход)."""
+    """Клавиатура для кратких заданий (авто-переход) и feedback."""
     return InlineKeyboardMarkup(inline_keyboard=[
         [InlineKeyboardButton(text="⏹ Стоп", callback_data=QuizControl(action="stop").pack())],
     ])

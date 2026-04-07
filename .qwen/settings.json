@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(sshpass *)",
+      "Bash(ssh *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git push)",
+      "WebFetch(raw.githubusercontent.com)",
+      "WebFetch(github.com)",
+      "Bash(git reset *)"
+    ]
+  },
+  "$version": 3
+}
