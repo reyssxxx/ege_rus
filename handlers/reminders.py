@@ -3,7 +3,7 @@ from aiogram.filters import Command
 from aiogram.types import CallbackQuery, InlineKeyboardButton, InlineKeyboardMarkup, Message
 import aiosqlite
 
-from keyboards.callbacks import ReminderToggle
+from keyboards.callbacks import MenuAction, ReminderToggle
 from db.repositories.users import get_reminder_enabled, toggle_reminder
 
 router = Router()
@@ -28,6 +28,13 @@ def _reminder_text(enabled: bool) -> str:
 async def cmd_reminders(message: Message, db: aiosqlite.Connection) -> None:
     enabled = await get_reminder_enabled(db, message.from_user.id)
     await message.answer(_reminder_text(enabled), reply_markup=_reminder_keyboard(enabled))
+
+
+@router.callback_query(MenuAction.filter(F.action == "reminders"))
+async def cb_reminders_show(callback: CallbackQuery, db: aiosqlite.Connection) -> None:
+    enabled = await get_reminder_enabled(db, callback.from_user.id)
+    await callback.message.edit_text(_reminder_text(enabled), reply_markup=_reminder_keyboard(enabled))
+    await callback.answer()
 
 
 @router.callback_query(ReminderToggle.filter())

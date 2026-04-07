@@ -1,7 +1,6 @@
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 from keyboards.callbacks import MenuAction
-from keyboards.callbacks import ReminderToggle
 
 
 def main_menu_keyboard() -> InlineKeyboardMarkup:
@@ -10,5 +9,5 @@ def main_menu_keyboard() -> InlineKeyboardMarkup:
         [InlineKeyboardButton(text="📝 По заданиям", callback_data=MenuAction(action="tasks").pack())],
         [InlineKeyboardButton(text="📊 Статистика", callback_data=MenuAction(action="stats").pack())],
         [InlineKeyboardButton(text="❌ Проблемные слова", callback_data=MenuAction(action="problems").pack())],
-        [InlineKeyboardButton(text="🔔 Напоминания", callback_data=ReminderToggle().pack())],
+        [InlineKeyboardButton(text="🔔 Напоминания", callback_data=MenuAction(action="reminders").pack())],
     ])
