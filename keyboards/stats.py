@@ -11,6 +11,9 @@ def stats_keyboard() -> InlineKeyboardMarkup:
             InlineKeyboardButton(text="📖 По заданиям", callback_data=StatsView(view="tasks").pack()),
         ],
         [
+            InlineKeyboardButton(text="❌ Проблемные", callback_data=StatsView(view="problems").pack()),
+        ],
+        [
             InlineKeyboardButton(text="🔄 Обновить", callback_data=StatsView(view="refresh").pack()),
         ],
         [

@@ -1,7 +1,7 @@
 import aiosqlite
 
-from db.models import UserStats, CategoryStats
-from db.repositories.users import get_user_stats, get_category_stats
+from db.models import UserStats, CategoryStats, ProblemWord
+from db.repositories.users import get_user_stats, get_category_stats, get_problem_words
 from utils.constants import TASK_NAMES
 
 
@@ -92,3 +92,32 @@ TASK_EMOJIS = {
     14: "🔗",
     15: "📝",
 }
+
+
+async def format_problem_words(db: aiosqlite.Connection, user_id: int) -> str:
+    """Форматирует список проблемных слов."""
+    problems = await get_problem_words(db, user_id, limit=15)
+
+    if not problems:
+        return (
+            "❌ <b>Проблемные слова</b>\n"
+            f"{'━' * 28}\n\n"
+            "Отлично! У вас нет слов с точностью ниже 50%.\n"
+            "Продолжайте тренировку! 💪"
+        )
+
+    lines = [
+        "❌ <b>Проблемные слова</b>",
+        f"{'━' * 28}",
+        "",
+        "Слова, где точность < 50%:",
+        "",
+    ]
+
+    for pw in problems:
+        bar = "▓" * pw.times_correct + "░" * (pw.times_shown - pw.times_correct)
+        lines.append(f"• <b>{pw.word_display}</b> → {pw.correct_answer}")
+        lines.append(f"  {bar} {pw.accuracy_pct}% ({pw.times_shown} пок.)")
+        lines.append("")
+
+    return "\n".join(lines)

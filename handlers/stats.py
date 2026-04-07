@@ -8,7 +8,7 @@ from aiogram.fsm.context import FSMContext
 
 from keyboards.callbacks import MenuAction
 from keyboards.stats import stats_keyboard, StatsView
-from services.stats_service import format_general_stats, format_category_stats
+from services.stats_service import format_general_stats, format_category_stats, format_problem_words
 
 router = Router()
 logger = logging.getLogger(__name__)
@@ -41,6 +41,14 @@ async def cb_stats_general(callback: CallbackQuery, db: aiosqlite.Connection):
 async def cb_stats_tasks(callback: CallbackQuery, db: aiosqlite.Connection):
     """Показать статистику по заданиям."""
     text = await format_category_stats(db, callback.from_user.id)
+    await callback.message.edit_text(text, reply_markup=stats_keyboard())
+    await callback.answer()
+
+
+@router.callback_query(StatsView.filter(F.view == "problems"))
+async def cb_stats_problems(callback: CallbackQuery, db: aiosqlite.Connection):
+    """Показать проблемные слова."""
+    text = await format_problem_words(db, callback.from_user.id)
     await callback.message.edit_text(text, reply_markup=stats_keyboard())
     await callback.answer()
 
