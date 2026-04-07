@@ -8,7 +8,7 @@ from aiogram.fsm.context import FSMContext
 
 from db.repositories.answers import record_answer
 from db.repositories.questions import get_question_by_id
-from db.repositories.users import ensure_user, update_streak, try_update_longest_streak
+from db.repositories.users import ensure_user, update_streak, update_session_streak, get_longest_streak
 from keyboards.callbacks import QuizAnswer, QuizControl, TaskStart
 from keyboards.quiz import answer_keyboard, stop_keyboard, continue_keyboard, wrong_answer_keyboard
 from keyboards.menu import main_menu_keyboard
@@ -16,6 +16,7 @@ from services.quiz_engine import get_next_question, build_options, check_answer
 from states.quiz import QuizState
 from utils.formatting import format_question_text, format_feedback_text, format_session_summary
 from utils.safe_edit import safe_edit_text
+from utils.constants import LONG_EXPLANATION_THRESHOLD
 
 router = Router()
 logger = logging.getLogger(__name__)
@@ -107,18 +108,13 @@ async def cb_answer(
     if is_correct:
         streak += 1
     else:
-        # При ошибке: проверяем рекорд
+        # При ошибке: проверяем рекорд (один SQL, нет race condition)
         if streak > 0:
-            is_new_record = await try_update_longest_streak(db, callback.from_user.id, streak)
+            is_new_record = await update_session_streak(db, callback.from_user.id, streak)
         streak = 0
 
-    # При каждом ответе получаем актуальный рекорд
-    cursor = await db.execute(
-        "SELECT longest_streak FROM users WHERE user_id = ?",
-        (callback.from_user.id,),
-    )
-    row = await cursor.fetchone()
-    best_streak = row["longest_streak"] if row else 0
+    # Получаем актуальный рекорд одним запросом
+    best_streak = await get_longest_streak(db, callback.from_user.id)
 
     await ensure_user(db, callback.from_user.id, callback.from_user.username)
     await record_answer(db, callback.from_user.id, question_id, is_correct)
@@ -144,7 +140,7 @@ async def cb_answer(
     await state.set_state(QuizState.reviewing)
 
     # Определяем тип задания: если пояснение длинное — ручной переход
-    has_long_explanation = question.explanation and len(question.explanation) > 50
+    has_long_explanation = question.explanation and len(question.explanation) > LONG_EXPLANATION_THRESHOLD
 
     if is_new_record:
         text += "\n\n🏆 <b>Новый рекорд!</b>"
@@ -201,12 +197,7 @@ async def cb_restart(
         return
 
     # Получаем рекорд из БД
-    cursor = await db.execute(
-        "SELECT longest_streak FROM users WHERE user_id = ?",
-        (callback.from_user.id,),
-    )
-    row = await cursor.fetchone()
-    best_streak = row["longest_streak"] if row else 0
+    best_streak = await get_longest_streak(db, callback.from_user.id)
 
     await state.update_data(
         subcategory=None,

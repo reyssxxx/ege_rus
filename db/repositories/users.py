@@ -20,6 +20,7 @@ async def ensure_user(db: aiosqlite.Connection, user_id: int, username: str | No
 
 
 async def update_streak(db: aiosqlite.Connection, user_id: int):
+    """Обновить дневной стрик. Вызывается при каждом ответе."""
     today = date.today().isoformat()
 
     cursor = await db.execute(
@@ -52,8 +53,10 @@ async def update_streak(db: aiosqlite.Connection, user_id: int):
     )
 
 
-async def try_update_longest_streak(db: aiosqlite.Connection, user_id: int, session_streak: int) -> bool:
-    """Обновить рекорд если сессионный стрик больше. Возвращает True если рекорд обновлён."""
+async def update_session_streak(db: aiosqlite.Connection, user_id: int, session_streak: int) -> bool:
+    """Обновить рекорд сессии. Обновляет longest_streak если session_streak больше.
+    Возвращает True если рекорд обновлён.
+    Один SQL-запрос — нет race condition."""
     cursor = await db.execute(
         "SELECT longest_streak FROM users WHERE user_id = ?",
         (user_id,),
@@ -70,6 +73,16 @@ async def try_update_longest_streak(db: aiosqlite.Connection, user_id: int, sess
         )
         return True
     return False
+
+
+async def get_longest_streak(db: aiosqlite.Connection, user_id: int) -> int:
+    """Получить рекорд стрика из БД."""
+    cursor = await db.execute(
+        "SELECT longest_streak FROM users WHERE user_id = ?",
+        (user_id,),
+    )
+    row = await cursor.fetchone()
+    return row["longest_streak"] if row else 0
 
 
 async def get_user_stats(db: aiosqlite.Connection, user_id: int) -> UserStats:

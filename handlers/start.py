@@ -6,7 +6,7 @@ from aiogram.filters import CommandStart, Command
 from aiogram.types import Message, CallbackQuery
 from aiogram.fsm.context import FSMContext
 
-from db.repositories.users import ensure_user
+from db.repositories.users import ensure_user, get_longest_streak
 from keyboards.callbacks import MenuAction
 from keyboards.menu import main_menu_keyboard
 from utils.safe_edit import safe_edit_text
@@ -19,12 +19,7 @@ async def _start_all_tasks(callback: CallbackQuery, state: FSMContext, db: aiosq
     from handlers.quiz import send_question
 
     # Получаем рекорд из БД
-    cursor = await db.execute(
-        "SELECT longest_streak FROM users WHERE user_id = ?",
-        (callback.from_user.id,),
-    )
-    row = await cursor.fetchone()
-    best_streak = row["longest_streak"] if row else 0
+    best_streak = await get_longest_streak(db, callback.from_user.id)
 
     await state.update_data(
         task_number=None,

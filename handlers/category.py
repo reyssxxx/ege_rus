@@ -6,6 +6,7 @@ from aiogram.types import CallbackQuery
 from aiogram.fsm.context import FSMContext
 
 from db.repositories.questions import get_task_answer_stats
+from db.repositories.users import get_longest_streak
 from keyboards.callbacks import MenuAction, TaskSelect, TaskStart
 from keyboards.category import tasks_keyboard, task_info_keyboard
 from states.quiz import QuizState
@@ -50,12 +51,7 @@ async def cb_start_task(
     db: aiosqlite.Connection,
 ):
     # Получаем рекорд из БД
-    cursor = await db.execute(
-        "SELECT longest_streak FROM users WHERE user_id = ?",
-        (callback.from_user.id,),
-    )
-    row = await cursor.fetchone()
-    best_streak = row["longest_streak"] if row else 0
+    best_streak = await get_longest_streak(db, callback.from_user.id)
 
     await state.update_data(
         task_number=callback_data.task,
