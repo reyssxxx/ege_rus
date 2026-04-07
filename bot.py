@@ -4,7 +4,7 @@ import logging
 from aiogram import Bot, Dispatcher
 from aiogram.client.default import DefaultBotProperties
 from aiogram.enums import ParseMode
-from aiogram.fsm.storage.file_storage import StorageKey, FileStorage
+from aiogram.fsm.storage.memory import MemoryStorage
 
 from config import get_settings
 from db.engine import init_db
@@ -24,7 +24,7 @@ async def main():
         token=settings.bot_token,
         default=DefaultBotProperties(parse_mode=ParseMode.HTML),
     )
-    dp = Dispatcher(storage=FileStorage(path="data/fsm_state"))
+    dp = Dispatcher(storage=MemoryStorage())
 
     # Инициализация БД (создание таблиц)
     await init_db(settings.db_path)
