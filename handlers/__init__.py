@@ -1,6 +1,6 @@
 from aiogram import Dispatcher
 
-from handlers import start, category, quiz, stats
+from handlers import start, category, quiz, stats, reminders, leaderboard, admin
 
 
 def register_routers(dp: Dispatcher):
@@ -9,4 +9,7 @@ def register_routers(dp: Dispatcher):
         category.router,
         quiz.router,
         stats.router,
+        reminders.router,
+        leaderboard.router,
+        admin.router,
     )
