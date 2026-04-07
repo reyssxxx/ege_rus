@@ -22,23 +22,20 @@ async def format_general_stats(db: aiosqlite.Connection, user_id: int) -> str:
 
     if stats.total_answers == 0:
         return (
-            "📊 <b>Ваша статистика</b>\n"
-            f"{'━' * 28}\n\n"
+            "📊 <b>Ваша статистика</b>\n\n"
             "Вы ещё не ответили ни на один вопрос.\n"
             "Начни тренировку — и прогресс появится! 🚀"
         )
 
     lines = [
         "📊 <b>Ваша статистика</b>",
-        f"{'━' * 28}",
         "",
         f"📝 Всего ответов: <b>{stats.total_answers}</b>",
         f"✅ Правильных: <b>{stats.correct_answers}</b>",
         f"🎯 Точность: <b>{stats.accuracy_pct}%</b>",
         f"{progress_bar(stats.correct_answers, stats.total_answers, 16)}",
         "",
-        f"🔥 Текущий стрик: <b>{stats.current_streak}</b> дн.",
-        f"🏆 Лучший стрик: <b>{stats.longest_streak}</b> дн.",
+        f"🏆 Лучший стрик: <b>{stats.longest_streak}</b>",
     ]
 
     return "\n".join(lines)
@@ -50,14 +47,12 @@ async def format_category_stats(db: aiosqlite.Connection, user_id: int) -> str:
 
     if not cat_stats:
         return (
-            "📖 <b>Прогресс по заданиям</b>\n"
-            f"{'━' * 28}\n\n"
+            "📖 <b>Прогресс по заданиям</b>\n\n"
             "Пока нет данных. Ответь на вопросы — и здесь появится прогресс! 📝"
         )
 
     lines = [
         "📖 <b>Прогресс по заданиям</b>",
-        f"{'━' * 28}",
         "",
     ]
 
@@ -100,15 +95,13 @@ async def format_problem_words(db: aiosqlite.Connection, user_id: int) -> str:
 
     if not problems:
         return (
-            "❌ <b>Проблемные слова</b>\n"
-            f"{'━' * 28}\n\n"
+            "❌ <b>Проблемные слова</b>\n\n"
             "Отлично! У вас нет слов с точностью ниже 50%.\n"
             "Продолжайте тренировку! 💪"
         )
 
     lines = [
         "❌ <b>Проблемные слова</b>",
-        f"{'━' * 28}",
         "",
         "Слова, где точность < 50%:",
         "",

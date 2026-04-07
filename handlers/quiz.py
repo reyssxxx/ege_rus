@@ -8,7 +8,7 @@ from aiogram.fsm.context import FSMContext
 
 from db.repositories.answers import record_answer
 from db.repositories.questions import get_question_by_id
-from db.repositories.users import ensure_user, update_streak, update_session_streak, get_longest_streak
+from db.repositories.users import ensure_user, update_session_streak, get_longest_streak
 from keyboards.callbacks import QuizAnswer, QuizControl, TaskStart
 from keyboards.quiz import answer_keyboard, stop_keyboard, continue_keyboard, wrong_answer_keyboard
 from keyboards.menu import main_menu_keyboard
@@ -120,7 +120,6 @@ async def cb_answer(
 
     await ensure_user(db, callback.from_user.id, callback.from_user.username)
     await record_answer(db, callback.from_user.id, question_id, is_correct)
-    await update_streak(db, callback.from_user.id)
 
     await state.update_data(
         session_total=session_total,

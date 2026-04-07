@@ -29,6 +29,14 @@ async def cb_stats(callback: CallbackQuery, db: aiosqlite.Connection):
     await callback.answer()
 
 
+@router.callback_query(MenuAction.filter(F.action == "problems"))
+async def cb_problems(callback: CallbackQuery, db: aiosqlite.Connection):
+    """Проблемные слова из главного меню."""
+    text = await format_problem_words(db, callback.from_user.id)
+    await callback.message.edit_text(text, reply_markup=stats_keyboard())
+    await callback.answer()
+
+
 @router.callback_query(StatsView.filter(F.view == "general"))
 async def cb_stats_general(callback: CallbackQuery, db: aiosqlite.Connection):
     """Показать общую статистику."""
@@ -41,14 +49,6 @@ async def cb_stats_general(callback: CallbackQuery, db: aiosqlite.Connection):
 async def cb_stats_tasks(callback: CallbackQuery, db: aiosqlite.Connection):
     """Показать статистику по заданиям."""
     text = await format_category_stats(db, callback.from_user.id)
-    await callback.message.edit_text(text, reply_markup=stats_keyboard())
-    await callback.answer()
-
-
-@router.callback_query(StatsView.filter(F.view == "problems"))
-async def cb_stats_problems(callback: CallbackQuery, db: aiosqlite.Connection):
-    """Показать проблемные слова."""
-    text = await format_problem_words(db, callback.from_user.id)
     await callback.message.edit_text(text, reply_markup=stats_keyboard())
     await callback.answer()
 

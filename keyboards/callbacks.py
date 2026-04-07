@@ -2,7 +2,7 @@ from aiogram.filters.callback_data import CallbackData
 
 
 class MenuAction(CallbackData, prefix="menu"):
-    action: str  # "tasks", "stats", "back"
+    action: str  # "tasks", "stats", "problems", "back"
 
 
 class TaskSelect(CallbackData, prefix="task"):

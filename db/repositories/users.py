@@ -1,4 +1,4 @@
-from datetime import datetime, timezone, date, timedelta
+from datetime import datetime, timezone
 
 import aiosqlite
 
@@ -19,44 +19,9 @@ async def ensure_user(db: aiosqlite.Connection, user_id: int, username: str | No
     )
 
 
-async def update_streak(db: aiosqlite.Connection, user_id: int):
-    """Обновить дневной стрик. Вызывается при каждом ответе."""
-    today = date.today().isoformat()
-
-    cursor = await db.execute(
-        "SELECT current_streak, longest_streak, last_streak_date FROM users WHERE user_id = ?",
-        (user_id,),
-    )
-    row = await cursor.fetchone()
-    if not row:
-        return
-
-    last_date = row["last_streak_date"]
-    current = row["current_streak"]
-    longest = row["longest_streak"]
-
-    if last_date == today:
-        return
-
-    yesterday = (date.today() - timedelta(days=1)).isoformat()
-
-    if last_date == yesterday:
-        current += 1
-    else:
-        current = 1
-
-    longest = max(longest, current)
-
-    await db.execute(
-        "UPDATE users SET current_streak = ?, longest_streak = ?, last_streak_date = ? WHERE user_id = ?",
-        (current, longest, today, user_id),
-    )
-
-
 async def update_session_streak(db: aiosqlite.Connection, user_id: int, session_streak: int) -> bool:
     """Обновить рекорд сессии. Обновляет longest_streak если session_streak больше.
-    Возвращает True если рекорд обновлён.
-    Один SQL-запрос — нет race condition."""
+    Возвращает True если рекорд обновлён."""
     cursor = await db.execute(
         "SELECT longest_streak FROM users WHERE user_id = ?",
         (user_id,),
@@ -101,7 +66,7 @@ async def get_user_stats(db: aiosqlite.Connection, user_id: int) -> UserStats:
     accuracy = round(100.0 * correct / total, 1) if total > 0 else 0.0
 
     cursor2 = await db.execute(
-        "SELECT current_streak, longest_streak FROM users WHERE user_id = ?",
+        "SELECT longest_streak FROM users WHERE user_id = ?",
         (user_id,),
     )
     user_row = await cursor2.fetchone()
@@ -110,7 +75,7 @@ async def get_user_stats(db: aiosqlite.Connection, user_id: int) -> UserStats:
         total_answers=total,
         correct_answers=correct,
         accuracy_pct=accuracy,
-        current_streak=user_row["current_streak"] if user_row else 0,
+        current_streak=0,
         longest_streak=user_row["longest_streak"] if user_row else 0,
     )
 

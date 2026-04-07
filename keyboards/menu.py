@@ -8,4 +8,5 @@ def main_menu_keyboard() -> InlineKeyboardMarkup:
         [InlineKeyboardButton(text="🔀 Все подряд", callback_data=MenuAction(action="all").pack())],
         [InlineKeyboardButton(text="📝 По заданиям", callback_data=MenuAction(action="tasks").pack())],
         [InlineKeyboardButton(text="📊 Статистика", callback_data=MenuAction(action="stats").pack())],
+        [InlineKeyboardButton(text="❌ Проблемные слова", callback_data=MenuAction(action="problems").pack())],
     ])
