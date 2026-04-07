@@ -225,13 +225,10 @@ async def cb_stop_quiz(callback: CallbackQuery, state: FSMContext):
 
 @router.callback_query(QuizControl.filter(F.action == "menu"))
 async def cb_change_category(callback: CallbackQuery, state: FSMContext):
-    from keyboards.category import tasks_keyboard
-
     await state.clear()
-    await state.set_state(QuizState.choosing_category)
     await safe_edit_text(
         callback,
-        "Выбери задание:",
-        reply_markup=tasks_keyboard(),
+        "Главное меню:",
+        reply_markup=main_menu_keyboard(),
     )
     await callback.answer()
