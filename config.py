@@ -1,9 +1,11 @@
+from pydantic import Field
 from pydantic_settings import BaseSettings
 
 
 class Settings(BaseSettings):
     bot_token: str
     db_path: str = "data/ege_bot.db"
+    admin_ids: list[int] = Field(default_factory=list)
 
     model_config = {"env_file": ".env", "env_file_encoding": "utf-8"}
 

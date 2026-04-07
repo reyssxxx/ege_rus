@@ -28,6 +28,7 @@ async def main():
         default=DefaultBotProperties(parse_mode=ParseMode.HTML),
     )
     dp = Dispatcher(storage=MemoryStorage())
+    dp["settings"] = settings
 
     # Запуск миграций БД
     import os
