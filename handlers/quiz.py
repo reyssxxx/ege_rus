@@ -32,6 +32,10 @@ async def send_question(callback: CallbackQuery, state: FSMContext, db: aiosqlit
     session_total = data.get("session_total", 0)
     best_streak = data.get("best_streak", 0)
 
+    # Защита: если сессия очищена (пользователь нажал стоп), не показывать вопрос
+    if "task_number" not in data:
+        return
+
     question = await get_next_question(db, callback.from_user.id, task_number, subcategory)
     if not question:
         await safe_edit_text(
@@ -98,7 +102,6 @@ async def cb_answer(
 
     session_total = data.get("session_total", 0) + 1
     streak = data.get("streak", 0)
-    best_streak = 0
     is_new_record = False
 
     if is_correct:
@@ -109,13 +112,13 @@ async def cb_answer(
             is_new_record = await try_update_longest_streak(db, callback.from_user.id, streak)
         streak = 0
 
-        # Получаем обновлённый рекорд
-        cursor = await db.execute(
-            "SELECT longest_streak FROM users WHERE user_id = ?",
-            (callback.from_user.id,),
-        )
-        row = await cursor.fetchone()
-        best_streak = row["longest_streak"] if row else 0
+    # При каждом ответе получаем актуальный рекорд
+    cursor = await db.execute(
+        "SELECT longest_streak FROM users WHERE user_id = ?",
+        (callback.from_user.id,),
+    )
+    row = await cursor.fetchone()
+    best_streak = row["longest_streak"] if row else 0
 
     await ensure_user(db, callback.from_user.id, callback.from_user.username)
     await record_answer(db, callback.from_user.id, question_id, is_correct)
@@ -124,12 +127,8 @@ async def cb_answer(
     await state.update_data(
         session_total=session_total,
         streak=streak,
-        new_record=is_new_record,
         best_streak=best_streak,
     )
-
-    # Для отображения используем сохранённый или полученный рекорд
-    display_best = best_streak if best_streak > 0 else data.get("best_streak", 0)
 
     text = format_feedback_text(
         is_correct=is_correct,
@@ -138,7 +137,7 @@ async def cb_answer(
         explanation=question.explanation,
         streak=streak,
         session_total=session_total,
-        best_streak=display_best,
+        best_streak=best_streak,
     )
 
     # Block double-tap during delay
@@ -159,10 +158,12 @@ async def cb_answer(
             await safe_edit_text(callback, text=text, reply_markup=stop_keyboard())
             await callback.answer()
             await asyncio.sleep(FEEDBACK_DELAY)
-            # Проверяем состояние после сна — пользователь мог нажать стоп/сменить тему
+            # Проверяем что сессия всё ещё активна (пользователь мог нажать стоп)
             current_state = await state.get_state()
             if current_state == QuizState.reviewing:
-                await send_question(callback, state, db)
+                data = await state.get_data()
+                if "task_number" in data:
+                    await send_question(callback, state, db)
     else:
         # Wrong answer — session stops, offer restart
         await safe_edit_text(callback, text=text, reply_markup=wrong_answer_keyboard())
