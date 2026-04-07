@@ -85,6 +85,7 @@ async def cb_answer(
     data = await state.get_data()
     question_id = data.get("current_question_id")
     options_order = data.get("options_order", [])
+    answered = data.get("answered_questions", [])
 
     if callback_data.qid != question_id:
         await callback.answer("Этот вопрос уже неактуален.")
