@@ -6,7 +6,7 @@ from aiogram.filters import CommandStart, Command
 from aiogram.types import Message, CallbackQuery
 from aiogram.fsm.context import FSMContext
 
-from db.repositories.users import ensure_user, get_longest_streak
+from db.repositories.users import ensure_user, get_longest_streak, get_reminder_enabled
 from keyboards.callbacks import MenuAction
 from keyboards.menu import main_menu_keyboard
 from utils.safe_edit import safe_edit_text
@@ -62,4 +62,19 @@ async def cb_all_tasks(callback: CallbackQuery, state: FSMContext, db: aiosqlite
 async def cb_back_to_menu(callback: CallbackQuery, state: FSMContext):
     await state.clear()
     await safe_edit_text(callback, "Главное меню:", reply_markup=main_menu_keyboard())
+    await callback.answer()
+
+
+@router.callback_query(MenuAction.filter(F.action == "reminders"))
+async def cb_reminders_screen(callback: CallbackQuery, db: aiosqlite.Connection):
+    from handlers.reminders import _reminder_keyboard, _reminder_text
+    enabled = await get_reminder_enabled(db, callback.from_user.id)
+    await safe_edit_text(callback, _reminder_text(enabled), reply_markup=_reminder_keyboard(enabled))
+    await callback.answer()
+
+
+@router.callback_query(MenuAction.filter(F.action == "leaderboard"))
+async def cb_leaderboard(callback: CallbackQuery, db: aiosqlite.Connection):
+    from handlers.leaderboard import _show_leaderboard
+    await _show_leaderboard(callback, db, "streak", edit=True)
     await callback.answer()
