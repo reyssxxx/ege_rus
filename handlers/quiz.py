@@ -27,52 +27,62 @@ FEEDBACK_DELAY = 0.8  # seconds before auto-advancing on correct answer
 async def send_question(callback: CallbackQuery, state: FSMContext, db: aiosqlite.Connection):
     """Fetch next question and display it."""
     data = await state.get_data()
-    task_number = data.get("task_number")
-    subcategory = data.get("subcategory")
-    streak = data.get("streak", 0)
-    session_total = data.get("session_total", 0)
-    best_streak = data.get("best_streak", 0)
-    answered = data.get("answered_questions", [])
 
     # Защита: если сессия очищена (пользователь нажал стоп), не показывать вопрос
     if "task_number" not in data:
         return
 
-    question = await get_next_question(db, callback.from_user.id, task_number, subcategory, exclude_ids=answered)
-    if not question:
+    try:
+        task_number = data.get("task_number")
+        subcategory = data.get("subcategory")
+        streak = data.get("streak", 0)
+        session_total = data.get("session_total", 0)
+        best_streak = data.get("best_streak", 0)
+        answered = data.get("answered_questions", [])
+
+        question = await get_next_question(db, callback.from_user.id, task_number, subcategory, exclude_ids=answered)
+        if not question:
+            await safe_edit_text(
+                callback,
+                "В этой категории пока нет вопросов.",
+                reply_markup=main_menu_keyboard(),
+            )
+            await state.clear()
+            return
+
+        options = build_options(question)
+
+        await state.set_state(QuizState.answering)
+        await state.update_data(
+            current_question_id=question.id,
+            options_order=options,
+        )
+
+        # In "all tasks" mode show the actual task number of the drawn question
+        display_task_number = question.task_number if task_number is None else task_number
+
+        text = format_question_text(
+            task_number=display_task_number,
+            subcategory=subcategory,
+            word_display=question.word_display,
+            streak=streak,
+            session_total=session_total,
+            best_streak=best_streak,
+        )
+
         await safe_edit_text(
             callback,
-            "В этой категории пока нет вопросов.",
+            text=text,
+            reply_markup=answer_keyboard(question.id, options),
+        )
+    except Exception:
+        logger.exception("Error in send_question")
+        await safe_edit_text(
+            callback,
+            "Что-то пошло не так. Попробуй /start",
             reply_markup=main_menu_keyboard(),
         )
         await state.clear()
-        return
-
-    options = build_options(question)
-
-    await state.set_state(QuizState.answering)
-    await state.update_data(
-        current_question_id=question.id,
-        options_order=options,
-    )
-
-    # In "all tasks" mode show the actual task number of the drawn question
-    display_task_number = question.task_number if task_number is None else task_number
-
-    text = format_question_text(
-        task_number=display_task_number,
-        subcategory=subcategory,
-        word_display=question.word_display,
-        streak=streak,
-        session_total=session_total,
-        best_streak=best_streak,
-    )
-
-    await safe_edit_text(
-        callback,
-        text=text,
-        reply_markup=answer_keyboard(question.id, options),
-    )
 
 
 @router.callback_query(QuizAnswer.filter(), QuizState.answering)
@@ -100,71 +110,80 @@ async def cb_answer(
         await callback.answer("Ошибка: вопрос не найден.")
         return
 
-    selected_option = options_order[callback_data.idx]
-    is_correct = check_answer(question, selected_option)
+    try:
+        selected_option = options_order[callback_data.idx]
+        is_correct = check_answer(question, selected_option)
 
-    session_total = data.get("session_total", 0) + 1
-    streak = data.get("streak", 0)
-    is_new_record = False
+        session_total = data.get("session_total", 0) + 1
+        streak = data.get("streak", 0)
+        is_new_record = False
 
-    if is_correct:
-        streak += 1
-    else:
-        # При ошибке: проверяем рекорд (один SQL, нет race condition)
-        if streak > 0:
-            is_new_record = await update_session_streak(db, callback.from_user.id, streak)
-        streak = 0
-
-    # Получаем актуальный рекорд одним запросом
-    best_streak = await get_longest_streak(db, callback.from_user.id)
-
-    await ensure_user(db, callback.from_user.id, callback.from_user.username)
-    await record_answer(db, callback.from_user.id, question_id, is_correct)
-
-    await state.update_data(
-        session_total=session_total,
-        streak=streak,
-        best_streak=best_streak,
-        answered_questions=list(set(answered + [question_id])),
-    )
-
-    text = format_feedback_text(
-        is_correct=is_correct,
-        word_display=question.word_display,
-        correct_answer=question.correct_answer,
-        explanation=question.explanation,
-        streak=streak,
-        session_total=session_total,
-        best_streak=best_streak,
-    )
-
-    # Block double-tap during delay
-    await state.set_state(QuizState.reviewing)
-
-    # Определяем тип задания: если пояснение длинное — ручной переход
-    has_long_explanation = question.explanation and len(question.explanation) > LONG_EXPLANATION_THRESHOLD
-
-    if is_new_record:
-        text += "\n\n🏆 <b>Новый рекорд!</b>"
-
-    if is_correct:
-        if has_long_explanation:
-            # Задание с пояснением — ждём нажатия "Продолжить"
-            await safe_edit_text(callback, text=text, reply_markup=continue_keyboard())
+        if is_correct:
+            streak += 1
         else:
-            # Краткое задание — авто-переход через FEEDBACK_DELAY
-            await safe_edit_text(callback, text=text, reply_markup=stop_keyboard())
-            await callback.answer()
-            await asyncio.sleep(FEEDBACK_DELAY)
-            # Проверяем что сессия всё ещё активна (пользователь мог нажать стоп)
-            current_state = await state.get_state()
-            if current_state == QuizState.reviewing:
-                data = await state.get_data()
-                if "task_number" in data:
-                    await send_question(callback, state, db)
-    else:
-        # Wrong answer — session stops, offer restart
-        await safe_edit_text(callback, text=text, reply_markup=wrong_answer_keyboard())
+            # При ошибке: проверяем рекорд (один SQL, нет race condition)
+            if streak > 0:
+                is_new_record = await update_session_streak(db, callback.from_user.id, streak)
+            streak = 0
+
+        # Получаем актуальный рекорд одним запросом
+        best_streak = await get_longest_streak(db, callback.from_user.id)
+
+        await ensure_user(db, callback.from_user.id, callback.from_user.username)
+        await record_answer(db, callback.from_user.id, question_id, is_correct)
+
+        await state.update_data(
+            session_total=session_total,
+            streak=streak,
+            best_streak=best_streak,
+            answered_questions=list(set(answered + [question_id])),
+        )
+
+        text = format_feedback_text(
+            is_correct=is_correct,
+            word_display=question.word_display,
+            correct_answer=question.correct_answer,
+            explanation=question.explanation,
+            streak=streak,
+            session_total=session_total,
+            best_streak=best_streak,
+        )
+
+        # Block double-tap during delay
+        await state.set_state(QuizState.reviewing)
+
+        # Определяем тип задания: если пояснение длинное — ручной переход
+        has_long_explanation = question.explanation and len(question.explanation) > LONG_EXPLANATION_THRESHOLD
+
+        if is_new_record:
+            text += "\n\n🏆 <b>Новый рекорд!</b>"
+
+        if is_correct:
+            if has_long_explanation:
+                # Задание с пояснением — ждём нажатия "Продолжить"
+                await safe_edit_text(callback, text=text, reply_markup=continue_keyboard())
+            else:
+                # Краткое задание — авто-переход через FEEDBACK_DELAY
+                await safe_edit_text(callback, text=text, reply_markup=stop_keyboard())
+                await callback.answer()
+                await asyncio.sleep(FEEDBACK_DELAY)
+                # Проверяем что сессия всё ещё активна (пользователь мог нажать стоп)
+                current_state = await state.get_state()
+                if current_state == QuizState.reviewing:
+                    data = await state.get_data()
+                    if "task_number" in data:
+                        await send_question(callback, state, db)
+        else:
+            # Wrong answer — session stops, offer restart
+            await safe_edit_text(callback, text=text, reply_markup=wrong_answer_keyboard())
+    except Exception:
+        logger.exception("Error in cb_answer")
+        await safe_edit_text(
+            callback,
+            "Что-то пошло не так. Попробуй /start",
+            reply_markup=main_menu_keyboard(),
+        )
+        await state.clear()
     await callback.answer()
 
 
