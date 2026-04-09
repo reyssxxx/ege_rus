@@ -1,4 +1,5 @@
 import os
+import sqlite3
 import aiosqlite
 
 MIGRATIONS_DIR = os.path.join(os.path.dirname(__file__), "migrations")
@@ -27,7 +28,11 @@ async def run_migrations(db: aiosqlite.Connection) -> None:
             filepath = os.path.join(MIGRATIONS_DIR, filename)
             with open(filepath, "r", encoding="utf-8") as f:
                 sql = f.read()
-            await db.execute(sql)
+            try:
+                await db.execute(sql)
+            except sqlite3.OperationalError as e:
+                if "duplicate column" not in str(e):
+                    raise
             await db.execute(
                 "INSERT INTO schema_migrations (version) VALUES (?)", (version,)
             )
