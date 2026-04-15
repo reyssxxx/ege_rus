@@ -10,6 +10,7 @@ logger = logging.getLogger(__name__)
 DATA_DIR = Path(__file__).resolve().parent.parent / "data"
 
 JSON_FILES = [
+    "task_02_morphology.json",
     "task_04_orthoepy.json",
     "task_05_paronyms.json",
     "task_09_roots.json",
