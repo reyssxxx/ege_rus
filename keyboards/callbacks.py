@@ -26,6 +26,10 @@ class SubcategorySelect(CallbackData, prefix="subcat"):
     subcat: str  # subcategory name, or "" for "all"
 
 
+class ProblemsStart(CallbackData, prefix="probstart"):
+    pass  # start quiz from problem words
+
+
 class QuizAnswer(CallbackData, prefix="ans"):
     qid: int  # question_id
     idx: int  # answer index in shuffled options
