@@ -58,3 +58,35 @@ SELECT
 FROM user_answers ua
 JOIN questions q ON ua.question_id = q.id
 GROUP BY ua.user_id, q.task_number, q.subcategory;
+
+-- Логи действий администратора и системы
+CREATE TABLE IF NOT EXISTS system_logs (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    log_type TEXT NOT NULL,          -- "backup", "content_import", "broadcast", "error", "info"
+    message TEXT NOT NULL,
+    admin_id INTEGER,
+    created_at TEXT NOT NULL DEFAULT (strftime('%Y-%m-%dT%H:%M:%f', 'now'))
+);
+
+CREATE INDEX IF NOT EXISTS idx_system_logs_type ON system_logs(log_type);
+CREATE INDEX IF NOT EXISTS idx_system_logs_created ON system_logs(created_at);
+
+-- История импорта контента
+CREATE TABLE IF NOT EXISTS content_imports (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    task_number INTEGER NOT NULL,
+    source_file TEXT,
+    questions_added INTEGER DEFAULT 0,
+    questions_updated INTEGER DEFAULT 0,
+    imported_by INTEGER,
+    imported_at TEXT NOT NULL DEFAULT (strftime('%Y-%m-%dT%H:%M:%f', 'now'))
+);
+
+-- История бэкапов
+CREATE TABLE IF NOT EXISTS backups_log (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    backup_path TEXT NOT NULL,
+    backup_size_bytes INTEGER,
+    created_by INTEGER,
+    created_at TEXT NOT NULL DEFAULT (strftime('%Y-%m-%dT%H:%M:%f', 'now'))
+);
