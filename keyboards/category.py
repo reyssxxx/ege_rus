@@ -9,11 +9,12 @@ def tasks_keyboard(selected: set[int] | None = None) -> InlineKeyboardMarkup:
         selected = set()
     buttons = []
     for task_num, name in TASK_NAMES.items():
-        mark = "✅ " if task_num in selected else ""
+        style = "success" if task_num in selected else None
         buttons.append([
             InlineKeyboardButton(
-                text=f"{mark}Задание {task_num}: {name}",
+                text=f"Задание {task_num}: {name}",
                 callback_data=TaskToggle(task=task_num).pack(),
+                style=style,
             )
         ])
     row = []

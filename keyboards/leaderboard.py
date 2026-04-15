@@ -10,8 +10,8 @@ class LeaderboardView(CallbackData, prefix="lb"):
 
 def leaderboard_keyboard(active_view: str) -> InlineKeyboardMarkup:
     def btn(label: str, view: str) -> InlineKeyboardButton:
-        text = f"✅ {label}" if view == active_view else label
-        return InlineKeyboardButton(text=text, callback_data=LeaderboardView(view=view).pack())
+        style = "success" if view == active_view else None
+        return InlineKeyboardButton(text=label, callback_data=LeaderboardView(view=view).pack(), style=style)
 
     return InlineKeyboardMarkup(
         inline_keyboard=[
