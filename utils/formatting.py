@@ -79,15 +79,19 @@ def format_task_info(task_number: int, total_answered: int, accuracy: float) -> 
     return "\n".join(lines)
 
 
-def format_session_summary(streak: int, session_total: int) -> str:
+def format_session_summary(best_streak: int, session_correct: int, session_wrong: int) -> str:
+    session_total = session_correct + session_wrong
     if session_total == 0:
         return "Вы не ответили ни на один вопрос."
 
+    accuracy = round(100.0 * session_correct / session_total)
     lines = [
         "📋 <b>Итоги сессии</b>",
-        f"{'━' * 24}",
-        f"Всего вопросов: {session_total}",
-        f"Лучший стрик: {streak}",
+        "",
+        f"✅ Правильно: <b>{session_correct}</b>",
+        f"❌ Неверно: <b>{session_wrong}</b>",
+        f"🎯 Точность: <b>{accuracy}%</b>",
+        f"🔥 Лучший стрик: <b>{best_streak}</b>",
     ]
 
     return "\n".join(lines)

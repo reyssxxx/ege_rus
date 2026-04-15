@@ -12,11 +12,12 @@ async def get_next_question(
     task_number: int | None,
     subcategory: str | None = None,
     exclude_ids: list[int] | None = None,
+    task_numbers: list[int] | None = None,
 ) -> Question | None:
     """Получить следующий вопрос, исключая уже отвеченные."""
-    question = await get_weighted_question(db, user_id, task_number, subcategory, exclude_ids)
+    question = await get_weighted_question(db, user_id, task_number, subcategory, exclude_ids, task_numbers)
     if not question:
-        question = await get_random_question(db, task_number, subcategory)
+        question = await get_random_question(db, task_number, subcategory, task_numbers)
     return question
 
 

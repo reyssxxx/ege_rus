@@ -28,9 +28,16 @@ async def get_random_question(
     db: aiosqlite.Connection,
     task_number: int | None,
     subcategory: str | None = None,
+    task_numbers: list[int] | None = None,
 ) -> Question | None:
     """task_number=None means all tasks."""
-    if task_number is None:
+    if task_numbers:
+        placeholders = ",".join("?" for _ in task_numbers)
+        cursor = await db.execute(
+            f"SELECT * FROM questions WHERE task_number IN ({placeholders}) ORDER BY RANDOM() LIMIT 1",
+            task_numbers,
+        )
+    elif task_number is None:
         cursor = await db.execute(
             "SELECT * FROM questions ORDER BY RANDOM() LIMIT 1",
         )
@@ -54,9 +61,14 @@ async def get_weighted_question(
     task_number: int | None,
     subcategory: str | None = None,
     exclude_ids: list[int] | None = None,
+    task_numbers: list[int] | None = None,
 ) -> Question | None:
     """Pick a question weighted by error history. task_number=None means all tasks."""
-    if task_number is None:
+    if task_numbers:
+        placeholders = ",".join("?" for _ in task_numbers)
+        task_filter = f"AND q.task_number IN ({placeholders})"
+        ordered_params = [user_id, *task_numbers]
+    elif task_number is None:
         task_filter = ""
         ordered_params = [user_id]
     else:
@@ -98,6 +110,16 @@ async def get_weighted_question(
     cursor = await db.execute(query, ordered_params)
     row = await cursor.fetchone()
     return _row_to_question(row) if row else None
+
+
+async def get_subcategories(db: aiosqlite.Connection, task_number: int) -> list[str]:
+    """Return distinct subcategory names for a task, ordered alphabetically."""
+    cursor = await db.execute(
+        "SELECT DISTINCT subcategory FROM questions WHERE task_number = ? ORDER BY subcategory",
+        (task_number,),
+    )
+    rows = await cursor.fetchall()
+    return [row["subcategory"] for row in rows if row["subcategory"]]
 
 
 async def get_task_answer_stats(

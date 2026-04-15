@@ -1,6 +1,27 @@
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
-from keyboards.callbacks import MenuAction
+from keyboards.callbacks import MenuAction, SubcategorySelect, TaskStart
+
+
+def subcategory_keyboard(task_number: int, subcategories: list[str]) -> InlineKeyboardMarkup:
+    buttons = []
+    for subcat in subcategories:
+        buttons.append([
+            InlineKeyboardButton(
+                text=subcat,
+                callback_data=SubcategorySelect(task=task_number, subcat=subcat).pack(),
+            )
+        ])
+    buttons.append([
+        InlineKeyboardButton(
+            text="🔀 Все подряд",
+            callback_data=SubcategorySelect(task=task_number, subcat="").pack(),
+        )
+    ])
+    buttons.append([
+        InlineKeyboardButton(text="« Назад", callback_data=MenuAction(action="tasks").pack())
+    ])
+    return InlineKeyboardMarkup(inline_keyboard=buttons)
 
 
 def main_menu_keyboard() -> InlineKeyboardMarkup:

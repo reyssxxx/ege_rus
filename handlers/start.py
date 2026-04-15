@@ -25,6 +25,8 @@ async def _start_all_tasks(callback: CallbackQuery, state: FSMContext, db: aiosq
         task_number=None,
         subcategory=None,
         session_total=0,
+        session_correct=0,
+        session_wrong=0,
         streak=0,
         best_streak=best_streak,
     )

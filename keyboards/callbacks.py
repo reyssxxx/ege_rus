@@ -13,6 +13,19 @@ class TaskStart(CallbackData, prefix="tstart"):
     task: int  # start quiz for this task (no subcategory filter)
 
 
+class TaskToggle(CallbackData, prefix="ttog"):
+    task: int  # toggle this task in multi-select
+
+
+class MultiTaskStart(CallbackData, prefix="mstart"):
+    pass  # start quiz with currently selected tasks
+
+
+class SubcategorySelect(CallbackData, prefix="subcat"):
+    task: int
+    subcat: str  # subcategory name, or "" for "all"
+
+
 class QuizAnswer(CallbackData, prefix="ans"):
     qid: int  # question_id
     idx: int  # answer index in shuffled options

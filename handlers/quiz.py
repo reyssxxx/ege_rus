@@ -10,7 +10,7 @@ from db.repositories.answers import record_answer
 from db.repositories.questions import get_question_by_id
 from db.repositories.users import ensure_user, update_session_streak, get_longest_streak
 from keyboards.callbacks import QuizAnswer, QuizControl, TaskStart
-from keyboards.quiz import answer_keyboard, stop_keyboard, continue_keyboard, wrong_answer_keyboard
+from keyboards.quiz import answer_keyboard, stop_keyboard, continue_keyboard
 from keyboards.menu import main_menu_keyboard
 from services.quiz_engine import get_next_question, build_options, check_answer
 from states.quiz import QuizState
@@ -35,12 +35,13 @@ async def send_question(callback: CallbackQuery, state: FSMContext, db: aiosqlit
     try:
         task_number = data.get("task_number")
         subcategory = data.get("subcategory")
+        task_numbers = data.get("task_numbers")  # multi-select mode
         streak = data.get("streak", 0)
         session_total = data.get("session_total", 0)
         best_streak = data.get("best_streak", 0)
         answered = data.get("answered_questions", [])
 
-        question = await get_next_question(db, callback.from_user.id, task_number, subcategory, exclude_ids=answered)
+        question = await get_next_question(db, callback.from_user.id, task_number, subcategory, exclude_ids=answered, task_numbers=task_numbers)
         if not question:
             await safe_edit_text(
                 callback,
@@ -115,16 +116,20 @@ async def cb_answer(
         is_correct = check_answer(question, selected_option)
 
         session_total = data.get("session_total", 0) + 1
+        session_correct = data.get("session_correct", 0)
+        session_wrong = data.get("session_wrong", 0)
         streak = data.get("streak", 0)
         is_new_record = False
 
         if is_correct:
             streak += 1
+            session_correct += 1
         else:
             # При ошибке: проверяем рекорд (один SQL, нет race condition)
             if streak > 0:
                 is_new_record = await update_session_streak(db, callback.from_user.id, streak)
             streak = 0
+            session_wrong += 1
 
         # Получаем актуальный рекорд одним запросом
         best_streak = await get_longest_streak(db, callback.from_user.id)
@@ -134,6 +139,8 @@ async def cb_answer(
 
         await state.update_data(
             session_total=session_total,
+            session_correct=session_correct,
+            session_wrong=session_wrong,
             streak=streak,
             best_streak=best_streak,
             answered_questions=list(set(answered + [question_id])),
@@ -158,24 +165,20 @@ async def cb_answer(
         if is_new_record:
             text += "\n\n🏆 <b>Новый рекорд!</b>"
 
-        if is_correct:
-            if has_long_explanation:
-                # Задание с пояснением — ждём нажатия "Продолжить"
-                await safe_edit_text(callback, text=text, reply_markup=continue_keyboard())
-            else:
-                # Краткое задание — авто-переход через FEEDBACK_DELAY
-                await safe_edit_text(callback, text=text, reply_markup=stop_keyboard())
-                await callback.answer()
-                await asyncio.sleep(FEEDBACK_DELAY)
-                # Проверяем что сессия всё ещё активна (пользователь мог нажать стоп)
-                current_state = await state.get_state()
-                if current_state == QuizState.reviewing:
-                    data = await state.get_data()
-                    if "task_number" in data:
-                        await send_question(callback, state, db)
+        if has_long_explanation or not is_correct:
+            # Длинное пояснение или ошибка — ждём нажатия "Продолжить"
+            await safe_edit_text(callback, text=text, reply_markup=continue_keyboard())
         else:
-            # Wrong answer — session stops, offer restart
-            await safe_edit_text(callback, text=text, reply_markup=wrong_answer_keyboard())
+            # Краткое правильное задание — авто-переход через FEEDBACK_DELAY
+            await safe_edit_text(callback, text=text, reply_markup=stop_keyboard())
+            await callback.answer()
+            await asyncio.sleep(FEEDBACK_DELAY)
+            # Проверяем что сессия всё ещё активна (пользователь мог нажать стоп)
+            current_state = await state.get_state()
+            if current_state == QuizState.reviewing:
+                data = await state.get_data()
+                if "task_number" in data:
+                    await send_question(callback, state, db)
     except Exception:
         logger.exception("Error in cb_answer")
         await safe_edit_text(
@@ -223,6 +226,8 @@ async def cb_restart(
     await state.update_data(
         subcategory=None,
         session_total=0,
+        session_correct=0,
+        session_wrong=0,
         streak=0,
         best_streak=best_streak,
     )
@@ -233,10 +238,11 @@ async def cb_restart(
 @router.callback_query(QuizControl.filter(F.action == "stop"))
 async def cb_stop_quiz(callback: CallbackQuery, state: FSMContext):
     data = await state.get_data()
-    streak = data.get("streak", 0)
-    session_total = data.get("session_total", 0)
+    best_streak = data.get("best_streak", 0)
+    session_correct = data.get("session_correct", 0)
+    session_wrong = data.get("session_wrong", 0)
 
-    text = format_session_summary(streak, session_total)
+    text = format_session_summary(best_streak, session_correct, session_wrong)
     await state.clear()
     await safe_edit_text(callback, text=text, reply_markup=main_menu_keyboard())
     await callback.answer()

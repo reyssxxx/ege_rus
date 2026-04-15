@@ -5,15 +5,17 @@ from db.repositories.users import get_user_stats, get_category_stats, get_proble
 from utils.constants import TASK_NAMES
 
 
-def progress_bar(correct: int, total: int, length: int = 10) -> str:
-    """Создаёт прогресс-бар с процентом."""
-    if total == 0:
-        return "░" * length + " —"
-    ratio = correct / total
-    filled = round(ratio * length)
-    bar = "▓" * filled + "░" * (length - filled)
-    pct = round(ratio * 100)
-    return f"{bar} {pct}%"
+TASK_EMOJIS = {
+    2: "🧩",
+    4: "🗣",
+    5: "📚",
+    9: "🔤",
+    10: "🔡",
+    11: "🔠",
+    12: "✍️",
+    14: "🔗",
+    15: "📝",
+}
 
 
 async def format_general_stats(db: aiosqlite.Connection, user_id: int) -> str:
@@ -33,8 +35,6 @@ async def format_general_stats(db: aiosqlite.Connection, user_id: int) -> str:
         f"📝 Всего ответов: <b>{stats.total_answers}</b>",
         f"✅ Правильных: <b>{stats.correct_answers}</b>",
         f"🎯 Точность: <b>{stats.accuracy_pct}%</b>",
-        f"{progress_bar(stats.correct_answers, stats.total_answers, 16)}",
-        "",
         f"🏆 Лучший стрик: <b>{stats.longest_streak}</b>",
     ]
 
@@ -69,24 +69,11 @@ async def format_category_stats(db: aiosqlite.Connection, user_id: int) -> str:
         data = task_data[task_num]
         name = TASK_NAMES.get(task_num, f"Задание {task_num}")
         emoji = TASK_EMOJIS.get(task_num, "📝")
-        bar = progress_bar(data["correct"], data["total"], 10)
-        lines.append(f"{emoji} <b>{task_num}. {name}</b>")
-        lines.append(f"   {bar} ({data['total']} отв.)")
-        lines.append("")
+        total = data["total"]
+        pct = round(100.0 * data["correct"] / total) if total > 0 else 0
+        lines.append(f"{emoji} <b>{name}</b>  —  {pct}%  ({total} отв.)")
 
     return "\n".join(lines)
-
-
-TASK_EMOJIS = {
-    4: "🗣",
-    5: "📚",
-    9: "🔤",
-    10: "🔡",
-    11: "🔠",
-    12: "✍️",
-    14: "🔗",
-    15: "📝",
-}
 
 
 async def format_problem_words(db: aiosqlite.Connection, user_id: int) -> str:
@@ -102,15 +89,11 @@ async def format_problem_words(db: aiosqlite.Connection, user_id: int) -> str:
 
     lines = [
         "❌ <b>Проблемные слова</b>",
-        "",
-        "Слова, где точность < 50%:",
+        "<i>Слова, в которых была хотя бы одна ошибка</i>",
         "",
     ]
 
     for pw in problems:
-        bar = "▓" * pw.times_correct + "░" * (pw.times_shown - pw.times_correct)
-        lines.append(f"• <b>{pw.word_display}</b> → {pw.correct_answer}")
-        lines.append(f"  {bar} {pw.accuracy_pct}% ({pw.times_shown} пок.)")
-        lines.append("")
+        lines.append(f"• <b>{pw.word_display}</b> → {pw.correct_answer}  ({pw.accuracy_pct}%, {pw.times_shown} пок.)")
 
     return "\n".join(lines)

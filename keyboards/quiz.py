@@ -30,9 +30,3 @@ def continue_keyboard() -> InlineKeyboardMarkup:
     ])
 
 
-def wrong_answer_keyboard() -> InlineKeyboardMarkup:
-    """Shown after a wrong answer — session stops here."""
-    return InlineKeyboardMarkup(inline_keyboard=[
-        [InlineKeyboardButton(text="🔄 Начать заново", callback_data=QuizControl(action="restart").pack())],
-        [InlineKeyboardButton(text="🏠 В меню", callback_data=QuizControl(action="menu").pack())],
-    ])

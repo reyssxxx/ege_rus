@@ -140,8 +140,7 @@ async def get_problem_words(db: aiosqlite.Connection, user_id: int, limit: int =
             ROUND(100.0 * uqs.times_correct / uqs.times_shown, 1) AS accuracy_pct
         FROM user_question_stats uqs
         JOIN questions q ON q.id = uqs.question_id
-        WHERE uqs.user_id = ? AND uqs.times_shown >= 2
-            AND CAST(uqs.times_correct AS REAL) / uqs.times_shown < 0.5
+        WHERE uqs.user_id = ? AND uqs.times_correct < uqs.times_shown
         ORDER BY accuracy_pct ASC, uqs.times_shown DESC
         LIMIT ?
         """,
