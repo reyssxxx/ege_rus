@@ -10,6 +10,7 @@ from db.repositories.users import get_longest_streak
 from keyboards.callbacks import MenuAction, TaskToggle, MultiTaskStart, TaskStart, SubcategorySelect
 from keyboards.category import tasks_keyboard, task_info_keyboard
 from keyboards.menu import subcategory_keyboard
+from services.session_service import record_session
 from states.quiz import QuizState
 from handlers.quiz import send_question
 from utils.safe_edit import safe_edit_text
@@ -75,6 +76,7 @@ async def cb_multi_start(
         streak=0,
         best_streak=best_streak,
     )
+    await record_session(db, callback.from_user.id, task_numbers=selected)
     await send_question(callback, state, db)
     await callback.answer()
 
@@ -114,6 +116,7 @@ async def cb_start_task(
         streak=0,
         best_streak=best_streak,
     )
+    await record_session(db, callback.from_user.id, task_number=task_number, subcategory=subcats[0] if subcats else None)
     await send_question(callback, state, db)
     await callback.answer()
 
@@ -138,5 +141,6 @@ async def cb_select_subcategory(
         streak=0,
         best_streak=best_streak,
     )
+    await record_session(db, callback.from_user.id, task_number=callback_data.task, subcategory=subcategory)
     await send_question(callback, state, db)
     await callback.answer()

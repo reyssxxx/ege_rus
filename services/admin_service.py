@@ -38,6 +38,24 @@ async def get_admin_stats(db: aiosqlite.Connection) -> dict:
     }
 
 
+async def get_today_stats(db: aiosqlite.Connection) -> dict:
+    """Статистика за сегодня: уникальные пользователи и сессии."""
+    async with db.execute(
+        "SELECT COUNT(DISTINCT user_id) FROM user_answers WHERE DATE(answered_at) = DATE('now')"
+    ) as cursor:
+        active_users_today = (await cursor.fetchone())[0]
+
+    async with db.execute(
+        "SELECT COUNT(*) FROM sessions WHERE DATE(started_at) = DATE('now')"
+    ) as cursor:
+        sessions_today = (await cursor.fetchone())[0]
+
+    return {
+        "active_users_today": active_users_today,
+        "sessions_today": sessions_today,
+    }
+
+
 async def get_top_active_users(db: aiosqlite.Connection) -> list[tuple[str, int]]:
     async with db.execute(
         """
@@ -68,6 +86,8 @@ def format_admin_main(stats: dict) -> str:
         f"👤 Пользователей: {stats['total_users']}\n"
         f"🆕 Новых сегодня: {stats['new_today']}\n"
         f"😴 Неактивных 7+ дней: {stats['inactive_7d']}\n"
+        f"📊 Активных сегодня: {stats['active_users_today']}\n"
+        f"🔄 Сессий сегодня: {stats['sessions_today']}\n"
         f"📝 Ответов сегодня: {stats['answers_today']}\n"
         f"❓ Вопросов в базе: {stats['total_questions']}"
     )

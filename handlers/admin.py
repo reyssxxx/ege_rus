@@ -18,6 +18,7 @@ from services.admin_service import (
     format_questions_count,
     format_conversion,
     get_admin_stats,
+    get_today_stats,
     get_stats_by_task,
     get_top_active_users,
     get_error_stats,
@@ -71,6 +72,8 @@ async def cb_admin_view(
 
     if view == "back":
         stats = await get_admin_stats(db)
+        today = await get_today_stats(db)
+        stats.update(today)
         text = format_admin_main(stats)
         keyboard = admin_keyboard()
 

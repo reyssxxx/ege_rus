@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(\"d:/my_projects/ege_bot/.venv/Scripts/python\" -c \"import py_compile, glob; [py_compile.compile\\(f, doraise=True\\) for f in glob.glob\\('**/*.py', recursive=True\\) if '.venv' not in f]; print\\('All OK'\\)\")",
+      "WebFetch(domain:core.telegram.org)"
+    ]
+  }
+}

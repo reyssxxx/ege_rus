@@ -8,7 +8,12 @@
       "Bash(git push)",
       "WebFetch(raw.githubusercontent.com)",
       "WebFetch(github.com)",
-      "Bash(git reset *)"
+      "Bash(git reset *)",
+      "Bash(mkdir *)",
+      "Bash(python *)",
+      "Bash(.venv\\scripts\\python.exe *)",
+      "Bash(dir *)",
+      "Bash(timeout *)"
     ]
   },
   "$version": 3
