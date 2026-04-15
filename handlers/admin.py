@@ -48,6 +48,8 @@ async def cmd_admin(message: Message, db: aiosqlite.Connection, settings: Settin
     if not _is_admin(message.from_user.id, settings):
         return
     stats = await get_admin_stats(db)
+    today = await get_today_stats(db)
+    stats.update(today)
     await message.answer(format_admin_main(stats), reply_markup=admin_keyboard())
 
 
