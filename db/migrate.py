@@ -30,6 +30,12 @@ async def run_migrations(db: aiosqlite.Connection) -> None:
                 sql = f.read()
             try:
                 await db.execute(sql)
+            except sqlite3.ProgrammingError as e:
+                # Multiple statements: use executescript
+                if "one statement" in str(e):
+                    await db.executescript(sql)
+                else:
+                    raise
             except sqlite3.OperationalError as e:
                 if "duplicate column" not in str(e):
                     raise
