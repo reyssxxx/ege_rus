@@ -36,12 +36,13 @@ async def send_question(callback: CallbackQuery, state: FSMContext, db: aiosqlit
         task_number = data.get("task_number")
         subcategory = data.get("subcategory")
         task_numbers = data.get("task_numbers")  # multi-select mode
+        problem_ids = data.get("problem_ids")    # problem words mode
         streak = data.get("streak", 0)
         session_total = data.get("session_total", 0)
         best_streak = data.get("best_streak", 0)
         answered = data.get("answered_questions", [])
 
-        question = await get_next_question(db, callback.from_user.id, task_number, subcategory, exclude_ids=answered, task_numbers=task_numbers)
+        question = await get_next_question(db, callback.from_user.id, task_number, subcategory, exclude_ids=answered, task_numbers=task_numbers, problem_ids=problem_ids)
         if not question:
             await safe_edit_text(
                 callback,

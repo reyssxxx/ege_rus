@@ -55,6 +55,48 @@ async def get_random_question(
     return _row_to_question(row) if row else None
 
 
+async def get_weighted_question_from_ids(
+    db: aiosqlite.Connection,
+    user_id: int,
+    question_ids: list[int],
+    exclude_ids: list[int] | None = None,
+) -> Question | None:
+    """Pick a question from a fixed set of IDs, weighted by error history."""
+    if not question_ids:
+        return None
+
+    available = [qid for qid in question_ids if qid not in (exclude_ids or [])]
+    if not available:
+        # All excluded — reset and pick from full set
+        available = question_ids
+
+    placeholders = ",".join("?" for _ in available)
+    query = f"""
+        SELECT q.*,
+            COALESCE(uqs.times_shown, 0) AS ts,
+            COALESCE(uqs.times_correct, 0) AS tc
+        FROM questions q
+        LEFT JOIN user_question_stats uqs
+            ON uqs.question_id = q.id AND uqs.user_id = ?
+        WHERE q.id IN ({placeholders})
+        ORDER BY
+            CASE
+                WHEN uqs.times_shown IS NULL THEN 0
+                WHEN uqs.times_correct = 0 THEN 1
+                ELSE 2
+            END,
+            CASE
+                WHEN uqs.times_shown > 0 THEN CAST(uqs.times_correct AS REAL) / uqs.times_shown
+                ELSE 0
+            END,
+            RANDOM()
+        LIMIT 1
+    """
+    cursor = await db.execute(query, [user_id, *available])
+    row = await cursor.fetchone()
+    return _row_to_question(row) if row else None
+
+
 async def get_weighted_question(
     db: aiosqlite.Connection,
     user_id: int,

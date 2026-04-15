@@ -128,6 +128,21 @@ async def get_category_stats(db: aiosqlite.Connection, user_id: int) -> list[Cat
     ]
 
 
+async def get_problem_question_ids(db: aiosqlite.Connection, user_id: int) -> list[int]:
+    """Вернуть ID вопросов, в которых была хотя бы одна ошибка."""
+    cursor = await db.execute(
+        """
+        SELECT question_id
+        FROM user_question_stats
+        WHERE user_id = ? AND times_correct < times_shown
+        ORDER BY CAST(times_correct AS REAL) / times_shown ASC, times_shown DESC
+        """,
+        (user_id,),
+    )
+    rows = await cursor.fetchall()
+    return [row["question_id"] for row in rows]
+
+
 async def get_problem_words(db: aiosqlite.Connection, user_id: int, limit: int = 20) -> list[ProblemWord]:
     cursor = await db.execute(
         """

@@ -6,9 +6,10 @@ from aiogram.filters import Command
 from aiogram.types import Message, CallbackQuery
 from aiogram.fsm.context import FSMContext
 
+from db.repositories.users import get_problem_question_ids, get_longest_streak
 from keyboards.callbacks import MenuAction
 from keyboards.stats import stats_keyboard, StatsView
-from services.stats_service import format_general_stats, format_category_stats, format_problem_words
+from services.stats_service import format_general_stats, format_category_stats
 
 router = Router()
 logger = logging.getLogger(__name__)
@@ -30,10 +31,28 @@ async def cb_stats(callback: CallbackQuery, db: aiosqlite.Connection):
 
 
 @router.callback_query(MenuAction.filter(F.action == "problems"))
-async def cb_problems(callback: CallbackQuery, db: aiosqlite.Connection):
-    """Проблемные слова из главного меню."""
-    text = await format_problem_words(db, callback.from_user.id)
-    await callback.message.edit_text(text, reply_markup=stats_keyboard())
+async def cb_problems(callback: CallbackQuery, state: FSMContext, db: aiosqlite.Connection):
+    """Запустить тренировку по проблемным словам."""
+    from handlers.quiz import send_question
+
+    problem_ids = await get_problem_question_ids(db, callback.from_user.id)
+    if not problem_ids:
+        await callback.answer("Отлично! Пока нет слов с ошибками. 💪", show_alert=True)
+        return
+
+    best_streak = await get_longest_streak(db, callback.from_user.id)
+    await state.update_data(
+        task_number=None,
+        task_numbers=None,
+        problem_ids=problem_ids,
+        subcategory=None,
+        session_total=0,
+        session_correct=0,
+        session_wrong=0,
+        streak=0,
+        best_streak=best_streak,
+    )
+    await send_question(callback, state, db)
     await callback.answer()
 
 
